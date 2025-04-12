@@ -21,7 +21,7 @@
         }
     </script>
 </head>
-<body style="--ff:ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; --weight:400; --bgc:white; --c:gray-900;"  class="antialiased">
+<bodySegoe style="--ff:ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, " UI', Roboto, 'Helvetica Neue', Arial, sans-serif; --weight:400; --bgc:white; --c:gray-900;" class="antialiased">
     <div style="--h:96px; --w:100%; --pos:absolute; --top:0; --left:0; --bgc:black;" ></div>
     <div style="--h:96px; --z:20; --pos:relative; --d:flex; --ai:center; --jc:space-between; --pl:24px; --pr:24px;"  class="container mx-auto">
         <a style="--size:1.25rem; --lh:1.75rem; --weight:800; --c:white; --tt:uppercase;" href="/" class="italic tracking-tighter">foundation</a>
@@ -42,7 +42,7 @@
                     </svg>
                 </a>
             </div>
-            <button style="--d-lg:none; --bgc:black; --c:white; --radius:1.5rem; --w:100%; --pt:16px; --pb:16px; --c:center; --tt:uppercase; --size:0.875rem; --lh:1.25rem; --shadow:0 25px 50px -12px rgb(0,0,0,0.25); --shadow-lg:none;" x-on:click="mobileMenu = !mobileMenu" type="button" class="focus:outline-none">
+            <button style="--d-lg:none; --bgc:black; --c:white; --radius:1.5rem; --w:100%; --pt:16px; --pb:16px; --ta:center; --tt:uppercase; --size:0.875rem; --lh:1.25rem; --shadow:0 25px 50px -12px rgb(0,0,0,0.25); --shadow-lg:none;" x-on:click="mobileMenu = !mobileMenu" type="button" class="focus:outline-none">
                 <template x-if="!mobileMenu">
                     <div style="--d:flex; --ai:center; --jc:center;" >
                         <svg style="--w:20px; --h:20px; --mr:8px;" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -77,7 +77,7 @@
     });
     </script>
     <div style="--pos:relative; --w:100%; --bgc:black; --pt:256px; --pb:96px;" x-data="slideshow()" x-init="init()" class="-mt-32">
-        <div style="--pos:relative; --z:10; --c:center; --c:white; --c:center; --maxw:36rem;"  class="mx-auto">
+        <div style="--pos:relative; --z:10; --ta:center; --c:white; --ta:center; --maxw:36rem;"  class="mx-auto">
             <h1 style="--size:1.875rem; --lh:2.25rem; --size-lg:4.5rem; --lh-lg:1; --mb:16px; --weight:700; --tt:uppercase;"  class="italic">BUILDING CONTRACTORS</h1>
             <a style="--d:inline-block; --radius:9999px; --bw:2px; --bc:white; --size:1.125rem; --lh:1.75rem; --pl:32px; --pr:32px; --pt:12px; --pb:12px;" href="/about" class="hover:bg-white hover:text-gray-900">Find out more</a>
         </div>
@@ -102,26 +102,26 @@
             </div>
         </div>
     </div>
-    <div style="--maxw:32rem; --c:center; --pt:96px; --pb:96px;"  class="mx-auto">
+    <div style="--maxw:32rem; --ta:center; --pt:96px; --pb:96px;"  class="mx-auto">
         <h2 style="--size:3rem; --lh:1; --mb:24px; --weight:700; --tt:uppercase;"  class="italic">Our Services</h2>
         <p style="--size:1.25rem; --lh:1.75rem;" >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
     </div>
     <div style="--d:flex; --fw:wrap; --jc:center; --pl:16px; --pr:16px;"  class="md:space-x-12">
         <a style="--d:block; --w:100%; --fx-md:1; --maxw:20rem; --mb:48px;" href="/service">
             <img style="--w:100%; --h:96; --objf:cover;" src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80">
-            <div style="--size:1.125rem; --lh:1.75rem; --c:center; --p:16px;" >Service Title</div>
+            <div style="--size:1.125rem; --lh:1.75rem; --ta:center; --p:16px;" >Service Title</div>
         </a>
         <a style="--d:block; --w:100%; --fx-md:1; --maxw:20rem; --mb:48px;" href="/service">
             <img style="--w:100%; --h:96; --objf:cover;" src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80">
-            <div style="--size:1.125rem; --lh:1.75rem; --c:center; --p:16px;" >Service Title</div>
+            <div style="--size:1.125rem; --lh:1.75rem; --ta:center; --p:16px;" >Service Title</div>
         </a>
         <a style="--d:block; --w:100%; --fx-md:1; --maxw:20rem; --mb:48px;" href="/service">
             <img style="--w:100%; --h:96; --objf:cover;" src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80">
-            <div style="--size:1.125rem; --lh:1.75rem; --c:center; --p:16px;" >Service Title</div>
+            <div style="--size:1.125rem; --lh:1.75rem; --ta:center; --p:16px;" >Service Title</div>
         </a>
     </div>
     <div style="--pos:relative; --w:100%; --bgc:black; --pt:128px; --pb:128px; --mt:48px; --mb:48px; --mt-lg:96px; --mb-lg:96px;" >
-        <div style="--pos:relative; --z:10; --c:center; --c:white; --c:center; --maxw:36rem;"  class="mx-auto">
+        <div style="--pos:relative; --z:10; --ta:center; --c:white; --ta:center; --maxw:36rem;"  class="mx-auto">
             <h1 style="--size:1.875rem; --lh:2.25rem; --size-lg:4.5rem; --lh-lg:1; --mb:16px; --weight:700; --tt:uppercase;"  class="italic">Property Development</h1>
             <a style="--d:inline-block; --radius:9999px; --bw:2px; --bc:white; --size:1.125rem; --lh:1.75rem; --pl:32px; --pr:32px; --pt:12px; --pb:12px;" href="#" class="hover:bg-white hover:text-gray-900">Find out more</a>
         </div>
@@ -146,7 +146,7 @@
             </div>
         </div>
     </div>
-    <div style="--bgc:black; --c:white; --c:center; --p:48px;" >
+    <div style="--bgc:black; --c:white; --ta:center; --p:48px;" >
         <div style="--size:1.5rem; --lh:2rem;" >Join the club</div>
         <form style="--maxw:24rem; --pos:relative; --h:48px; --mt:24px; --bc:b; --bc:white;" name="subscribe" method="POST" netlify class="mx-auto">
             <input style="--w:100%; --h:100%; --bgc:transparent; --bc:none; --pr:48px;" type="text" name="email"  placeholder="Enter your email">
@@ -181,7 +181,7 @@
             </a>
         </div>
     </div>
-    <div style="--c:center; --pt:48px; --pb:48px; --mt:48px; --bc:t; --bc:oklch(91.9% 0.016 262); --size:0.75rem; --lh:1rem; --tt:uppercase;"  class="container mx-auto">
+    <div style="--ta:center; --pt:48px; --pb:48px; --mt:48px; --bc:t; --bc:oklch(91.9% 0.016 262); --size:0.75rem; --lh:1rem; --tt:uppercase;"  class="container mx-auto">
         <div>Copyright &copy; 2021 foundation</div>
         <div style="--c:gray-400; --mt:8px;" >Images by Unsplash</div>
     </div>

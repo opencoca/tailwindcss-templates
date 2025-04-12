@@ -13,9 +13,7 @@
     <link rel="stylesheet" href="https://startr.style/style.css">
 </head>
 
-<body
-    style="--ff:ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; --c:oklch(47.318% 0.036 262); --bgc:white;"
-    class="antialiased">
+<bodySegoe style="--ff:ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, " UI', Roboto, 'Helvetica Neue', Arial, sans-serif; --c:oklch(47.318% 0.036 262); --bgc:white;" class="antialiased">
     <script>
         const menu = () => ({
             showContactInfo: false,
@@ -23,13 +21,10 @@
         });
     </script>
     <div x-data="menu()">
-        <div style="--pl:24px; --pr:24px; --d:flex; --jc:space-between; --ai:center; --pt:16px; --pb:16px; --h:128px;"
-            class="container mx-auto">
+        <div style="--pl:24px; --pr:24px; --d:flex; --jc:space-between; --ai:center; --pt:16px; --pb:16px; --h:128px;"  class="container mx-auto">
             <div style="--d:flex; --ai:center; --h:100%;">
-                <a style="--size:1.5rem; --lh:2rem; --weight:700; --c:black; --h:100%; --d:flex; --ai:center;" href="/"
-                    class="tracking-tighter">outlet</a>
-                <div style="--d:none; --d-lg:flex; --ai:center; --size:0.75rem; --lh:1rem; --tt:uppercase; --ml:16px;"
-                    class="tracking-wider">
+                <a style="--size:1.5rem; --lh:2rem; --weight:700; --c:black; --h:100%; --d:flex; --ai:center;" href="/" class="tracking-tighter">outlet</a>
+                <div style="--d:none; --d-lg:flex; --ai:center; --size:0.75rem; --lh:1rem; --tt:uppercase; --ml:16px;"  class="tracking-wider">
                     <a style="--ml:32px;" href="/products">Catalog</a>
                     <a style="--ml:32px;" href="/about">About</a>
                     <a style="--ml:32px;" href="/blog">Blog</a>
@@ -37,7 +32,7 @@
                         type="button">Contact</button>
                 </div>
             </div>
-            <div style="--d:flex; --ai:center; --size:0.75rem; --lh:1rem; --tt:uppercase;" class="tracking-wider">
+            <div style="--d:flex; --ai:center; --size:0.75rem; --lh:1rem; --tt:uppercase;"  class="tracking-wider">
                 <a style="--ml:32px;" href="/cart">
                     <svg style="--w:24px; --h:24px;" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg">
@@ -106,8 +101,7 @@
             </template>
         </div>
         <div style="--d:flex; --jc:center; --ai:center;">
-            <button style="--d:flex; --d-lg:none; --tt:uppercase; --size:0.75rem; --lh:1rem; --ai:center; --mb:24px;"
-                x-on:click="showMobileMenu = true" class="-mt-6">
+            <button style="--d:flex; --d-lg:none; --tt:uppercase; --size:0.75rem; --lh:1rem; --ai:center; --mb:24px;" x-on:click="showMobileMenu = true" class="-mt-6">
                 <svg style="--w:16px; --h:16px; --mr:4px;" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16"></path>
@@ -116,13 +110,11 @@
             </button>
         </div>
         <template x-if="showMobileMenu">
-            <div style="--d-md:none; --pos:fixed; --top:0; --right:0; --bottom:0; --left:0; --w:100%; --h:100%; --d:flex; --fd:column; --ai:center; --jc:center; --bgc:gray-100; --z:40; --tt:uppercase; --size:1.25rem; --lh:1.75rem; --c:center; --c:black;"
-                class="space-y-4 tracking-widest">
+            <div style="--d-md:none; --pos:fixed; --top:0; --right:0; --bottom:0; --left:0; --w:100%; --h:100%; --d:flex; --fd:column; --ai:center; --jc:center; --bgc:gray-100; --z:40; --tt:uppercase; --size:1.25rem; --lh:1.75rem; --ta:center; --c:black;"  class="space-y-4 tracking-widest">
                 <a href="/products">Catalog</a>
                 <a href="/about">About</a>
                 <a href="/blog">Blog</a>
-                <button style="--tt:uppercase; --c:black;" x-on:click="showContactInfo = true" type="button"
-                    class="tracking-widest">Contact</button>
+                <button style="--tt:uppercase; --c:black;" x-on:click="showContactInfo = true" type="button" class="tracking-widest">Contact</button>
                 <button style="--pos:absolute; --top:0; --right:0; --pr:32px; --pt:16px;"
                     x-on:click="showMobileMenu = false" type="button">
                     <svg style="--w:32px; --h:32px;" fill="none" stroke="currentColor" viewBox="0 0 24 24"
@@ -134,13 +126,11 @@
             </div>
         </template>
     </div>
-    <div style="--pl:24px; --pr:24px; --d:grid; --gtc:repeat(1, 1fr); --gtc-lg:repeat(12, 1fr);"
-        class="container mx-auto">
+    <div style="--pl:24px; --pr:24px; --d:grid; --gtc:repeat(1, 1fr); --gtc-lg:repeat(12, 1fr);"  class="container mx-auto">
         <div
             style="--gc-lg:span 5; --pt:48px; --pb:48px; --pl-md:48px; --pr-md:48px; --pt-md:128px; --pb-md:128px; --d:flex; --ai:center; --jc:center;">
             <div style="--maxw:24rem;">
-                <h1 style="--size:3rem; --lh:1; --size-md:3.75rem; --lh-md:1; --mb:24px; --c:black;"
-                    class="font-display leading-tight">Our new arrivals</h1>
+                <h1 style="--size:3rem; --lh:1; --size-md:3.75rem; --lh-md:1; --mb:24px; --c:black;"  class="font-display leading-tight">Our new arrivals</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua.</p>
                 <a style="--d:flex; --ai:center; --mt:32px; --tt:uppercase; --size:0.875rem; --lh:1.25rem; --c:black; --weight:600;"
@@ -181,17 +171,14 @@
                     src="https://images.unsplash.com/photo-1515555230216-82228b88ea98?auto=format&amp;amp;fit=crop&amp;amp;w=900&amp;amp;q=60">
             </a>
             <div style="--pos:absolute; --bottom:0; --right:0; --d:grid; --gtc:repeat(2, 1fr);">
-                <button style="--p:16px; --p-md:24px; --bgc:white;" x-on:click="current = current class="
-                    hover:bg-gray-100 hover:opacity-80"> 0 ? current - 1 : items.length - 1">
+                <button style="--p:16px; --p-md:24px; --bgc:white;" x-on:click="current = current class="hover:bg-gray-100 hover:opacity-80"> 0 ? current - 1 : items.length - 1">
                     <svg style="--w:24px; --h:24px; --w-md:40px; --h-md:40px;" fill="none" stroke="currentColor"
                         viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7">
                         </path>
                     </svg>
                 </button>
-                <button style="--p:16px; --p-md:24px; --bgc:white;"
-                    x-on:click="current = current < items.length - 1 ? current + 1 : 0"
-                    class="hover:bg-gray-100 hover:opacity-80">
+                <button style="--p:16px; --p-md:24px; --bgc:white;" x-on:click="current = current < items.length - 1 ? current + 1 : 0" class="hover:bg-gray-100 hover:opacity-80">
                     <svg style="--w:24px; --h:24px; --w-md:40px; --h-md:40px;" fill="none" stroke="currentColor"
                         viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -200,20 +187,17 @@
             </div>
         </div>
     </div>
-    <h2 style="--c:center; --tt:uppercase; --size:1.125rem; --lh:1.75rem; --size-md:1.25rem; --lh-md:1.75rem; --c:black; --pt:48px; --pb:48px; --pt-md:96px; --pb-md:96px; --pl:24px; --pr:24px;"
-        class="font-display">Our Collections</h2>
-    <div style="--pl:24px; --pr:24px; --d:grid; --gtc:repeat(1, 1fr); --gtc-lg:repeat(2, 1fr); --mb-lg:96px;"
-        class="container mx-auto">
+    <h2 style="--ta:center; --tt:uppercase; --size:1.125rem; --lh:1.75rem; --size-md:1.25rem; --lh-md:1.75rem; --c:black; --pt:48px; --pb:48px; --pt-md:96px; --pb-md:96px; --pl:24px; --pr:24px;"  class="font-display">Our Collections</h2>
+    <div style="--pl:24px; --pr:24px; --d:grid; --gtc:repeat(1, 1fr); --gtc-lg:repeat(2, 1fr); --mb-lg:96px;"  class="container mx-auto">
         <div style="--pos:relative; --h:208px; --h-md:72; --h-lg:auto;">
             <a href="/category">
                 <img style="--pos:absolute; --top:0; --right:0; --bottom:0; --left:0; --w:100%; --h:100%; --objf:cover;"
                     src="https://images.unsplash.com/photo-1523779105320-d1cd346ff52b?auto=format&amp;fit=crop&amp;w=900&amp;q=60">
             </a>
         </div>
-        <div style="--pl:24px; --pr:24px; --pt:48px; --pb:48px; --p-md:64px; --p-lg:128px; --d:flex; --ai:center; --jc:center;"
-            class="order-last">
+        <div style="--pl:24px; --pr:24px; --pt:48px; --pb:48px; --p-md:64px; --p-lg:128px; --d:flex; --ai:center; --jc:center;"  class="order-last">
             <div>
-                <h3 style="--size:2.25rem; --lh:2.5rem; --mb:24px; --c:black;" class="font-display leading-tight">Bags +
+                <h3 style="--size:2.25rem; --lh:2.5rem; --mb:24px; --c:black;"  class="font-display leading-tight">Bags +
                     Clutches</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua.</p>
@@ -228,18 +212,16 @@
             </div>
         </div>
     </div>
-    <div style="--pl:24px; --pr:24px; --d:grid; --gtc:repeat(1, 1fr); --gtc-lg:repeat(2, 1fr); --mb-lg:96px;"
-        class="container mx-auto">
+    <div style="--pl:24px; --pr:24px; --d:grid; --gtc:repeat(1, 1fr); --gtc-lg:repeat(2, 1fr); --mb-lg:96px;"  class="container mx-auto">
         <div style="--pos:relative; --h:208px; --h-md:72; --h-lg:auto;">
             <a href="/category">
                 <img style="--pos:absolute; --top:0; --right:0; --bottom:0; --left:0; --w:100%; --h:100%; --objf:cover;"
                     src="https://images.unsplash.com/photo-1506629082955-511b1aa562c8?auto=format&amp;fit=crop&amp;w=900&amp;q=60">
             </a>
         </div>
-        <div style="--pl:24px; --pr:24px; --pt:48px; --pb:48px; --p-md:64px; --p-lg:128px; --d:flex; --ai:center; --jc:center;"
-            class="order-last lg:order-first">
+        <div style="--pl:24px; --pr:24px; --pt:48px; --pb:48px; --p-md:64px; --p-lg:128px; --d:flex; --ai:center; --jc:center;"  class="order-last lg:order-first">
             <div>
-                <h3 style="--size:2.25rem; --lh:2.5rem; --mb:24px; --c:black;" class="font-display leading-tight">
+                <h3 style="--size:2.25rem; --lh:2.5rem; --mb:24px; --c:black;"  class="font-display leading-tight">
                     Clothing</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua.</p>
@@ -254,18 +236,16 @@
             </div>
         </div>
     </div>
-    <div style="--pl:24px; --pr:24px; --d:grid; --gtc:repeat(1, 1fr); --gtc-lg:repeat(2, 1fr); --mb-lg:96px;"
-        class="container mx-auto">
+    <div style="--pl:24px; --pr:24px; --d:grid; --gtc:repeat(1, 1fr); --gtc-lg:repeat(2, 1fr); --mb-lg:96px;"  class="container mx-auto">
         <div style="--pos:relative; --h:208px; --h-md:72; --h-lg:auto;">
             <a href="/category">
                 <img style="--pos:absolute; --top:0; --right:0; --bottom:0; --left:0; --w:100%; --h:100%; --objf:cover;"
                     src="https://images.unsplash.com/photo-1596944924616-7b38e7cfac36?auto=format&amp;fit=crop&amp;w=900&amp;q=60">
             </a>
         </div>
-        <div style="--pl:24px; --pr:24px; --pt:48px; --pb:48px; --p-md:64px; --p-lg:128px; --d:flex; --ai:center; --jc:center;"
-            class="order-last">
+        <div style="--pl:24px; --pr:24px; --pt:48px; --pb:48px; --p-md:64px; --p-lg:128px; --d:flex; --ai:center; --jc:center;"  class="order-last">
             <div>
-                <h3 style="--size:2.25rem; --lh:2.5rem; --mb:24px; --c:black;" class="font-display leading-tight">
+                <h3 style="--size:2.25rem; --lh:2.5rem; --mb:24px; --c:black;"  class="font-display leading-tight">
                     Jewellery</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua.</p>
@@ -280,10 +260,8 @@
             </div>
         </div>
     </div>
-    <h2 style="--c:center; --tt:uppercase; --size:1.125rem; --lh:1.75rem; --size-lg:1.25rem; --lh-lg:1.75rem; --c:black; --pt:48px; --pb:48px; --pt-md:96px; --pb-md:96px; --pl:24px; --pr:24px;"
-        class="font-display">Latest Products</h2>
-    <div style="--pl:24px; --pr:24px; --d:grid; --gtc:repeat(1, 1fr); --gtc-lg:repeat(4, 1fr); --gtr-lg:repeat(2, 1fr); --gg:32px; --c:center; --size:0.875rem; --lh:1.25rem; --tt:uppercase;"
-        class="container mx-auto grid-rows-none">
+    <h2 style="--ta:center; --tt:uppercase; --size:1.125rem; --lh:1.75rem; --size-lg:1.25rem; --lh-lg:1.75rem; --c:black; --pt:48px; --pb:48px; --pt-md:96px; --pb-md:96px; --pl:24px; --pr:24px;"  class="font-display">Latest Products</h2>
+    <div style="--pl:24px; --pr:24px; --d:grid; --gtc:repeat(1, 1fr); --gtc-lg:repeat(4, 1fr); --gtr-lg:repeat(2, 1fr); --gg:32px; --ta:center; --size:0.875rem; --lh:1.25rem; --tt:uppercase;"  class="container mx-auto grid-rows-none">
         <div style="--gc:span 1; --gr:span 1;">
             <div style="--w:100%; --h:208px; --pos:relative;">
                 <a href="/product">
@@ -345,33 +323,30 @@
             </div>
         </div>
     </div>
-    <div style="--pt:80px; --pb:80px; --mt:48px; --mt-md:96px; --bc:t; --bc:oklch(91.9% 0.016 262);"
-        class="container mx-auto">
+    <div style="--pt:80px; --pb:80px; --mt:48px; --mt-md:96px; --bc:t; --bc:oklch(91.9% 0.016 262);"  class="container mx-auto">
         <div style="--bgc:black; --pos:relative;">
             <div
-                style="--pos:relative; --z:10; --c:white; --c:center; --pl:24px; --pr:24px; --pl-md:48px; --pr-md:48px; --pt:96px; --pb:96px; --pt-md:192px; --pb-md:192px;">
-                <h3 style="--size:1.5rem; --lh:2rem;" class="font-display">End of Season Sale</h3>
+                style="--pos:relative; --z:10; --c:white; --ta:center; --pl:24px; --pr:24px; --pl-md:48px; --pr-md:48px; --pt:96px; --pb:96px; --pt-md:192px; --pb-md:192px;">
+                <h3 style="--size:1.5rem; --lh:2rem;"  class="font-display">End of Season Sale</h3>
                 <p style="--mt:24px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-                <a style="--d:inline-block; --bgc:black; --tt:uppercase; --size:0.875rem; --lh:1.25rem; --pt:16px; --pb:16px; --pl:24px; --pr:24px; --mt:32px;"
-                    href="/products" class="hover:opacity-75">Browse</a>
+                <a style="--d:inline-block; --bgc:black; --tt:uppercase; --size:0.875rem; --lh:1.25rem; --pt:16px; --pb:16px; --pl:24px; --pr:24px; --mt:32px;" href="/products" class="hover:opacity-75">Browse</a>
             </div>
             <img style="--pos:absolute; --top:0; --right:0; --bottom:0; --left:0; --w:100%; --h:100%; --objf:cover; --op:0.75;"
                 src="https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=2550&amp;q=80">
         </div>
     </div>
-    <div style="--bc:t; --bc:oklch(91.9% 0.016 262); --pl:24px; --pr:24px;" class="container mx-auto">
-        <div style="--c:center; --maxw:28rem; --mt:48px; --mb:48px; --mt-md:96px; --mb-md:96px;" class="mx-auto">
+    <div style="--bc:t; --bc:oklch(91.9% 0.016 262); --pl:24px; --pr:24px;"  class="container mx-auto">
+        <div style="--ta:center; --maxw:28rem; --mt:48px; --mb:48px; --mt-md:96px; --mb-md:96px;"  class="mx-auto">
             <p style="--size:1.125rem; --lh:1.75rem;">"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
             <div style="--mt:16px; --weight:700;">novolio</div>
         </div>
     </div>
-    <div style="--d:flex; --fw:wrap; --jc:space-between; --bc:t; --bc:b; --bc:oklch(91.9% 0.016 262); --pt:24px; --pb:24px; --mb:32px;"
-        class="container mx-auto">
+    <div style="--d:flex; --fw:wrap; --jc:space-between; --bc:t; --bc:b; --bc:oklch(91.9% 0.016 262); --pt:24px; --pb:24px; --mb:32px;"  class="container mx-auto">
         <form style="--d:flex; --fw:wrap; --fw-sm:nowrap; --w:100%; --maxw-sm:24rem; --pl:24px; --pr:24px;"
             name="subscribe" method="POST">
             <input
-                style="--h:48px; --fx:1; --bw:1px; --bc:oklch(91.9% 0.016 262); --c:center; --c-sm:left; --tt:uppercase; --weight:600; --pl:16px; --pr:16px; --size:0.875rem; --lh:1.25rem;"
+                style="--h:48px; --fx:1; --bw:1px; --bc:oklch(91.9% 0.016 262); --ta:center; --c-sm:left; --tt:uppercase; --weight:600; --pl:16px; --pr:16px; --size:0.875rem; --lh:1.25rem;"
                 type="text" name="email" required="" placeholder="Email address">
             <button
                 style="--w:100%; --w-sm:auto; --h:48px; --pl:24px; --pr:24px; --d:flex; --jc:center; --ai:center; --tt:uppercase; --size:0.875rem; --lh:1.25rem; --bgc:gray-900; --c:white; --fs:0;">Subscribe</button>
@@ -408,8 +383,7 @@
             </a>
         </div>
     </div>
-    <div style="--pl:24px; --pr:24px; --d:flex; --fw:wrap; --tt:uppercase; --size:0.875rem; --lh:1.25rem; --weight:700; --c:gray-900; --pt:24px; --pb:24px;"
-        class="container mx-auto">
+    <div style="--pl:24px; --pr:24px; --d:flex; --fw:wrap; --tt:uppercase; --size:0.875rem; --lh:1.25rem; --weight:700; --c:gray-900; --pt:24px; --pb:24px;"  class="container mx-auto">
         <div style="--fx:1;">
             <a style="--d:block; --mt:8px;" href="/products">Catalog</a>
             <a style="--d:block; --mt:8px;" href="/about">About</a>
@@ -425,14 +399,13 @@
             <a style="--d:block; --mt:8px;" href="/about">About</a>
             <a style="--d:block; --mt:8px;" href="/blog">Blog</a>
         </div>
-        <div style="--w:100%; --mt:48px; --mt-md:0;" class="md:w-4/12">
+        <div style="--w:100%; --mt:48px; --mt-md:0;"  class="md:w-4/12">
             <h4>outlet</h4>
-            <p style="--tt:none; --mt:8px; --maxw:24rem;" class="leading-relaxed">Lorem ipsum dolor sit amet,
+            <p style="--tt:none; --mt:8px; --maxw:24rem;"  class="leading-relaxed">Lorem ipsum dolor sit amet,
                 consectetur adipisicing elit, sed do eiusmod tempor</p>
         </div>
     </div>
-    <div style="--c:center; --pt:48px; --pb:48px; --mt:48px; --bc:t; --bc:oklch(91.9% 0.016 262); --size:0.75rem; --lh:1rem; --tt:uppercase;"
-        class="container mx-auto">
+    <div style="--ta:center; --pt:48px; --pb:48px; --mt:48px; --bc:t; --bc:oklch(91.9% 0.016 262); --size:0.75rem; --lh:1rem; --tt:uppercase;"  class="container mx-auto">
         <div>Copyright &copy; 2021 novolio</div>
         <div style="--c:gray-400; --mt:8px;">Images by Unsplash</div>
     </div>
