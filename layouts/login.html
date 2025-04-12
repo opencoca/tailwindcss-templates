@@ -7,50 +7,52 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://startr.style/style.css">
+
 
 		<title>Sign in</title>
 
 	</head>
-	<body class="bg-gray-100">
+	<body style="--bgc:gray-100;" >
 
 		
-		<div class="min-h-screen w-full p-6 flex justify-center items-center">
+		<div style="--minh:100vh; --w:100%; --p:24px; --d:flex; --jc:center; --ai:center;" >
 			
-    		<div class="w-full max-w-xs">
+    		<div style="--w:100%; --maxw:20rem;" >
 
-    			<div class="bg-white border p-8 shadow rounded w-full mb-6">
+    			<div style="--bgc:white; --bw:1px; --p:32px; --shadow:0 1px 3px 0 rgb(0,0,0,0.1), 0 1px 2px 0 rgb(0,0,0,0.06); --radius:0.25rem; --w:100%; --mb:24px;" >
 
-		            <h1 class="mb-6 text-lg text-gray-900 font-thin">Login to your account</h1>
+		            <h1 style="--mb:24px; --size:1.125rem; --lh:1.75rem; --c:gray-900; --weight:100;" >Login to your account</h1>
 
 		            <form method="POST" action="/login">
 
-		                <fieldset class="mb-4">
-		                    <label class="block text-sm text-gray-900 mb-2">Email address</label>
-		                    <input id="email" type="email" class="block w-full rounded-sm border bg-white py-2 px-3 text-sm" name="email" required autofocus>
+		                <fieldset style="--mb:16px;" >
+		                    <label style="--d:block; --size:0.875rem; --lh:1.25rem; --c:gray-900; --mb:8px;" >Email address</label>
+		                    <input style="--d:block; --w:100%; --radius:0.125rem; --bw:1px; --bgc:white; --pt:8px; --pb:8px; --pl:12px; --pr:12px; --size:0.875rem; --lh:1.25rem;" id="email" type="email"  name="email" required autofocus>
 		                </fieldset>
 
-		                <fieldset class="mb-4">
-		                    <div class="w-full flex justify-between items-center">
-		                        <label for="password" class="block text-sm text-gray-900 mb-2">Password</label>
-		                        <a class="text-xs font-thin text-blue no-underline hover:underline" href="#">
+		                <fieldset style="--mb:16px;" >
+		                    <div style="--w:100%; --d:flex; --jc:space-between; --ai:center;" >
+		                        <label style="--d:block; --size:0.875rem; --lh:1.25rem; --c:gray-900; --mb:8px;" for="password">Password</label>
+		                        <a style="--size:0.75rem; --lh:1rem; --weight:100; --c:blue; --td:none;" href="#" class="hover:underline">
 		                            Forgotten password?
 		                        </a>
 		                    </div>
-		                    <input id="password" type="password" class="block w-full rounded-sm border bg-white py-2 px-3 text-sm" name="password" required>
+		                    <input style="--d:block; --w:100%; --radius:0.125rem; --bw:1px; --bgc:white; --pt:8px; --pb:8px; --pl:12px; --pr:12px; --size:0.875rem; --lh:1.25rem;" id="password" type="password"  name="password" required>
 		                </fieldset>
 
-		                <div class="pt-1 pb-5 text-sm text-gray-darker font-thin">
-		                    <label><input class="mr-1" type="checkbox" name="remember" id="remember"> Remember me</label>
+		                <div style="--pt:4px; --pb:20px; --size:0.875rem; --lh:1.25rem; --c:gray-darker; --weight:100;" >
+		                    <label><input style="--mr:4px;" type="checkbox" name="remember" id="remember"> Remember me</label>
 		                </div>
 
 
-		                <button type="submit" class="block w-full bg-blue-600 text-white rounded-sm py-3 text-sm tracking-wide">
+		                <button style="--d:block; --w:100%; --bgc:oklch(36.38% 0.13 264); --c:white; --radius:0.125rem; --pt:12px; --pb:12px; --size:0.875rem; --lh:1.25rem;" type="submit" class="tracking-wide">
 		                    Sign in
 		                </button> 
 		            </form> 
 		        </div>
 
-        		<p class="text-center text-sm text-gray-600 font-thin">Don't have an account yet? <a href="/register" class="text-blue-500 no-underline hover:underline">Sign up</a></p>
+        		<p style="--c:center; --size:0.875rem; --lh:1.25rem; --c:gray-600; --weight:100;" >Don't have an account yet? <a style="--c:blue-500; --td:none;" href="/register" class="hover:underline">Sign up</a></p>
         	</div>
 
 		</div>
