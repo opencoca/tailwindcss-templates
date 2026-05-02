@@ -1,0 +1,10 @@
+path,reason
+sparrow,HTTrack-scraped third-party content (read-only mirror)
+layouts/Bike-Sparrow _ Look like an expert right from the start_files,downloaded vendor assets
+layouts/DentalPro_files,downloaded vendor assets
+layouts/Pinwheel-tailwind_files,downloaded vendor assets
+layouts/Tailwind Starter Template - Landing Page Template_ Windy Toolbox_files,downloaded vendor assets
+MatDash-1.0.0/node_modules,dependency cache
+MatDash-1.0.0/dist,build output
+MatDash-1.0.0/public,static assets
+.git,version control internals
