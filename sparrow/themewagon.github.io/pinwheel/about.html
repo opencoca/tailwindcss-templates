@@ -43,7 +43,7 @@
   <meta name="robots" content="" />
 
   <!-- meta-description -->
-  <meta name="description" content="meta description" />
+  <meta name="description" content="Here is a concise and SEO-friendly meta description based on the content: &quot;Discover our mission to empower entrepreneurs with innovative solutions, exception...">
 
   <!-- author from config.json -->
   <meta name="author" content="{config.metadata.meta_author}" />
@@ -94,34 +94,30 @@
 
   <!-- Main Stylesheet -->
   <link href="styles/main.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://startr.style/style.css">
 </head>
 
-<header class="header">
-  <nav class="navbar container">
+<header  class="header">
+  <nav  class="navbar container">
     <!-- logo -->
-    <div class="order-0">
+    <div style="--o:0;" >
       <a href="index-2.html">
         <img src="images/logo.svg" height="30" width="147" alt="logo" />
       </a>
     </div>
     <!-- navbar toggler -->
-    <input id="nav-toggle" type="checkbox" class="hidden" />
-    <label
-      id="show-button"
-      for="nav-toggle"
-      class="order-1 flex cursor-pointer items-center lg:order-1 lg:hidden"
-    >
-      <svg class="h-6 fill-current" viewBox="0 0 20 20">
+    <input style="--d:none;" id="nav-toggle" type="checkbox"  />
+    <label style="--o:1; --d:flex; --cur:pointer; --ai:center; --o-lg:1; --d-lg:none;" id="show-button"
+      for="nav-toggle">
+      <svg style="--h:24px;" viewBox="0 0 20 20" class="fill-current">
         <title>Menu Open</title>
         <path d="M0 3h20v2H0V3z m0 6h20v2H0V9z m0 6h20v2H0V0z"></path>
       </svg>
     </label>
-    <label
-      id="hide-button"
-      for="nav-toggle"
-      class="order-2 hidden cursor-pointer items-center lg:order-1"
-    >
-      <svg class="h-6 fill-current" viewBox="0 0 20 20">
+    <label style="--o:2; --d:none; --cur:pointer; --ai:center; --o-lg:1;" id="hide-button"
+      for="nav-toggle">
+      <svg style="--h:24px;" viewBox="0 0 20 20" class="fill-current">
         <title>Menu Close</title>
         <polygon
           points="11 9 22 9 22 11 11 11 11 22 9 22 9 11 -2 11 -2 9 9 9 9 -2 11 -2"
@@ -130,179 +126,148 @@
       </svg>
     </label>
     <!-- /navbar toggler -->
-    <ul
-      id="nav-menu"
-      class="navbar-nav order-2 hidden w-full flex-[0_0_100%] lg:order-1 lg:flex lg:w-auto lg:flex-auto lg:justify-center lg:space-x-5"
-    >
-      <li class="nav-item">
+    <ul style="--o:2; --d:none; --w:100%; --o-lg:1; --d-lg:flex; --w-lg:auto; --jc-lg:center;" id="nav-menu" class="navbar-nav flex-[0_0_100%] lg:flex-auto lg:space-x-5">
+      <li  class="nav-item">
         <a href="#" class="nav-link active">Home</a>
       </li>
-      <li class="nav-item">
+      <li  class="nav-item">
         <a href="about.html" class="nav-link">About</a>
       </li>
-      <li class="nav-item">
+      <li  class="nav-item">
         <a href="blog.html" class="nav-link">Blog</a>
       </li>
-      <li class="nav-item">
+      <li  class="nav-item">
         <a href="features.html" class="nav-link">Features</a>
       </li>
-      <li class="nav-item">
+      <li  class="nav-item">
         <a href="how-it-works.html" class="nav-link">How It Works</a>
       </li>
-      <li class="nav-item nav-dropdown group relative">
-        <span class="nav-link inline-flex items-center">
+      <li style="--pos:relative;"  class="nav-item nav-dropdown group">
+        <span style="--ai:center;"  class="nav-link inline-flex">
           Pages
-          <svg class="h-4 w-4 fill-current" viewBox="0 0 20 20">
+          <svg style="--h:16px; --w:16px;" viewBox="0 0 20 20" class="fill-current">
             <path
               d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
             />
           </svg>
         </span>
-        <ul
-          class="nav-dropdown-list hidden group-hover:block lg:invisible lg:absolute lg:block lg:opacity-0 lg:group-hover:visible lg:group-hover:opacity-100"
-        >
-          <li class="nav-dropdown-item">
+        <ul style="--d:none; --pos-lg:absolute; --d-lg:block; --op-lg:0.0;"  class="nav-dropdown-list group-hover:block lg:invisible lg:group-hover:visible lg:group-hover:opacity-100">
+          <li  class="nav-dropdown-item">
             <a href="career.html" class="nav-dropdown-link">Career</a>
           </li>
-          <li class="nav-dropdown-item">
-            <a href="career-single.html" class="nav-dropdown-link"
-              >Career Single</a
+          <li  class="nav-dropdown-item">
+            <a href="career-single.html" class="nav-dropdown-link">Career Single</a
             >
           </li>
-          <li class="nav-dropdown-item">
-            <a href="integrations.html" class="nav-dropdown-link"
-              >Integrations</a
+          <li  class="nav-dropdown-item">
+            <a href="integrations.html" class="nav-dropdown-link">Integrations</a
             >
           </li>
-          <li class="nav-dropdown-item">
-            <a href="integration-single.html" class="nav-dropdown-link"
-              >Integration Single</a
+          <li  class="nav-dropdown-item">
+            <a href="integration-single.html" class="nav-dropdown-link">Integration Single</a
             >
           </li>
-          <li class="nav-dropdown-item">
+          <li  class="nav-dropdown-item">
             <a href="pricing.html" class="nav-dropdown-link">Pricing</a>
           </li>
-          <li class="nav-dropdown-item">
+          <li  class="nav-dropdown-item">
             <a href="changelogs.html" class="nav-dropdown-link">Changelogs</a>
           </li>
-          <li class="nav-dropdown-item">
-            <a href="terms-conditions.html" class="nav-dropdown-link"
-              >Terms & Conditions</a
+          <li  class="nav-dropdown-item">
+            <a href="terms-conditions.html" class="nav-dropdown-link">Terms & Conditions</a
             >
           </li>
         </ul>
       </li>
-      <li class="nav-item">
+      <li  class="nav-item">
         <a href="contact.html" class="nav-link">Contact</a>
       </li>
-      <li class="nav-item mt-3.5 lg:hidden">
-        <a class="btn btn-white btn-sm border-border" href="signin.html"
-          >Sing Up Now</a
+      <li style="--mt:3.5; --d-lg:none;"  class="nav-item">
+        <a style="--bc:border;" href="signin.html" class="btn btn-white btn-sm">Sing Up Now</a
         >
       </li>
     </ul>
-    <div class="order-1 ml-auto hidden items-center md:order-2 md:ml-0 lg:flex">
-      <a class="btn btn-white btn-sm" href="signin.html">Sing Up Now</a>
+    <div style="--o:1; --d:none; --ai:center; --o-md:2; --ml-md:0; --d-lg:flex;"  class="ml-auto">
+      <a href="signin.html" class="btn btn-white btn-sm">Sing Up Now</a>
     </div>
   </nav>
 </header>
 
 <body><!-- floating assets -->
-<img
-  class="floating-bubble-1 absolute right-0 top-0 -z-[1]"
-  src="images/floating-bubble-1.svg"
+<img style="--pos:absolute; --right:0; --top:0;" src="images/floating-bubble-1.svg"
   alt=""
-/>
-<img
-  class="floating-bubble-2 absolute left-0 top-[387px] -z-[1]"
-  src="images/floating-bubble-2.svg"
+/ class="floating-bubble-1 -z-[1]">
+<img style="--pos:absolute; --left:0; --top:[387px];" src="images/floating-bubble-2.svg"
   alt=""
-/>
-<img
-  class="floating-bubble-3 absolute right-0 top-[605px] -z-[1]"
-  src="images/floating-bubble-3.svg"
+/ class="floating-bubble-2 -z-[1]">
+<img style="--pos:absolute; --right:0; --top:[605px];" src="images/floating-bubble-3.svg"
   alt=""
-/>
+/ class="floating-bubble-3 -z-[1]">
 <!-- ./end floating assets -->
 
 <!-- Common hero -->
-<section class="page-hero py-16">
-  <div class="container">
-    <div class="text-center">
-      <ul
-        class="breadcrumb inline-flex h-8 items-center justify-center space-x-2 rounded-3xl bg-theme-light px-4 py-2"
-      >
-        <li class="leading-none text-dark">
-          <a class="inline-flex items-center text-primary" href="#">
-            <svg
-              class="mr-1.5"
-              width="15"
+<section style="--pt:64px; --pb:64px;"  class="page-hero">
+  <div  class="container">
+    <div style="--ta:center;" >
+      <ul style="--h:32px; --ai:center; --jc:center; --radius:1.5rem; --bgc:theme-light; --pl:16px; --pr:16px; --pt:8px; --pb:8px;"  class="breadcrumb inline-flex space-x-2">
+        <li style="--c:dark;"  class="leading-none">
+          <a style="--ai:center; --c:primary;" href="#" class="inline-flex">
+            <svg style="--mr:6px;" width="15"
               height="15"
               viewBox="0 0 16 16"
               fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
+              xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M13.1769 15.0588H10.3533V9.41178H5.64744V15.0588H2.82391V6.58825H1.88274V16H14.118V6.58825H13.1769V15.0588ZM6.58862 15.0588V10.353H9.41215V15.0588H6.58862ZM15.8084 6.09225L15.2512 6.85178L8.00038 1.52472L0.749559 6.8499L0.192383 6.09131L8.00038 0.357666L15.8084 6.09225Z"
                 fill="black"
               />
             </svg>
-            <span class="text-sm leading-none">Home</span>
+            <span style="--size:0.875rem; --lh:1.25rem;"  class="leading-none">Home</span>
           </a>
         </li>
-        <li class="leading-none text-dark">
-          <span class="text-sm leading-none">/ About Us</span>
+        <li style="--c:dark;"  class="leading-none">
+          <span style="--size:0.875rem; --lh:1.25rem;"  class="leading-none">/ About Us</span>
         </li>
       </ul>
     </div>
-    <div class="page-hero-content mx-auto max-w-[768px] text-center">
-      <h1 class="mb-5 mt-8">About our company</h1>
+    <div style="--maxw:768px; --ta:center;"  class="page-hero-content mx-auto">
+      <h1 style="--mb:20px; --mt:32px;" >About our company</h1>
       <p>
         Donec sollicitudin molestie malesda. Donec sollitudin molestie
         malesuada. Mauris pellentesque nec, egestas non nisi. Cras ultricies
         ligula sed magna dictum porta. Lorem
       </p>
-      <div class="mt-11 justify-center sm:flex">
-        <a class="btn btn-primary m-3 block sm:inline-block" href="#"
-          >Download The Theme</a
+      <div style="--mt:44px; --jc:center; --d-sm:flex;" >
+        <a style="--m:12px; --d:block; --d-sm:inline-block;" href="#" class="btn btn-primary">Download The Theme</a
         >
-        <a
-          class="btn btn-outline-primary m-3 block min-w-[160px] sm:inline-block"
-          href="#"
-          >Learn more</a
+        <a style="--m:12px; --d:block; --minw:160px; --d-sm:inline-block;" href="#" class="btn btn-outline-primary">Learn more</a
         >
       </div>
     </div>
-    <div class="counter mt-16">
-      <div class="row mx-0 rounded-[20px] bg-white px-10 shadow-lg lg:py-10">
-        <div
-          class="border-border px-10 py-10 text-center sm:col-6 lg:col-3 lg:border-r lg:py-0"
-        >
+    <div style="--mt:64px;"  class="counter">
+      <div style="--ml:0; --mr:0; --bgc:#ffffff; --pl:40px; --pr:40px; --shadow:0 10px 15px -3px rgb(0,0,0,0.1), 0 4px 6px -2px rgb(0,0,0,0.05); --pt-lg:40px; --pb-lg:40px;"  class="row rounded-[20px]">
+        <div style="--bc:border; --pl:40px; --pr:40px; --pt:40px; --pb:40px; --ta:center; --bc-lg:r; --pt-lg:0; --pb-lg:0;"  class="sm:col-6 lg:col-3">
           <h2>
-            <span class="count">25M</span> <span class="text-[#A3A1FB]">+</span>
+            <span  class="count">25M</span> <span style="--c:[#A3A1FB];" >+</span>
           </h2>
           <p>Customers</p>
         </div>
-        <div
-          class="border-border px-10 py-10 text-center sm:col-6 lg:col-3 lg:border-r lg:py-0"
-        >
+        <div style="--bc:border; --pl:40px; --pr:40px; --pt:40px; --pb:40px; --ta:center; --bc-lg:r; --pt-lg:0; --pb-lg:0;"  class="sm:col-6 lg:col-3">
           <h2>
-            <span class="count">440M</span>
-            <span class="text-[#5EE2A0]">+</span>
+            <span  class="count">440M</span>
+            <span style="--c:[#5EE2A0];" >+</span>
           </h2>
           <p>Products sold</p>
         </div>
-        <div
-          class="border-border px-10 py-10 text-center sm:col-6 lg:col-3 lg:border-r lg:py-0"
-        >
+        <div style="--bc:border; --pl:40px; --pr:40px; --pt:40px; --pb:40px; --ta:center; --bc-lg:r; --pt-lg:0; --pb-lg:0;"  class="sm:col-6 lg:col-3">
           <h2>
-            <span class="count">50K</span> <span class="text-primary">+</span>
+            <span  class="count">50K</span> <span style="--c:primary;" >+</span>
           </h2>
           <p>Online stores</p>
         </div>
-        <div class="px-10 py-10 text-center sm:col-6 lg:col-3 lg:py-0">
+        <div style="--pl:40px; --pr:40px; --pt:40px; --pb:40px; --ta:center; --pt-lg:0; --pb-lg:0;"  class="sm:col-6 lg:col-3">
           <h2>
-            <span class="count">20K</span> <span class="text-[#FEC163]">+</span>
+            <span  class="count">20K</span> <span style="--c:[#FEC163];" >+</span>
           </h2>
           <p>Transactions</p>
         </div>
@@ -313,53 +278,43 @@
 <!-- end Common hero -->
 
 <!-- Gallery -->
-<section class="section">
-  <div class="container">
-    <div class="row justify-center text-center">
-      <div class="col-8">
+<section  class="section">
+  <div  class="container">
+    <div style="--jc:center; --ta:center;"  class="row">
+      <div  class="col-8">
         <h2>We started with one single goal Empower entrepreneurs</h2>
       </div>
     </div>
-    <div class="row mt-2.5">
-      <div class="md:col-6">
-        <div class="relative mt-8">
-          <img
-            class="w-full object-cover"
-            width="480"
+    <div style="--mt:10px;"  class="row">
+      <div  class="md:col-6">
+        <div style="--pos:relative; --mt:32px;" >
+          <img style="--w:100%; --objf:cover;" width="480"
             height="328"
             src="images/about/gallery-img-1.png"
             alt=""
           />
         </div>
-        <div class="relative mt-8">
-          <img
-            class="w-full object-cover"
-            width="480"
+        <div style="--pos:relative; --mt:32px;" >
+          <img style="--w:100%; --objf:cover;" width="480"
             height="274"
             src="images/about/gallery-img-2.png"
             alt=""
           />
-          <img
-            class="absolute -bottom-5 -left-5 -z-[1]"
-            src="images/shape-2.svg"
+          <img style="--pos:absolute;" src="images/shape-2.svg"
             alt=""
-          />
+          / class="-bottom-5 -left-5 -z-[1]">
         </div>
       </div>
-      <div class="md:col-6">
-        <div class="relative mt-8">
-          <img
-            class="w-full object-cover"
-            width="480"
+      <div  class="md:col-6">
+        <div style="--pos:relative; --mt:32px;" >
+          <img style="--w:100%; --objf:cover;" width="480"
             height="540"
             src="images/about/gallery-img-3.png"
             alt=""
           />
-          <img
-            class="absolute -bottom-4 -right-5 -z-[1] h-16 w-16"
-            src="images/shape.svg"
+          <img style="--pos:absolute; --h:64px; --w:64px;" src="images/shape.svg"
             alt=""
-          />
+          / class="-bottom-4 -right-5 -z-[1]">
         </div>
       </div>
     </div>
@@ -368,110 +323,98 @@
 <!-- End Gallery -->
 
 <!-- Works -->
-<section class="section">
-  <div class="container">
-    <div class="row items-center justify-between">
-      <div class="md:col-5">
-        <h2 class="text-center md:text-left">
+<section  class="section">
+  <div  class="container">
+    <div style="--ai:center; --jc:space-between;"  class="row">
+      <div  class="md:col-5">
+        <h2 style="--ta:center; --ta-md:left;" >
           The six core work <br />
           drive everything do
         </h2>
       </div>
-      <div class="mt-6 text-center md:col-3 md:mt-0 md:text-right">
-        <a class="btn btn-primary" href="#">Download The Theme</a>
+      <div style="--mt:24px; --ta:center; --mt-md:0; --ta-md:right;"  class="md:col-3">
+        <a href="#" class="btn btn-primary">Download The Theme</a>
       </div>
     </div>
-    <div class="row mt-14">
-      <div class="mb-8 sm:col-6 lg:col-4">
-        <div class="rounded-xl bg-white p-6 shadow-lg lg:p-8">
-          <div class="gradient-number relative inline-block">
-            <span
-              class="bg-gradient absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
-              >01</span
+    <div style="--mt:56px;"  class="row">
+      <div style="--mb:32px;"  class="sm:col-6 lg:col-4">
+        <div style="--radius:0.75rem; --bgc:#ffffff; --p:24px; --shadow:0 10px 15px -3px rgb(0,0,0,0.1), 0 4px 6px -2px rgb(0,0,0,0.05); --p-lg:32px;" >
+          <div style="--pos:relative; --d:inline-block;"  class="gradient-number">
+            <span style="--bgc:gradient; --pos:absolute;"  class="top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">01</span
             >
             <img src="images/gradient-number-bg.svg" alt="" />
           </div>
-          <h4 class="my-6">Accessibility</h4>
+          <h4 style="--mt:24px; --mb:24px;" >Accessibility</h4>
           <p>
             Nulla porttitor acmsan tinci dunt. posuere cubilia Cudfrae Donec
             velit neque, autor sit amet aliuam vel
           </p>
         </div>
       </div>
-      <div class="mb-8 sm:col-6 lg:col-4">
-        <div class="rounded-xl bg-white p-6 shadow-lg lg:p-8">
-          <div class="gradient-number relative inline-block">
-            <span
-              class="bg-gradient absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
-              >02</span
+      <div style="--mb:32px;"  class="sm:col-6 lg:col-4">
+        <div style="--radius:0.75rem; --bgc:#ffffff; --p:24px; --shadow:0 10px 15px -3px rgb(0,0,0,0.1), 0 4px 6px -2px rgb(0,0,0,0.05); --p-lg:32px;" >
+          <div style="--pos:relative; --d:inline-block;"  class="gradient-number">
+            <span style="--bgc:gradient; --pos:absolute;"  class="top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">02</span
             >
             <img src="images/gradient-number-bg.svg" alt="" />
           </div>
-          <h4 class="my-6">Empowerement</h4>
+          <h4 style="--mt:24px; --mb:24px;" >Empowerement</h4>
           <p>
             Nulla porttitor acmsan tinci dunt. posuere cubilia Cudfrae Donec
             velit neque, autor sit amet aliuam vel
           </p>
         </div>
       </div>
-      <div class="mb-8 sm:col-6 lg:col-4">
-        <div class="rounded-xl bg-white p-6 shadow-lg lg:p-8">
-          <div class="gradient-number relative inline-block">
-            <span
-              class="bg-gradient absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
-              >03</span
+      <div style="--mb:32px;"  class="sm:col-6 lg:col-4">
+        <div style="--radius:0.75rem; --bgc:#ffffff; --p:24px; --shadow:0 10px 15px -3px rgb(0,0,0,0.1), 0 4px 6px -2px rgb(0,0,0,0.05); --p-lg:32px;" >
+          <div style="--pos:relative; --d:inline-block;"  class="gradient-number">
+            <span style="--bgc:gradient; --pos:absolute;"  class="top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">03</span
             >
             <img src="images/gradient-number-bg.svg" alt="" />
           </div>
-          <h4 class="my-6">Innovation</h4>
+          <h4 style="--mt:24px; --mb:24px;" >Innovation</h4>
           <p>
             Nulla porttitor acmsan tinci dunt. posuere cubilia Cudfrae Donec
             velit neque, autor sit amet aliuam vel
           </p>
         </div>
       </div>
-      <div class="mb-8 sm:col-6 lg:col-4">
-        <div class="rounded-xl bg-white p-6 shadow-lg lg:p-8">
-          <div class="gradient-number relative inline-block">
-            <span
-              class="bg-gradient absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
-              >04</span
+      <div style="--mb:32px;"  class="sm:col-6 lg:col-4">
+        <div style="--radius:0.75rem; --bgc:#ffffff; --p:24px; --shadow:0 10px 15px -3px rgb(0,0,0,0.1), 0 4px 6px -2px rgb(0,0,0,0.05); --p-lg:32px;" >
+          <div style="--pos:relative; --d:inline-block;"  class="gradient-number">
+            <span style="--bgc:gradient; --pos:absolute;"  class="top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">04</span
             >
             <img src="images/gradient-number-bg.svg" alt="" />
           </div>
-          <h4 class="my-6">Excellence</h4>
+          <h4 style="--mt:24px; --mb:24px;" >Excellence</h4>
           <p>
             Nulla porttitor acmsan tinci dunt. posuere cubilia Cudfrae Donec
             velit neque, autor sit amet aliuam vel
           </p>
         </div>
       </div>
-      <div class="mb-8 sm:col-6 lg:col-4">
-        <div class="rounded-xl bg-white p-6 shadow-lg lg:p-8">
-          <div class="gradient-number relative inline-block">
-            <span
-              class="bg-gradient absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
-              >05</span
+      <div style="--mb:32px;"  class="sm:col-6 lg:col-4">
+        <div style="--radius:0.75rem; --bgc:#ffffff; --p:24px; --shadow:0 10px 15px -3px rgb(0,0,0,0.1), 0 4px 6px -2px rgb(0,0,0,0.05); --p-lg:32px;" >
+          <div style="--pos:relative; --d:inline-block;"  class="gradient-number">
+            <span style="--bgc:gradient; --pos:absolute;"  class="top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">05</span
             >
             <img src="images/gradient-number-bg.svg" alt="" />
           </div>
-          <h4 class="my-6">Team work</h4>
+          <h4 style="--mt:24px; --mb:24px;" >Team work</h4>
           <p>
             Nulla porttitor acmsan tinci dunt. posuere cubilia Cudfrae Donec
             velit neque, autor sit amet aliuam vel
           </p>
         </div>
       </div>
-      <div class="mb-8 sm:col-6 lg:col-4">
-        <div class="rounded-xl bg-white p-6 shadow-lg lg:p-8">
-          <div class="gradient-number relative inline-block">
-            <span
-              class="bg-gradient absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
-              >06</span
+      <div style="--mb:32px;"  class="sm:col-6 lg:col-4">
+        <div style="--radius:0.75rem; --bgc:#ffffff; --p:24px; --shadow:0 10px 15px -3px rgb(0,0,0,0.1), 0 4px 6px -2px rgb(0,0,0,0.05); --p-lg:32px;" >
+          <div style="--pos:relative; --d:inline-block;"  class="gradient-number">
+            <span style="--bgc:gradient; --pos:absolute;"  class="top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">06</span
             >
             <img src="images/gradient-number-bg.svg" alt="" />
           </div>
-          <h4 class="my-6">Responsibility</h4>
+          <h4 style="--mt:24px; --mb:24px;" >Responsibility</h4>
           <p>
             Nulla porttitor acmsan tinci dunt. posuere cubilia Cudfrae Donec
             velit neque, autor sit amet aliuam vel
@@ -484,120 +427,84 @@
 <!-- ./end Works -->
 
 <!-- Members -->
-<section class="section">
-  <div class="container">
-    <div class="row">
-      <div class="mx-auto text-center lg:col-6">
+<section  class="section">
+  <div  class="container">
+    <div  class="row">
+      <div style="--ta:center;"  class="mx-auto lg:col-6">
         <h2>This is who we are</h2>
-        <p class="mt-4">
+        <p style="--mt:16px;" >
           Donec sollicitudin molestie malesda. Donec sollitudin mol estie
           ultricies ligula sed magna dictum
         </p>
       </div>
     </div>
-    <div class="row mt-12 justify-center">
-      <div class="lg:col-10">
-        <div class="row">
-          <div
-            class="mb-6 flex flex-col px-6 text-center sm:col-6 lg:col-4 sm:items-center"
-          >
-            <div class="member-avatar inline-flex justify-center">
-              <img
-                class="rouded-full h-28 w-28"
-                src="images/users/user-1.png"
+    <div style="--mt:48px; --jc:center;"  class="row">
+      <div  class="lg:col-10">
+        <div  class="row">
+          <div style="--mb:24px; --d:flex; --fd:column; --pl:24px; --pr:24px; --ta:center; --ai-sm:center;"  class="sm:col-6 lg:col-4">
+            <div style="--jc:center;"  class="member-avatar inline-flex">
+              <img style="--h:112px; --w:112px;" src="images/users/user-1.png"
                 alt=""
-              />
+              / class="rouded-full">
             </div>
-            <div
-              class="mt-6 w-full flex-1 rounded-xl bg-white py-8 px-4 shadow-lg"
-            >
-              <h5 class="font-primary">Eleanor Pena</h5>
-              <p class="mt-1.5">Co-founder & COO</p>
+            <div style="--mt:24px; --w:100%; --fx:1; --radius:0.75rem; --bgc:#ffffff; --pt:32px; --pb:32px; --pl:16px; --pr:16px; --shadow:0 10px 15px -3px rgb(0,0,0,0.1), 0 4px 6px -2px rgb(0,0,0,0.05);" >
+              <h5  class="font-primary">Eleanor Pena</h5>
+              <p style="--mt:6px;" >Co-founder & COO</p>
             </div>
           </div>
-          <div
-            class="mb-6 flex flex-col px-6 text-center sm:col-6 lg:col-4 sm:items-center"
-          >
-            <div class="member-avatar inline-flex justify-center">
-              <img
-                class="rouded-full h-28 w-28"
-                src="images/users/user-2.png"
+          <div style="--mb:24px; --d:flex; --fd:column; --pl:24px; --pr:24px; --ta:center; --ai-sm:center;"  class="sm:col-6 lg:col-4">
+            <div style="--jc:center;"  class="member-avatar inline-flex">
+              <img style="--h:112px; --w:112px;" src="images/users/user-2.png"
                 alt=""
-              />
+              / class="rouded-full">
             </div>
-            <div
-              class="mt-6 w-full flex-1 rounded-xl bg-white py-8 px-4 shadow-lg"
-            >
-              <h5 class="font-primary">Savannah Nguyen</h5>
-              <p class="mt-1.5">Head of Infrastructure</p>
+            <div style="--mt:24px; --w:100%; --fx:1; --radius:0.75rem; --bgc:#ffffff; --pt:32px; --pb:32px; --pl:16px; --pr:16px; --shadow:0 10px 15px -3px rgb(0,0,0,0.1), 0 4px 6px -2px rgb(0,0,0,0.05);" >
+              <h5  class="font-primary">Savannah Nguyen</h5>
+              <p style="--mt:6px;" >Head of Infrastructure</p>
             </div>
           </div>
-          <div
-            class="mb-6 flex flex-col px-6 text-center sm:col-6 lg:col-4 sm:items-center"
-          >
-            <div class="member-avatar inline-flex justify-center">
-              <img
-                class="rouded-full h-28 w-28"
-                src="images/users/user-3.png"
+          <div style="--mb:24px; --d:flex; --fd:column; --pl:24px; --pr:24px; --ta:center; --ai-sm:center;"  class="sm:col-6 lg:col-4">
+            <div style="--jc:center;"  class="member-avatar inline-flex">
+              <img style="--h:112px; --w:112px;" src="images/users/user-3.png"
                 alt=""
-              />
+              / class="rouded-full">
             </div>
-            <div
-              class="mt-6 w-full flex-1 rounded-xl bg-white py-8 px-4 shadow-lg"
-            >
-              <h5 class="font-primary">Courtney Henry</h5>
-              <p class="mt-1.5">Head of Brand Marketing</p>
+            <div style="--mt:24px; --w:100%; --fx:1; --radius:0.75rem; --bgc:#ffffff; --pt:32px; --pb:32px; --pl:16px; --pr:16px; --shadow:0 10px 15px -3px rgb(0,0,0,0.1), 0 4px 6px -2px rgb(0,0,0,0.05);" >
+              <h5  class="font-primary">Courtney Henry</h5>
+              <p style="--mt:6px;" >Head of Brand Marketing</p>
             </div>
           </div>
-          <div
-            class="mb-6 flex flex-col px-6 text-center sm:col-6 lg:col-4 sm:items-center"
-          >
-            <div class="member-avatar inline-flex justify-center">
-              <img
-                class="rouded-full h-28 w-28"
-                src="images/users/user-4.png"
+          <div style="--mb:24px; --d:flex; --fd:column; --pl:24px; --pr:24px; --ta:center; --ai-sm:center;"  class="sm:col-6 lg:col-4">
+            <div style="--jc:center;"  class="member-avatar inline-flex">
+              <img style="--h:112px; --w:112px;" src="images/users/user-4.png"
                 alt=""
-              />
+              / class="rouded-full">
             </div>
-            <div
-              class="mt-6 w-full flex-1 rounded-xl bg-white py-8 px-4 shadow-lg"
-            >
-              <h5 class="font-primary">Floyd Miles</h5>
-              <p class="mt-1.5">Head of Infrastructure</p>
+            <div style="--mt:24px; --w:100%; --fx:1; --radius:0.75rem; --bgc:#ffffff; --pt:32px; --pb:32px; --pl:16px; --pr:16px; --shadow:0 10px 15px -3px rgb(0,0,0,0.1), 0 4px 6px -2px rgb(0,0,0,0.05);" >
+              <h5  class="font-primary">Floyd Miles</h5>
+              <p style="--mt:6px;" >Head of Infrastructure</p>
             </div>
           </div>
-          <div
-            class="mb-6 flex flex-col px-6 text-center sm:col-6 lg:col-4 sm:items-center"
-          >
-            <div class="member-avatar inline-flex justify-center">
-              <img
-                class="rouded-full h-28 w-28"
-                src="images/users/user-5.png"
+          <div style="--mb:24px; --d:flex; --fd:column; --pl:24px; --pr:24px; --ta:center; --ai-sm:center;"  class="sm:col-6 lg:col-4">
+            <div style="--jc:center;"  class="member-avatar inline-flex">
+              <img style="--h:112px; --w:112px;" src="images/users/user-5.png"
                 alt=""
-              />
+              / class="rouded-full">
             </div>
-            <div
-              class="mt-6 w-full flex-1 rounded-xl bg-white py-8 px-4 shadow-lg"
-            >
-              <h5 class="font-primary">Robert Fox</h5>
-              <p class="mt-1.5">Head of Product Design</p>
+            <div style="--mt:24px; --w:100%; --fx:1; --radius:0.75rem; --bgc:#ffffff; --pt:32px; --pb:32px; --pl:16px; --pr:16px; --shadow:0 10px 15px -3px rgb(0,0,0,0.1), 0 4px 6px -2px rgb(0,0,0,0.05);" >
+              <h5  class="font-primary">Robert Fox</h5>
+              <p style="--mt:6px;" >Head of Product Design</p>
             </div>
           </div>
-          <div
-            class="mb-6 flex flex-col px-6 text-center sm:col-6 lg:col-4 sm:items-center"
-          >
-            <div class="member-avatar inline-flex justify-center">
-              <img
-                class="rouded-full h-28 w-28"
-                src="images/users/user-6.png"
+          <div style="--mb:24px; --d:flex; --fd:column; --pl:24px; --pr:24px; --ta:center; --ai-sm:center;"  class="sm:col-6 lg:col-4">
+            <div style="--jc:center;"  class="member-avatar inline-flex">
+              <img style="--h:112px; --w:112px;" src="images/users/user-6.png"
                 alt=""
-              />
+              / class="rouded-full">
             </div>
-            <div
-              class="mt-6 w-full flex-1 rounded-xl bg-white py-8 px-4 shadow-lg"
-            >
-              <h5 class="font-primary">Darrell Steward</h5>
-              <p class="mt-1.5">Head of People & HR</p>
+            <div style="--mt:24px; --w:100%; --fx:1; --radius:0.75rem; --bgc:#ffffff; --pt:32px; --pb:32px; --pl:16px; --pr:16px; --shadow:0 10px 15px -3px rgb(0,0,0,0.1), 0 4px 6px -2px rgb(0,0,0,0.05);" >
+              <h5  class="font-primary">Darrell Steward</h5>
+              <p style="--mt:6px;" >Head of People & HR</p>
             </div>
           </div>
         </div>
@@ -605,33 +512,31 @@
     </div>
   </div>
 </section>
-<div
-  class="fixed left-0 top-0 z-50 flex w-[30px] items-center justify-center bg-gray-200 py-[2.5px] text-[12px] uppercase text-black sm:bg-red-200 md:bg-yellow-200 lg:bg-green-200 xl:bg-blue-200 2xl:bg-pink-200"
->
-  <span class="block sm:hidden">all</span>
-  <span class="hidden sm:block md:hidden">sm</span>
-  <span class="hidden md:block lg:hidden">md</span>
-  <span class="hidden lg:block xl:hidden">lg</span>
-  <span class="hidden xl:block 2xl:hidden">xl</span>
-  <span class="hidden 2xl:block">2xl</span>
+<div style="--pos:fixed; --left:0; --top:0; --z:50; --d:flex; --w:30px; --ai:center; --jc:center; --bgc:#e5e7eb; --pt:[2.5px]; --pb:[2.5px]; --c:[12px]; --tt:uppercase; --c:#000000; --bgc-sm:#fecaca; --bgc-md:#fef08a; --bgc-lg:#bbf7d0; --bgc-xl:#bfdbfe; --bgc-2xl:#fbcfe8;" >
+  <span style="--d:block; --d-sm:none;" >all</span>
+  <span style="--d:none; --d-sm:block; --d-md:none;" >sm</span>
+  <span style="--d:none; --d-md:block; --d-lg:none;" >md</span>
+  <span style="--d:none; --d-lg:block; --d-xl:none;" >lg</span>
+  <span style="--d:none; --d-xl:block; --d-2xl:none;" >xl</span>
+  <span style="--d:none; --d-2xl:block;" >2xl</span>
 </div>
 
- <footer class="footer bg-theme-light/50">
-  <div class="container">
-    <div class="row gx-5 pb-10 pt-[52px]">
-      <div class="col-12 mt-12 md:col-6 lg:col-3">
+ <footer style="--bgc:theme-light/50;"  class="footer">
+  <div  class="container">
+    <div style="--pb:40px; --pt:[52px];"  class="row gx-5">
+      <div style="--mt:48px;"  class="col-12 md:col-6 lg:col-3">
         <a href="index-2.html">
           <img src="images/logo.svg" alt="" />
         </a>
-        <p class="mt-6">
+        <p style="--mt:24px;" >
           Lorem ipsum dolor sit sed dmi amet, consectetur adipiscing. Cdo
           tellus, sed condimentum volutpat.
         </p>
       </div>
-      <div class="col-12 mt-12 md:col-6 lg:col-3">
+      <div style="--mt:48px;"  class="col-12 md:col-6 lg:col-3">
         <h6>Socials</h6>
         <p>themefisher@gmail.com</p>
-        <ul class="social-icons mt-4 lg:mt-6">
+        <ul style="--mt:16px; --mt-lg:24px;"  class="social-icons">
           <li>
             <a href="#">
               <svg
@@ -698,7 +603,7 @@
           </li>
         </ul>
       </div>
-      <div class="col-12 mt-12 md:col-6 lg:col-3">
+      <div style="--mt:48px;"  class="col-12 md:col-6 lg:col-3">
         <h6>Quick Links</h6>
         <ul>
           <li>
@@ -715,17 +620,15 @@
           </li>
         </ul>
       </div>
-      <div class="col-12 mt-12 md:col-6 lg:col-3">
+      <div style="--mt:48px;"  class="col-12 md:col-6 lg:col-3">
         <h6>Location & Contact</h6>
         <p>2118 Thornridge Cir. Syracuse, Connecticut 35624</p>
         <p>(704) 555-0127</p>
       </div>
     </div>
   </div>
-  <div class="container max-w-[1440px]">
-    <div
-      class="footer-copyright mx-auto border-t border-border pb-10 pt-7 text-center"
-    >
+  <div style="--maxw:1440px;"  class="container">
+    <div style="--bc:t; --bc:border; --pb:40px; --pt:28px; --ta:center;"  class="footer-copyright mx-auto">
       <p>Designed And Developed by <a href="https://themefisher.com/" target="_blank">Themefisher</a> | Distributed by <a href="https://themewagon.com/" target="_blank">ThemeWagon</a></p>
       
     </div>

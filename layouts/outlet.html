@@ -23,7 +23,7 @@
     <div x-data="menu()">
         <div style="--pl:24px; --pr:24px; --d:flex; --jc:space-between; --ai:center; --pt:16px; --pb:16px; --h:128px;"  class="container mx-auto">
             <div style="--d:flex; --ai:center; --h:100%;">
-                <a style="--size:1.5rem; --lh:2rem; --weight:700; --c:black; --h:100%; --d:flex; --ai:center;" href="/" class="tracking-tighter">outlet</a>
+                <a style="--size:1.5rem; --lh:2rem; --weight:700; --weight:900; --h:100%; --d:flex; --ai:center;" href="/" class="tracking-tighter">outlet</a>
                 <div style="--d:none; --d-lg:flex; --ai:center; --size:0.75rem; --lh:1rem; --tt:uppercase; --ml:16px;"  class="tracking-wider">
                     <a style="--ml:32px;" href="/products">Catalog</a>
                     <a style="--ml:32px;" href="/about">About</a>
@@ -110,11 +110,11 @@
             </button>
         </div>
         <template x-if="showMobileMenu">
-            <div style="--d-md:none; --pos:fixed; --top:0; --right:0; --bottom:0; --left:0; --w:100%; --h:100%; --d:flex; --fd:column; --ai:center; --jc:center; --bgc:gray-100; --z:40; --tt:uppercase; --size:1.25rem; --lh:1.75rem; --ta:center; --c:black;"  class="space-y-4 tracking-widest">
+            <div style="--d-md:none; --pos:fixed; --top:0; --right:0; --bottom:0; --left:0; --w:100%; --h:100%; --d:flex; --fd:column; --ai:center; --jc:center; --bgc:gray-100; --z:40; --tt:uppercase; --size:1.25rem; --lh:1.75rem; --ta:center; --weight:900;"  class="space-y-4 tracking-widest">
                 <a href="/products">Catalog</a>
                 <a href="/about">About</a>
                 <a href="/blog">Blog</a>
-                <button style="--tt:uppercase; --c:black;" x-on:click="showContactInfo = true" type="button" class="tracking-widest">Contact</button>
+                <button style="--tt:uppercase; --weight:900;" x-on:click="showContactInfo = true" type="button" class="tracking-widest">Contact</button>
                 <button style="--pos:absolute; --top:0; --right:0; --pr:32px; --pt:16px;"
                     x-on:click="showMobileMenu = false" type="button">
                     <svg style="--w:32px; --h:32px;" fill="none" stroke="currentColor" viewBox="0 0 24 24"
@@ -130,7 +130,7 @@
         <div
             style="--gc-lg:span 5; --pt:48px; --pb:48px; --pl-md:48px; --pr-md:48px; --pt-md:128px; --pb-md:128px; --d:flex; --ai:center; --jc:center;">
             <div style="--maxw:24rem;">
-                <h1 style="--size:3rem; --lh:1; --size-md:3.75rem; --lh-md:1; --mb:24px; --c:black;"  class="font-display leading-tight">Our new arrivals</h1>
+                <h1 style="--size:3rem; --lh:1; --size-md:3.75rem; --lh-md:1; --mb:24px; --weight:900;"  class="font-display leading-tight">Our new arrivals</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua.</p>
                 <a style="--d:flex; --ai:center; --mt:32px; --tt:uppercase; --size:0.875rem; --lh:1.25rem; --c:black; --weight:600;"
@@ -187,7 +187,7 @@
             </div>
         </div>
     </div>
-    <h2 style="--ta:center; --tt:uppercase; --size:1.125rem; --lh:1.75rem; --size-md:1.25rem; --lh-md:1.75rem; --c:black; --pt:48px; --pb:48px; --pt-md:96px; --pb-md:96px; --pl:24px; --pr:24px;"  class="font-display">Our Collections</h2>
+    <h2 style="--ta:center; --tt:uppercase; --size:1.125rem; --lh:1.75rem; --size-md:1.25rem; --lh-md:1.75rem; --weight:900; --pt:48px; --pb:48px; --pt-md:96px; --pb-md:96px; --pl:24px; --pr:24px;"  class="font-display">Our Collections</h2>
     <div style="--pl:24px; --pr:24px; --d:grid; --gtc:repeat(1, 1fr); --gtc-lg:repeat(2, 1fr); --mb-lg:96px;"  class="container mx-auto">
         <div style="--pos:relative; --h:208px; --h-md:72; --h-lg:auto;">
             <a href="/category">
@@ -197,7 +197,7 @@
         </div>
         <div style="--pl:24px; --pr:24px; --pt:48px; --pb:48px; --p-md:64px; --p-lg:128px; --d:flex; --ai:center; --jc:center;"  class="order-last">
             <div>
-                <h3 style="--size:2.25rem; --lh:2.5rem; --mb:24px; --c:black;"  class="font-display leading-tight">Bags +
+                <h3 style="--size:2.25rem; --lh:2.5rem; --mb:24px; --weight:900;"  class="font-display leading-tight">Bags +
                     Clutches</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua.</p>
@@ -221,7 +221,7 @@
         </div>
         <div style="--pl:24px; --pr:24px; --pt:48px; --pb:48px; --p-md:64px; --p-lg:128px; --d:flex; --ai:center; --jc:center;"  class="order-last lg:order-first">
             <div>
-                <h3 style="--size:2.25rem; --lh:2.5rem; --mb:24px; --c:black;"  class="font-display leading-tight">
+                <h3 style="--size:2.25rem; --lh:2.5rem; --mb:24px; --weight:900;"  class="font-display leading-tight">
                     Clothing</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua.</p>
@@ -245,7 +245,7 @@
         </div>
         <div style="--pl:24px; --pr:24px; --pt:48px; --pb:48px; --p-md:64px; --p-lg:128px; --d:flex; --ai:center; --jc:center;"  class="order-last">
             <div>
-                <h3 style="--size:2.25rem; --lh:2.5rem; --mb:24px; --c:black;"  class="font-display leading-tight">
+                <h3 style="--size:2.25rem; --lh:2.5rem; --mb:24px; --weight:900;"  class="font-display leading-tight">
                     Jewellery</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua.</p>
@@ -260,7 +260,7 @@
             </div>
         </div>
     </div>
-    <h2 style="--ta:center; --tt:uppercase; --size:1.125rem; --lh:1.75rem; --size-lg:1.25rem; --lh-lg:1.75rem; --c:black; --pt:48px; --pb:48px; --pt-md:96px; --pb-md:96px; --pl:24px; --pr:24px;"  class="font-display">Latest Products</h2>
+    <h2 style="--ta:center; --tt:uppercase; --size:1.125rem; --lh:1.75rem; --size-lg:1.25rem; --lh-lg:1.75rem; --weight:900; --pt:48px; --pb:48px; --pt-md:96px; --pb-md:96px; --pl:24px; --pr:24px;"  class="font-display">Latest Products</h2>
     <div style="--pl:24px; --pr:24px; --d:grid; --gtc:repeat(1, 1fr); --gtc-lg:repeat(4, 1fr); --gtr-lg:repeat(2, 1fr); --gg:32px; --ta:center; --size:0.875rem; --lh:1.25rem; --tt:uppercase;"  class="container mx-auto grid-rows-none">
         <div style="--gc:span 1; --gr:span 1;">
             <div style="--w:100%; --h:208px; --pos:relative;">

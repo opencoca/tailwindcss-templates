@@ -43,7 +43,7 @@
   <meta name="robots" content="" />
 
   <!-- meta-description -->
-  <meta name="description" content="meta description" />
+  <meta name="description" content="Here is a concise and SEO-friendly meta description based on the content: &quot;Introducing Avocode Enterprise: A fully integrated suite of authentication &amp; autho...">
 
   <!-- author from config.json -->
   <meta name="author" content="{config.metadata.meta_author}" />
@@ -94,34 +94,30 @@
 
   <!-- Main Stylesheet -->
   <link href="styles/main.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://startr.style/style.css">
 </head>
 
-<header class="header">
-  <nav class="navbar container">
+<header  class="header">
+  <nav  class="navbar container">
     <!-- logo -->
-    <div class="order-0">
+    <div style="--o:0;" >
       <a href="index-2.html">
         <img src="images/logo.svg" height="30" width="147" alt="logo" />
       </a>
     </div>
     <!-- navbar toggler -->
-    <input id="nav-toggle" type="checkbox" class="hidden" />
-    <label
-      id="show-button"
-      for="nav-toggle"
-      class="order-1 flex cursor-pointer items-center lg:order-1 lg:hidden"
-    >
-      <svg class="h-6 fill-current" viewBox="0 0 20 20">
+    <input style="--d:none;" id="nav-toggle" type="checkbox"  />
+    <label style="--o:1; --d:flex; --cur:pointer; --ai:center; --o-lg:1; --d-lg:none;" id="show-button"
+      for="nav-toggle">
+      <svg style="--h:24px;" viewBox="0 0 20 20" class="fill-current">
         <title>Menu Open</title>
         <path d="M0 3h20v2H0V3z m0 6h20v2H0V9z m0 6h20v2H0V0z"></path>
       </svg>
     </label>
-    <label
-      id="hide-button"
-      for="nav-toggle"
-      class="order-2 hidden cursor-pointer items-center lg:order-1"
-    >
-      <svg class="h-6 fill-current" viewBox="0 0 20 20">
+    <label style="--o:2; --d:none; --cur:pointer; --ai:center; --o-lg:1;" id="hide-button"
+      for="nav-toggle">
+      <svg style="--h:24px;" viewBox="0 0 20 20" class="fill-current">
         <title>Menu Close</title>
         <polygon
           points="11 9 22 9 22 11 11 11 11 22 9 22 9 11 -2 11 -2 9 9 9 9 -2 11 -2"
@@ -130,101 +126,89 @@
       </svg>
     </label>
     <!-- /navbar toggler -->
-    <ul
-      id="nav-menu"
-      class="navbar-nav order-2 hidden w-full flex-[0_0_100%] lg:order-1 lg:flex lg:w-auto lg:flex-auto lg:justify-center lg:space-x-5"
-    >
-      <li class="nav-item">
+    <ul style="--o:2; --d:none; --w:100%; --o-lg:1; --d-lg:flex; --w-lg:auto; --jc-lg:center;" id="nav-menu" class="navbar-nav flex-[0_0_100%] lg:flex-auto lg:space-x-5">
+      <li  class="nav-item">
         <a href="#" class="nav-link active">Home</a>
       </li>
-      <li class="nav-item">
+      <li  class="nav-item">
         <a href="about.html" class="nav-link">About</a>
       </li>
-      <li class="nav-item">
+      <li  class="nav-item">
         <a href="blog.html" class="nav-link">Blog</a>
       </li>
-      <li class="nav-item">
+      <li  class="nav-item">
         <a href="features.html" class="nav-link">Features</a>
       </li>
-      <li class="nav-item">
+      <li  class="nav-item">
         <a href="how-it-works.html" class="nav-link">How It Works</a>
       </li>
-      <li class="nav-item nav-dropdown group relative">
-        <span class="nav-link inline-flex items-center">
+      <li style="--pos:relative;"  class="nav-item nav-dropdown group">
+        <span style="--ai:center;"  class="nav-link inline-flex">
           Pages
-          <svg class="h-4 w-4 fill-current" viewBox="0 0 20 20">
+          <svg style="--h:16px; --w:16px;" viewBox="0 0 20 20" class="fill-current">
             <path
               d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
             />
           </svg>
         </span>
-        <ul
-          class="nav-dropdown-list hidden group-hover:block lg:invisible lg:absolute lg:block lg:opacity-0 lg:group-hover:visible lg:group-hover:opacity-100"
-        >
-          <li class="nav-dropdown-item">
+        <ul style="--d:none; --pos-lg:absolute; --d-lg:block; --op-lg:0.0;"  class="nav-dropdown-list group-hover:block lg:invisible lg:group-hover:visible lg:group-hover:opacity-100">
+          <li  class="nav-dropdown-item">
             <a href="career.html" class="nav-dropdown-link">Career</a>
           </li>
-          <li class="nav-dropdown-item">
-            <a href="career-single.html" class="nav-dropdown-link"
-              >Career Single</a
+          <li  class="nav-dropdown-item">
+            <a href="career-single.html" class="nav-dropdown-link">Career Single</a
             >
           </li>
-          <li class="nav-dropdown-item">
-            <a href="integrations.html" class="nav-dropdown-link"
-              >Integrations</a
+          <li  class="nav-dropdown-item">
+            <a href="integrations.html" class="nav-dropdown-link">Integrations</a
             >
           </li>
-          <li class="nav-dropdown-item">
-            <a href="integration-single.html" class="nav-dropdown-link"
-              >Integration Single</a
+          <li  class="nav-dropdown-item">
+            <a href="integration-single.html" class="nav-dropdown-link">Integration Single</a
             >
           </li>
-          <li class="nav-dropdown-item">
+          <li  class="nav-dropdown-item">
             <a href="pricing.html" class="nav-dropdown-link">Pricing</a>
           </li>
-          <li class="nav-dropdown-item">
+          <li  class="nav-dropdown-item">
             <a href="changelogs.html" class="nav-dropdown-link">Changelogs</a>
           </li>
-          <li class="nav-dropdown-item">
-            <a href="terms-conditions.html" class="nav-dropdown-link"
-              >Terms & Conditions</a
+          <li  class="nav-dropdown-item">
+            <a href="terms-conditions.html" class="nav-dropdown-link">Terms & Conditions</a
             >
           </li>
         </ul>
       </li>
-      <li class="nav-item">
+      <li  class="nav-item">
         <a href="contact.html" class="nav-link">Contact</a>
       </li>
-      <li class="nav-item mt-3.5 lg:hidden">
-        <a class="btn btn-white btn-sm border-border" href="signin.html"
-          >Sing Up Now</a
+      <li style="--mt:3.5; --d-lg:none;"  class="nav-item">
+        <a style="--bc:border;" href="signin.html" class="btn btn-white btn-sm">Sing Up Now</a
         >
       </li>
     </ul>
-    <div class="order-1 ml-auto hidden items-center md:order-2 md:ml-0 lg:flex">
-      <a class="btn btn-white btn-sm" href="signin.html">Sing Up Now</a>
+    <div style="--o:1; --d:none; --ai:center; --o-md:2; --ml-md:0; --d-lg:flex;"  class="ml-auto">
+      <a href="signin.html" class="btn btn-white btn-sm">Sing Up Now</a>
     </div>
   </nav>
 </header>
 
 <body><!-- Banner -->
-<section class="section banner relative">
-  <div class="container">
-    <div class="row items-center">
-      <div class="lg:col-6">
-        <h1 class="banner-title">
+<section style="--pos:relative;"  class="section banner">
+  <div  class="container">
+    <div style="--ai:center;"  class="row">
+      <div  class="lg:col-6">
+        <h1  class="banner-title">
           Scale design & dev operations with Avocode Enterprise
         </h1>
-        <p class="mt-6">
+        <p style="--mt:24px;" >
           A fully integrated suite of authentication & authoriz products,
           Stytch’s platform removes the headache of.
         </p>
-        <a class="btn btn-white mt-8" href="#">Download The Theme</a>
+        <a style="--mt:32px;" href="#" class="btn btn-white">Download The Theme</a>
       </div>
-      <div class="lg:col-6">
-        <img
-          class="w-full object-contain"
-          src="images/banner-img.png"
+      <div  class="lg:col-6">
+        <img style="--w:100%; --objf:contain;" src="images/banner-img.png"
           width="603"
           height="396"
           alt=""
@@ -232,184 +216,138 @@
       </div>
     </div>
   </div>
-  <img
-    class="banner-shape absolute -top-28 right-0 -z-[1] w-full max-w-[30%]"
-    src="images/banner-shape.svg"
+  <img style="--pos:absolute; --right:0; --w:100%; --maxw:30%;" src="images/banner-shape.svg"
     alt=""
-  />
+  / class="banner-shape -top-28 -z-[1]">
 </section>
 <!-- ./end Banner -->
 
 <!-- Key features -->
-<section class="section key-feature relative">
-  <img
-    class="absolute left-0 top-0 -z-[1] -translate-y-1/2"
-    src="images/icons/feature-shape.svg"
+<section style="--pos:relative;"  class="section key-feature">
+  <img style="--pos:absolute; --left:0; --top:0;" src="images/icons/feature-shape.svg"
     alt=""
-  />
-  <div class="container">
-    <div class="row justify-between text-center lg:text-start">
-      <div class="lg:col-5">
+  / class="-z-[1] -translate-y-1/2">
+  <div  class="container">
+    <div style="--jc:space-between; --ta:center; --c-lg:start;"  class="row">
+      <div  class="lg:col-5">
         <h2>The Highlighting Part Of Our Solution</h2>
       </div>
-      <div class="mt-6 lg:col-5 lg:mt-0">
+      <div style="--mt:24px; --mt-lg:0;"  class="lg:col-5">
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas
           Werat viverra id et aliquet. vulputate egestas sollicitudin .
         </p>
       </div>
     </div>
-    <div
-      class="key-feature-grid mt-10 grid grid-cols-2 gap-7 md:grid-cols-3 xl:grid-cols-4"
-    >
-      <div
-        class="flex flex-col justify-between rounded-lg bg-white p-5 shadow-lg"
-      >
+    <div style="--mt:40px; --d:grid; --gtc:repeat(2, 1fr); --gg:28px; --gtc-md:repeat(3, 1fr); --gtc-xl:repeat(4, 1fr);"  class="key-feature-grid">
+      <div style="--d:flex; --fd:column; --jc:space-between; --radius:0.5rem; --bgc:#ffffff; --p:20px; --shadow:0 10px 15px -3px rgb(0,0,0,0.1), 0 4px 6px -2px rgb(0,0,0,0.05);" >
         <div>
-          <h3 class="h4 text-xl lg:text-2xl">Live Caption</h3>
+          <h3 style="--size:1.25rem; --lh:1.75rem; --size-lg:1.5rem; --lh-lg:2rem;"  class="h4">Live Caption</h3>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
         </div>
-        <span class="icon mt-4">
-          <img
-            class="objec-contain"
-            src="images/icons/feature-icon-1.svg"
+        <span style="--mt:16px;"  class="icon">
+          <img src="images/icons/feature-icon-1.svg"
             alt=""
-          />
+          / class="objec-contain">
         </span>
       </div>
-      <div
-        class="flex flex-col justify-between rounded-lg bg-white p-5 shadow-lg"
-      >
+      <div style="--d:flex; --fd:column; --jc:space-between; --radius:0.5rem; --bgc:#ffffff; --p:20px; --shadow:0 10px 15px -3px rgb(0,0,0,0.1), 0 4px 6px -2px rgb(0,0,0,0.05);" >
         <div>
-          <h3 class="h4 text-xl lg:text-2xl">Smart Reply</h3>
+          <h3 style="--size:1.25rem; --lh:1.75rem; --size-lg:1.5rem; --lh-lg:2rem;"  class="h4">Smart Reply</h3>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
         </div>
-        <span class="icon mt-4">
-          <img
-            class="objec-contain"
-            src="images/icons/feature-icon-2.svg"
+        <span style="--mt:16px;"  class="icon">
+          <img src="images/icons/feature-icon-2.svg"
             alt=""
-          />
+          / class="objec-contain">
         </span>
       </div>
-      <div
-        class="flex flex-col justify-between rounded-lg bg-white p-5 shadow-lg"
-      >
+      <div style="--d:flex; --fd:column; --jc:space-between; --radius:0.5rem; --bgc:#ffffff; --p:20px; --shadow:0 10px 15px -3px rgb(0,0,0,0.1), 0 4px 6px -2px rgb(0,0,0,0.05);" >
         <div>
-          <h3 class="h4 text-xl lg:text-2xl">Sound Amplifier</h3>
+          <h3 style="--size:1.25rem; --lh:1.75rem; --size-lg:1.5rem; --lh-lg:2rem;"  class="h4">Sound Amplifier</h3>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
         </div>
-        <span class="icon mt-4">
-          <img
-            class="objec-contain"
-            src="images/icons/feature-icon-3.svg"
+        <span style="--mt:16px;"  class="icon">
+          <img src="images/icons/feature-icon-3.svg"
             alt=""
-          />
+          / class="objec-contain">
         </span>
       </div>
-      <div
-        class="flex flex-col justify-between rounded-lg bg-white p-5 shadow-lg"
-      >
+      <div style="--d:flex; --fd:column; --jc:space-between; --radius:0.5rem; --bgc:#ffffff; --p:20px; --shadow:0 10px 15px -3px rgb(0,0,0,0.1), 0 4px 6px -2px rgb(0,0,0,0.05);" >
         <div>
-          <h3 class="h4 text-xl lg:text-2xl">Gesture Navigation</h3>
+          <h3 style="--size:1.25rem; --lh:1.75rem; --size-lg:1.5rem; --lh-lg:2rem;"  class="h4">Gesture Navigation</h3>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
         </div>
-        <span class="icon mt-4">
-          <img
-            class="objec-contain"
-            src="images/icons/feature-icon-4.svg"
+        <span style="--mt:16px;"  class="icon">
+          <img src="images/icons/feature-icon-4.svg"
             alt=""
-          />
+          / class="objec-contain">
         </span>
       </div>
-      <div
-        class="flex flex-col justify-between rounded-lg bg-white p-5 shadow-lg"
-      >
+      <div style="--d:flex; --fd:column; --jc:space-between; --radius:0.5rem; --bgc:#ffffff; --p:20px; --shadow:0 10px 15px -3px rgb(0,0,0,0.1), 0 4px 6px -2px rgb(0,0,0,0.05);" >
         <div>
-          <h3 class="h4 text-xl lg:text-2xl">Dark Theme</h3>
+          <h3 style="--size:1.25rem; --lh:1.75rem; --size-lg:1.5rem; --lh-lg:2rem;"  class="h4">Dark Theme</h3>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
         </div>
-        <span class="icon mt-4">
-          <img
-            class="objec-contain"
-            src="images/icons/feature-icon-5.svg"
+        <span style="--mt:16px;"  class="icon">
+          <img src="images/icons/feature-icon-5.svg"
             alt=""
-          />
+          / class="objec-contain">
         </span>
       </div>
-      <div
-        class="flex flex-col justify-between rounded-lg bg-white p-5 shadow-lg"
-      >
+      <div style="--d:flex; --fd:column; --jc:space-between; --radius:0.5rem; --bgc:#ffffff; --p:20px; --shadow:0 10px 15px -3px rgb(0,0,0,0.1), 0 4px 6px -2px rgb(0,0,0,0.05);" >
         <div>
-          <h3 class="h4 text-xl lg:text-2xl">Privacy Controls</h3>
+          <h3 style="--size:1.25rem; --lh:1.75rem; --size-lg:1.5rem; --lh-lg:2rem;"  class="h4">Privacy Controls</h3>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
         </div>
-        <span class="icon mt-4">
-          <img
-            class="objec-contain"
-            src="images/icons/feature-icon-6.svg"
+        <span style="--mt:16px;"  class="icon">
+          <img src="images/icons/feature-icon-6.svg"
             alt=""
-          />
+          / class="objec-contain">
         </span>
       </div>
-      <div
-        class="flex flex-col justify-between rounded-lg bg-white p-5 shadow-lg"
-      >
+      <div style="--d:flex; --fd:column; --jc:space-between; --radius:0.5rem; --bgc:#ffffff; --p:20px; --shadow:0 10px 15px -3px rgb(0,0,0,0.1), 0 4px 6px -2px rgb(0,0,0,0.05);" >
         <div>
-          <h3 class="h4 text-xl lg:text-2xl">Location Controls</h3>
+          <h3 style="--size:1.25rem; --lh:1.75rem; --size-lg:1.5rem; --lh-lg:2rem;"  class="h4">Location Controls</h3>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
         </div>
-        <span class="icon mt-4">
-          <img
-            class="objec-contain"
-            src="images/icons/feature-icon-7.svg"
+        <span style="--mt:16px;"  class="icon">
+          <img src="images/icons/feature-icon-7.svg"
             alt=""
-          />
+          / class="objec-contain">
         </span>
       </div>
-      <div
-        class="flex flex-col justify-between rounded-lg bg-white p-5 shadow-lg"
-      >
+      <div style="--d:flex; --fd:column; --jc:space-between; --radius:0.5rem; --bgc:#ffffff; --p:20px; --shadow:0 10px 15px -3px rgb(0,0,0,0.1), 0 4px 6px -2px rgb(0,0,0,0.05);" >
         <div>
-          <h3 class="h4 text-xl lg:text-2xl">Security Updates</h3>
+          <h3 style="--size:1.25rem; --lh:1.75rem; --size-lg:1.5rem; --lh-lg:2rem;"  class="h4">Security Updates</h3>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
         </div>
-        <span class="icon mt-4">
-          <img
-            class="objec-contain"
-            src="images/icons/feature-icon-8.svg"
+        <span style="--mt:16px;"  class="icon">
+          <img src="images/icons/feature-icon-8.svg"
             alt=""
-          />
+          / class="objec-contain">
         </span>
       </div>
-      <div
-        class="flex flex-col justify-between rounded-lg bg-white p-5 shadow-lg"
-      >
+      <div style="--d:flex; --fd:column; --jc:space-between; --radius:0.5rem; --bgc:#ffffff; --p:20px; --shadow:0 10px 15px -3px rgb(0,0,0,0.1), 0 4px 6px -2px rgb(0,0,0,0.05);" >
         <div>
-          <h3 class="h4 text-xl lg:text-2xl">Focus Mode</h3>
+          <h3 style="--size:1.25rem; --lh:1.75rem; --size-lg:1.5rem; --lh-lg:2rem;"  class="h4">Focus Mode</h3>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
         </div>
-        <span class="icon mt-4">
-          <img
-            class="objec-contain"
-            src="images/icons/feature-icon-9.svg"
+        <span style="--mt:16px;"  class="icon">
+          <img src="images/icons/feature-icon-9.svg"
             alt=""
-          />
+          / class="objec-contain">
         </span>
       </div>
-      <div
-        class="flex flex-col justify-between rounded-lg bg-white p-5 shadow-lg"
-      >
+      <div style="--d:flex; --fd:column; --jc:space-between; --radius:0.5rem; --bgc:#ffffff; --p:20px; --shadow:0 10px 15px -3px rgb(0,0,0,0.1), 0 4px 6px -2px rgb(0,0,0,0.05);" >
         <div>
-          <h3 class="h4 text-xl lg:text-2xl">Family Link</h3>
+          <h3 style="--size:1.25rem; --lh:1.75rem; --size-lg:1.5rem; --lh-lg:2rem;"  class="h4">Family Link</h3>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
         </div>
-        <span class="icon mt-4">
-          <img
-            class="objec-contain"
-            src="images/icons/feature-icon-10.svg"
+        <span style="--mt:16px;"  class="icon">
+          <img src="images/icons/feature-icon-10.svg"
             alt=""
-          />
+          / class="objec-contain">
         </span>
       </div>
     </div>
@@ -418,97 +356,85 @@
 <!-- ./end Key features -->
 
 <!-- Services -->
-<section class="section services">
-  <div class="container">
-    <div class="tab row gx-5 items-center" data-tab-group="integration-tab">
-      <div class="lg:col-7 lg:order-2">
-        <div class="tab-content" data-tab-content>
-          <div class="tab-content-panel active" data-tab-panel="0">
-            <img
-              class="w-full object-contain"
-              src="images/sells-by-country.png"
+<section  class="section services">
+  <div  class="container">
+    <div style="--ai:center;" data-tab-group="integration-tab" class="tab row gx-5">
+      <div style="--o-lg:2;"  class="lg:col-7">
+        <div data-tab-content class="tab-content">
+          <div data-tab-panel="0" class="tab-content-panel active">
+            <img style="--w:100%; --objf:contain;" src="images/sells-by-country.png"
             />
           </div>
-          <div class="tab-content-panel" data-tab-panel="1">
-            <img class="w-full object-contain" src="images/collaboration.png" />
+          <div data-tab-panel="1" class="tab-content-panel">
+            <img style="--w:100%; --objf:contain;" src="images/collaboration.png" />
           </div>
-          <div class="tab-content-panel" data-tab-panel="2">
-            <img
-              class="w-full object-contain"
-              src="images/sells-by-country.png"
+          <div data-tab-panel="2" class="tab-content-panel">
+            <img style="--w:100%; --objf:contain;" src="images/sells-by-country.png"
             />
           </div>
         </div>
       </div>
-      <div class="mt-6 lg:col-5 lg:order-1 lg:mt-0">
-        <div class="text-container">
-          <h2 class="lg:text-4xl">
+      <div style="--mt:24px; --o-lg:1; --mt-lg:0;"  class="lg:col-5">
+        <div style="--c:container;" >
+          <h2 style="--size-lg:2.25rem; --lh-lg:2.5rem;" >
             Prevent failure from to impacting your reputation
           </h2>
-          <p class="mt-4">
+          <p style="--mt:16px;" >
             Our platform helps you build secure onboarding authentication
             experiences that retain and engage your users. We build the
             infrastructure, you can.
           </p>
-          <ul class="tab-nav -ml-4 mt-8 border-b-0" data-tab-nav>
-            <li class="tab-nav-item active" data-tab="0">
-              <img class="mr-3" src="images/icons/drop.svg" alt="" />
+          <ul style="--mt:32px; --bc:b-0;" data-tab-nav class="tab-nav -ml-4">
+            <li data-tab="0" class="tab-nav-item active">
+              <img style="--mr:12px;" src="images/icons/drop.svg" alt="" />
               Habit building essential choose habit
             </li>
-            <li class="tab-nav-item" data-tab="1">
-              <img class="mr-3" src="images/icons/brain.svg" alt="" />
+            <li data-tab="1" class="tab-nav-item">
+              <img style="--mr:12px;" src="images/icons/brain.svg" alt="" />
               Get an overview of Habit Calendars.
             </li>
-            <li class="tab-nav-item" data-tab="2">
-              <img class="mr-3" src="images/icons/timer.svg" alt="" />
+            <li data-tab="2" class="tab-nav-item">
+              <img style="--mr:12px;" src="images/icons/timer.svg" alt="" />
               Start building with Habitify platform
             </li>
           </ul>
         </div>
       </div>
     </div>
-    <div class="row gx-5 mt-12 items-center lg:mt-0">
-      <div class="lg:col-7">
-        <div class="relative">
-          <img class="w-full object-contain" src="images/collaboration.png" />
-          <img
-            class="absolute bottom-6 left-1/2 -z-[1] -translate-x-1/2"
-            src="images/shape.svg"
+    <div style="--mt:48px; --ai:center; --mt-lg:0;"  class="row gx-5">
+      <div  class="lg:col-7">
+        <div style="--pos:relative;" >
+          <img style="--w:100%; --objf:contain;" src="images/collaboration.png" />
+          <img style="--pos:absolute; --bottom:24px;" src="images/shape.svg"
             alt=""
-          />
+          / class="left-1/2 -z-[1] -translate-x-1/2">
         </div>
       </div>
-      <div class="mt-6 lg:col-5 lg:mt-0">
-        <div class="text-container">
-          <h2 class="lg:text-4xl">
+      <div style="--mt:24px; --mt-lg:0;"  class="lg:col-5">
+        <div style="--c:container;" >
+          <h2 style="--size-lg:2.25rem; --lh-lg:2.5rem;" >
             Accept payments any country in this whole universe
           </h2>
-          <p class="mt-4">
+          <p style="--mt:16px;" >
             Donec sollicitudin molestie malesda. Donec sollitudin molestie
             malesuada. Mauris pellentesque nec, egestas non nisi. Cras ultricies
             ligula sed
           </p>
-          <ul class="mt-6 text-dark lg:-ml-4">
-            <li class="mb-2 flex items-center rounded px-4">
-              <img
-                class="mr-3"
-                src="images/icons/checkmark-circle.svg"
+          <ul style="--mt:24px; --c:dark;"  class="lg:-ml-4">
+            <li style="--mb:8px; --d:flex; --ai:center; --radius:0.25rem; --pl:16px; --pr:16px;" >
+              <img style="--mr:12px;" src="images/icons/checkmark-circle.svg"
                 alt=""
               />
               Supporting more than 119 country world
             </li>
-            <li class="mb-2 flex items-center rounded px-4">
-              <img
-                class="mr-3"
-                src="images/icons/checkmark-circle.svg"
+            <li style="--mb:8px; --d:flex; --ai:center; --radius:0.25rem; --pl:16px; --pr:16px;" >
+              <img style="--mr:12px;" src="images/icons/checkmark-circle.svg"
                 alt=""
               />
               Open transaction with more than currencies
             </li>
-            <li class="flex items-center rounded px-4">
-              <img
-                class="mr-3"
-                src="images/icons/checkmark-circle.svg"
+            <li style="--d:flex; --ai:center; --radius:0.25rem; --pl:16px; --pr:16px;" >
+              <img style="--mr:12px;" src="images/icons/checkmark-circle.svg"
                 alt=""
               />
               Customer Service with 79 languages
@@ -517,44 +443,35 @@
         </div>
       </div>
     </div>
-    <div class="row gx-5 mt-12 items-center lg:mt-0">
-      <div class="lg:col-7 lg:order-2">
-        <div class="video pb-5 pr-9">
-          <div class="video-thumbnail overflow-hidden rounded-2xl">
-            <img
-              class="w-full object-contain"
-              src="images/intro-thumbnail.png"
+    <div style="--mt:48px; --ai:center; --mt-lg:0;"  class="row gx-5">
+      <div style="--o-lg:2;"  class="lg:col-7">
+        <div style="--pb:20px; --pr:36px;"  class="video">
+          <div style="--of:hidden; --radius:1rem;"  class="video-thumbnail">
+            <img style="--w:100%; --objf:contain;" src="images/intro-thumbnail.png"
               alt=""
             />
-            <button class="video-play-btn">
+            <button  class="video-play-btn">
               <img src="images/icons/play-icon.svg" alt="" />
             </button>
           </div>
-          <div
-            class="video-player absolute left-0 top-0 z-10 hidden h-full w-full"
-          >
-            <iframe
-              class="h-full w-full"
-              allowfullscreen=""
-              src="https://www.youtube.com/embed/g3-VxLQO7do?autoplay=1"
-            ></iframe>
+          <div style="--pos:absolute; --left:0; --top:0; --z:10; --d:none; --h:100%; --w:100%;"  class="video-player">
+            <iframe style="--h:100%; --w:100%;" allowfullscreen=""
+              src="https://www.youtube.com/embed/g3-VxLQO7do?autoplay=1"></iframe>
           </div>
-          <img
-            class="intro-shape absolute bottom-0 right-0 -z-[1]"
-            src="images/shape.svg"
+          <img style="--pos:absolute; --bottom:0; --right:0;" src="images/shape.svg"
             alt=""
-          />
+          / class="intro-shape -z-[1]">
         </div>
       </div>
-      <div class="mt-6 lg:col-5 lg:order-1 lg:mt-0">
-        <div class="text-container">
-          <h2 class="lg:text-4xl">Accountability that works for you</h2>
-          <p class="mt-4">
+      <div style="--mt:24px; --o-lg:1; --mt-lg:0;"  class="lg:col-5">
+        <div style="--c:container;" >
+          <h2 style="--size-lg:2.25rem; --lh-lg:2.5rem;" >Accountability that works for you</h2>
+          <p style="--mt:16px;" >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
             egestas Werat viverra id et aliquet. vulputate egestas sollicitudin
             .
           </p>
-          <button class="btn btn-white mt-6">know about us</button>
+          <button style="--mt:24px;"  class="btn btn-white">know about us</button>
         </div>
       </div>
     </div>
@@ -563,37 +480,35 @@
 <!-- ./end Services -->
 
 <!-- Reviews -->
-<section class="reviews">
-  <div class="container">
-    <div class="row justify-between">
-      <div class="lg:col-6">
+<section  class="reviews">
+  <div  class="container">
+    <div style="--jc:space-between;"  class="row">
+      <div  class="lg:col-6">
         <h2>Our customers have nice things to say about us</h2>
       </div>
-      <div class="lg:col-4">
+      <div  class="lg:col-4">
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas
           Werat viverra id et aliquet. vulputate egestas sollicitudin .
         </p>
       </div>
     </div>
-    <div class="row mt-10">
-      <div class="col-12">
-        <div class="swiper reviews-carousel">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="review">
-                <div class="review-author-avatar bg-gradient">
+    <div style="--mt:40px;"  class="row">
+      <div  class="col-12">
+        <div  class="swiper reviews-carousel">
+          <div  class="swiper-wrapper">
+            <div  class="swiper-slide">
+              <div  class="review">
+                <div style="--bgc:gradient;"  class="review-author-avatar">
                   <img src="images/users/user-5.png" alt="" />
                 </div>
-                <h4 class="mb-2">Courtney Henry</h4>
-                <p class="mb-4 text-[#666]">microsoft corp</p>
+                <h4 style="--mb:8px;" >Courtney Henry</h4>
+                <p style="--mb:16px; --c:[#666];" >microsoft corp</p>
                 <p>
                   Our platform helps build secure onboarding authentica
                   experiences & engage your users. We build .
                 </p>
-                <div
-                  class="review-rating mt-6 flex items-center justify-center space-x-2.5"
-                >
+                <div style="--mt:24px; --d:flex; --ai:center; --jc:center;"  class="review-rating space-x-2.5">
                   <img src="images/icons/star.svg" alt="" />
                   <img src="images/icons/star.svg" alt="" />
                   <img src="images/icons/star.svg" alt="" />
@@ -602,20 +517,18 @@
                 </div>
               </div>
             </div>
-            <div class="swiper-slide">
-              <div class="review">
-                <div class="review-author-avatar bg-gradient">
+            <div  class="swiper-slide">
+              <div  class="review">
+                <div style="--bgc:gradient;"  class="review-author-avatar">
                   <img src="images/users/user-2.png" alt="" />
                 </div>
-                <h4 class="mb-2">Ronald Richards</h4>
-                <p class="mb-4 text-[#666]">meta limited</p>
+                <h4 style="--mb:8px;" >Ronald Richards</h4>
+                <p style="--mb:16px; --c:[#666];" >meta limited</p>
                 <p>
                   Our platform helps build secure onboarding authentica
                   experiences & engage your users. We build .
                 </p>
-                <div
-                  class="review-rating mt-6 flex items-center justify-center space-x-2.5"
-                >
+                <div style="--mt:24px; --d:flex; --ai:center; --jc:center;"  class="review-rating space-x-2.5">
                   <img src="images/icons/star.svg" alt="" />
                   <img src="images/icons/star.svg" alt="" />
                   <img src="images/icons/star.svg" alt="" />
@@ -624,20 +537,18 @@
                 </div>
               </div>
             </div>
-            <div class="swiper-slide">
-              <div class="review">
-                <div class="review-author-avatar bg-gradient">
+            <div  class="swiper-slide">
+              <div  class="review">
+                <div style="--bgc:gradient;"  class="review-author-avatar">
                   <img src="images/users/user-6.png" alt="" />
                 </div>
-                <h4 class="mb-2">Bessie Cooper</h4>
-                <p class="mb-4 text-[#666]">apple inc ltd</p>
+                <h4 style="--mb:8px;" >Bessie Cooper</h4>
+                <p style="--mb:16px; --c:[#666];" >apple inc ltd</p>
                 <p>
                   Our platform helps build secure onboarding authentica
                   experiences & engage your users. We build .
                 </p>
-                <div
-                  class="review-rating mt-6 flex items-center justify-center space-x-2.5"
-                >
+                <div style="--mt:24px; --d:flex; --ai:center; --jc:center;"  class="review-rating space-x-2.5">
                   <img src="images/icons/star.svg" alt="" />
                   <img src="images/icons/star.svg" alt="" />
                   <img src="images/icons/star.svg" alt="" />
@@ -648,9 +559,7 @@
             </div>
           </div>
           <!-- If we need pagination -->
-          <div
-            class="swiper-pagination reviews-carousel-pagination !bottom-0"
-          ></div>
+          <div  class="swiper-pagination reviews-carousel-pagination !bottom-0"></div>
         </div>
       </div>
     </div>
@@ -659,19 +568,17 @@
 <!-- Reviews -->
 
 <!-- Call To action -->
-<section class="px-5 py-20 xl:py-[120px]">
-  <div class="container">
-    <div
-      class="bg-gradient row justify-center rounded-b-[80px] rounded-t-[20px] px-[30px] pb-[75px] pt-16"
-    >
-      <div class="lg:col-11">
-        <div class="row">
-          <div class="lg:col-7">
-            <h2 class="h1 text-white">Helping teams in the world with focus</h2>
-            <a class="btn btn-white mt-8" href="#">Download The Theme</a>
+<section style="--pl:20px; --pr:20px; --pt:80px; --pb:80px; --pt-xl:[120px]; --pb-xl:[120px];" >
+  <div  class="container">
+    <div style="--bgc:gradient; --jc:center; --pl:[30px]; --pr:[30px]; --pb:[75px]; --pt:64px;"  class="row rounded-b-[80px] rounded-t-[20px]">
+      <div  class="lg:col-11">
+        <div  class="row">
+          <div  class="lg:col-7">
+            <h2 style="--c:#ffffff;"  class="h1">Helping teams in the world with focus</h2>
+            <a style="--mt:32px;" href="#" class="btn btn-white">Download The Theme</a>
           </div>
-          <div class="mt-8 lg:col-5 lg:mt-0">
-            <p class="text-white">
+          <div style="--mt:32px; --mt-lg:0;"  class="lg:col-5">
+            <p style="--c:#ffffff;" >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
               egestas Werat viverra id et aliquet. vulputate egestas
               sollicitudin .
@@ -682,33 +589,31 @@
     </div>
   </div>
 </section>
-<div
-  class="fixed left-0 top-0 z-50 flex w-[30px] items-center justify-center bg-gray-200 py-[2.5px] text-[12px] uppercase text-black sm:bg-red-200 md:bg-yellow-200 lg:bg-green-200 xl:bg-blue-200 2xl:bg-pink-200"
->
-  <span class="block sm:hidden">all</span>
-  <span class="hidden sm:block md:hidden">sm</span>
-  <span class="hidden md:block lg:hidden">md</span>
-  <span class="hidden lg:block xl:hidden">lg</span>
-  <span class="hidden xl:block 2xl:hidden">xl</span>
-  <span class="hidden 2xl:block">2xl</span>
+<div style="--pos:fixed; --left:0; --top:0; --z:50; --d:flex; --w:30px; --ai:center; --jc:center; --bgc:#e5e7eb; --pt:[2.5px]; --pb:[2.5px]; --c:[12px]; --tt:uppercase; --c:#000000; --bgc-sm:#fecaca; --bgc-md:#fef08a; --bgc-lg:#bbf7d0; --bgc-xl:#bfdbfe; --bgc-2xl:#fbcfe8;" >
+  <span style="--d:block; --d-sm:none;" >all</span>
+  <span style="--d:none; --d-sm:block; --d-md:none;" >sm</span>
+  <span style="--d:none; --d-md:block; --d-lg:none;" >md</span>
+  <span style="--d:none; --d-lg:block; --d-xl:none;" >lg</span>
+  <span style="--d:none; --d-xl:block; --d-2xl:none;" >xl</span>
+  <span style="--d:none; --d-2xl:block;" >2xl</span>
 </div>
 
- <footer class="footer bg-theme-light/50">
-  <div class="container">
-    <div class="row gx-5 pb-10 pt-[52px]">
-      <div class="col-12 mt-12 md:col-6 lg:col-3">
+ <footer style="--bgc:theme-light/50;"  class="footer">
+  <div  class="container">
+    <div style="--pb:40px; --pt:[52px];"  class="row gx-5">
+      <div style="--mt:48px;"  class="col-12 md:col-6 lg:col-3">
         <a href="index-2.html">
           <img src="images/logo.svg" alt="" />
         </a>
-        <p class="mt-6">
+        <p style="--mt:24px;" >
           Lorem ipsum dolor sit sed dmi amet, consectetur adipiscing. Cdo
           tellus, sed condimentum volutpat.
         </p>
       </div>
-      <div class="col-12 mt-12 md:col-6 lg:col-3">
+      <div style="--mt:48px;"  class="col-12 md:col-6 lg:col-3">
         <h6>Socials</h6>
         <p>themefisher@gmail.com</p>
-        <ul class="social-icons mt-4 lg:mt-6">
+        <ul style="--mt:16px; --mt-lg:24px;"  class="social-icons">
           <li>
             <a href="#">
               <svg
@@ -775,7 +680,7 @@
           </li>
         </ul>
       </div>
-      <div class="col-12 mt-12 md:col-6 lg:col-3">
+      <div style="--mt:48px;"  class="col-12 md:col-6 lg:col-3">
         <h6>Quick Links</h6>
         <ul>
           <li>
@@ -792,17 +697,15 @@
           </li>
         </ul>
       </div>
-      <div class="col-12 mt-12 md:col-6 lg:col-3">
+      <div style="--mt:48px;"  class="col-12 md:col-6 lg:col-3">
         <h6>Location & Contact</h6>
         <p>2118 Thornridge Cir. Syracuse, Connecticut 35624</p>
         <p>(704) 555-0127</p>
       </div>
     </div>
   </div>
-  <div class="container max-w-[1440px]">
-    <div
-      class="footer-copyright mx-auto border-t border-border pb-10 pt-7 text-center"
-    >
+  <div style="--maxw:1440px;"  class="container">
+    <div style="--bc:t; --bc:border; --pb:40px; --pt:28px; --ta:center;"  class="footer-copyright mx-auto">
       <p>Designed And Developed by <a href="https://themefisher.com/" target="_blank">Themefisher</a> | Distributed by <a href="https://themewagon.com/" target="_blank">ThemeWagon</a></p>
       
     </div>

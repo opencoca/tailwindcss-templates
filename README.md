@@ -13,7 +13,8 @@ You can preview all of the templates and layouts on this landing page here. [Pre
 
 ## Authors
 
-* **Ross Topping** - [Digizu](https://digizu.co.uk)
+* **Ross Topping** - [Digizu](https://digizu.co.uk) — original templates
+* **Startr LLC** — modifications, additions, and new layouts (2024–2026)
 
 ## License
 

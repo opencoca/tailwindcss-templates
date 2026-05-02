@@ -43,7 +43,7 @@
   <meta name="robots" content="" />
 
   <!-- meta-description -->
-  <meta name="description" content="meta description" />
+  <meta name="description" content="Here is a concise and SEO-friendly meta description: &quot;Update: Changelogs 13.3.1 (Oct 15, 2020) - Security enhancements and transaction processing improvements.">
 
   <!-- author from config.json -->
   <meta name="author" content="{config.metadata.meta_author}" />
@@ -94,34 +94,30 @@
 
   <!-- Main Stylesheet -->
   <link href="styles/main.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://startr.style/style.css">
 </head>
 
-<header class="header">
-  <nav class="navbar container">
+<header  class="header">
+  <nav  class="navbar container">
     <!-- logo -->
-    <div class="order-0">
+    <div style="--o:0;" >
       <a href="index-2.html">
         <img src="images/logo.svg" height="30" width="147" alt="logo" />
       </a>
     </div>
     <!-- navbar toggler -->
-    <input id="nav-toggle" type="checkbox" class="hidden" />
-    <label
-      id="show-button"
-      for="nav-toggle"
-      class="order-1 flex cursor-pointer items-center lg:order-1 lg:hidden"
-    >
-      <svg class="h-6 fill-current" viewBox="0 0 20 20">
+    <input style="--d:none;" id="nav-toggle" type="checkbox"  />
+    <label style="--o:1; --d:flex; --cur:pointer; --ai:center; --o-lg:1; --d-lg:none;" id="show-button"
+      for="nav-toggle">
+      <svg style="--h:24px;" viewBox="0 0 20 20" class="fill-current">
         <title>Menu Open</title>
         <path d="M0 3h20v2H0V3z m0 6h20v2H0V9z m0 6h20v2H0V0z"></path>
       </svg>
     </label>
-    <label
-      id="hide-button"
-      for="nav-toggle"
-      class="order-2 hidden cursor-pointer items-center lg:order-1"
-    >
-      <svg class="h-6 fill-current" viewBox="0 0 20 20">
+    <label style="--o:2; --d:none; --cur:pointer; --ai:center; --o-lg:1;" id="hide-button"
+      for="nav-toggle">
+      <svg style="--h:24px;" viewBox="0 0 20 20" class="fill-current">
         <title>Menu Close</title>
         <polygon
           points="11 9 22 9 22 11 11 11 11 22 9 22 9 11 -2 11 -2 9 9 9 9 -2 11 -2"
@@ -130,153 +126,130 @@
       </svg>
     </label>
     <!-- /navbar toggler -->
-    <ul
-      id="nav-menu"
-      class="navbar-nav order-2 hidden w-full flex-[0_0_100%] lg:order-1 lg:flex lg:w-auto lg:flex-auto lg:justify-center lg:space-x-5"
-    >
-      <li class="nav-item">
+    <ul style="--o:2; --d:none; --w:100%; --o-lg:1; --d-lg:flex; --w-lg:auto; --jc-lg:center;" id="nav-menu" class="navbar-nav flex-[0_0_100%] lg:flex-auto lg:space-x-5">
+      <li  class="nav-item">
         <a href="#" class="nav-link active">Home</a>
       </li>
-      <li class="nav-item">
+      <li  class="nav-item">
         <a href="about.html" class="nav-link">About</a>
       </li>
-      <li class="nav-item">
+      <li  class="nav-item">
         <a href="blog.html" class="nav-link">Blog</a>
       </li>
-      <li class="nav-item">
+      <li  class="nav-item">
         <a href="features.html" class="nav-link">Features</a>
       </li>
-      <li class="nav-item">
+      <li  class="nav-item">
         <a href="how-it-works.html" class="nav-link">How It Works</a>
       </li>
-      <li class="nav-item nav-dropdown group relative">
-        <span class="nav-link inline-flex items-center">
+      <li style="--pos:relative;"  class="nav-item nav-dropdown group">
+        <span style="--ai:center;"  class="nav-link inline-flex">
           Pages
-          <svg class="h-4 w-4 fill-current" viewBox="0 0 20 20">
+          <svg style="--h:16px; --w:16px;" viewBox="0 0 20 20" class="fill-current">
             <path
               d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
             />
           </svg>
         </span>
-        <ul
-          class="nav-dropdown-list hidden group-hover:block lg:invisible lg:absolute lg:block lg:opacity-0 lg:group-hover:visible lg:group-hover:opacity-100"
-        >
-          <li class="nav-dropdown-item">
+        <ul style="--d:none; --pos-lg:absolute; --d-lg:block; --op-lg:0.0;"  class="nav-dropdown-list group-hover:block lg:invisible lg:group-hover:visible lg:group-hover:opacity-100">
+          <li  class="nav-dropdown-item">
             <a href="career.html" class="nav-dropdown-link">Career</a>
           </li>
-          <li class="nav-dropdown-item">
-            <a href="career-single.html" class="nav-dropdown-link"
-              >Career Single</a
+          <li  class="nav-dropdown-item">
+            <a href="career-single.html" class="nav-dropdown-link">Career Single</a
             >
           </li>
-          <li class="nav-dropdown-item">
-            <a href="integrations.html" class="nav-dropdown-link"
-              >Integrations</a
+          <li  class="nav-dropdown-item">
+            <a href="integrations.html" class="nav-dropdown-link">Integrations</a
             >
           </li>
-          <li class="nav-dropdown-item">
-            <a href="integration-single.html" class="nav-dropdown-link"
-              >Integration Single</a
+          <li  class="nav-dropdown-item">
+            <a href="integration-single.html" class="nav-dropdown-link">Integration Single</a
             >
           </li>
-          <li class="nav-dropdown-item">
+          <li  class="nav-dropdown-item">
             <a href="pricing.html" class="nav-dropdown-link">Pricing</a>
           </li>
-          <li class="nav-dropdown-item">
+          <li  class="nav-dropdown-item">
             <a href="changelogs.html" class="nav-dropdown-link">Changelogs</a>
           </li>
-          <li class="nav-dropdown-item">
-            <a href="terms-conditions.html" class="nav-dropdown-link"
-              >Terms & Conditions</a
+          <li  class="nav-dropdown-item">
+            <a href="terms-conditions.html" class="nav-dropdown-link">Terms & Conditions</a
             >
           </li>
         </ul>
       </li>
-      <li class="nav-item">
+      <li  class="nav-item">
         <a href="contact.html" class="nav-link">Contact</a>
       </li>
-      <li class="nav-item mt-3.5 lg:hidden">
-        <a class="btn btn-white btn-sm border-border" href="signin.html"
-          >Sing Up Now</a
+      <li style="--mt:3.5; --d-lg:none;"  class="nav-item">
+        <a style="--bc:border;" href="signin.html" class="btn btn-white btn-sm">Sing Up Now</a
         >
       </li>
     </ul>
-    <div class="order-1 ml-auto hidden items-center md:order-2 md:ml-0 lg:flex">
-      <a class="btn btn-white btn-sm" href="signin.html">Sing Up Now</a>
+    <div style="--o:1; --d:none; --ai:center; --o-md:2; --ml-md:0; --d-lg:flex;"  class="ml-auto">
+      <a href="signin.html" class="btn btn-white btn-sm">Sing Up Now</a>
     </div>
   </nav>
 </header>
 
 <body><!-- floating assets -->
-<img
-  class="floating-bubble-1 absolute right-0 top-0 -z-[1]"
-  src="images/floating-bubble-1.svg"
+<img style="--pos:absolute; --right:0; --top:0;" src="images/floating-bubble-1.svg"
   alt=""
-/>
-<img
-  class="floating-bubble-2 absolute left-0 top-[387px] -z-[1]"
-  src="images/floating-bubble-2.svg"
+/ class="floating-bubble-1 -z-[1]">
+<img style="--pos:absolute; --left:0; --top:[387px];" src="images/floating-bubble-2.svg"
   alt=""
-/>
-<img
-  class="floating-bubble-3 absolute right-0 top-[605px] -z-[1]"
-  src="images/floating-bubble-3.svg"
+/ class="floating-bubble-2 -z-[1]">
+<img style="--pos:absolute; --right:0; --top:[605px];" src="images/floating-bubble-3.svg"
   alt=""
-/>
+/ class="floating-bubble-3 -z-[1]">
 <!-- ./end floating assets -->
 
 <!-- Common hero -->
-<section class="page-hero pt-16 pb-14">
-  <div class="container">
-    <div class="text-center">
-      <ul
-        class="breadcrumb inline-flex h-8 items-center justify-center space-x-2 rounded-3xl bg-theme-light px-4 py-2"
-      >
-        <li class="leading-none text-dark">
-          <a class="inline-flex items-center text-primary" href="#">
-            <svg
-              class="mr-1.5"
-              width="15"
+<section style="--pt:64px; --pb:56px;"  class="page-hero">
+  <div  class="container">
+    <div style="--ta:center;" >
+      <ul style="--h:32px; --ai:center; --jc:center; --radius:1.5rem; --bgc:theme-light; --pl:16px; --pr:16px; --pt:8px; --pb:8px;"  class="breadcrumb inline-flex space-x-2">
+        <li style="--c:dark;"  class="leading-none">
+          <a style="--ai:center; --c:primary;" href="#" class="inline-flex">
+            <svg style="--mr:6px;" width="15"
               height="15"
               viewBox="0 0 16 16"
               fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
+              xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M13.1769 15.0588H10.3533V9.41178H5.64744V15.0588H2.82391V6.58825H1.88274V16H14.118V6.58825H13.1769V15.0588ZM6.58862 15.0588V10.353H9.41215V15.0588H6.58862ZM15.8084 6.09225L15.2512 6.85178L8.00038 1.52472L0.749559 6.8499L0.192383 6.09131L8.00038 0.357666L15.8084 6.09225Z"
                 fill="black"
               />
             </svg>
-            <span class="text-sm leading-none">Home</span>
+            <span style="--size:0.875rem; --lh:1.25rem;"  class="leading-none">Home</span>
           </a>
         </li>
-        <li class="leading-none text-dark">
-          <span class="text-sm leading-none">/ Changelogs</span>
+        <li style="--c:dark;"  class="leading-none">
+          <span style="--size:0.875rem; --lh:1.25rem;"  class="leading-none">/ Changelogs</span>
         </li>
       </ul>
     </div>
-    <div class="page-hero-content mx-auto max-w-[768px] text-center">
-      <h1 class="mt-8">Changelogs</h1>
+    <div style="--maxw:768px; --ta:center;"  class="page-hero-content mx-auto">
+      <h1 style="--mt:32px;" >Changelogs</h1>
     </div>
   </div>
 </section>
 <!-- end Common hero -->
 
-<section class="section changelogs pt-0">
-  <div class="container">
-    <div class="row justify-center">
-      <div class="lg:col-10">
-        <div class="row mb-10 lg:mt-0">
-          <div class="lg:col-3">
-            <h6 class="mb-4 pl-7 text-lg lg:mt-0 lg:pl-0">
+<section style="--pt:0;"  class="section changelogs">
+  <div  class="container">
+    <div style="--jc:center;"  class="row">
+      <div  class="lg:col-10">
+        <div style="--mb:40px; --mt-lg:0;"  class="row">
+          <div  class="lg:col-3">
+            <h6 style="--mb:16px; --pl:28px; --size:1.125rem; --lh:1.75rem; --mt-lg:0; --pl-lg:0;" >
               13.3.1 (Octobor 15,2020)
             </h6>
           </div>
-          <div class="border-border lg:col-9 lg:border-l lg:pl-10 lg:pb-10">
-            <div
-              class="changelogs-content rounded-xl bg-white p-6 shadow-lg lg:p-10"
-            >
-              <span class="changelogs-tag bg-[#3A9CFF]">Changed</span>
+          <div style="--bc:border; --bc-lg:l; --pl-lg:40px; --pb-lg:40px;"  class="lg:col-9">
+            <div style="--radius:0.75rem; --bgc:#ffffff; --p:24px; --shadow:0 10px 15px -3px rgb(0,0,0,0.1), 0 4px 6px -2px rgb(0,0,0,0.05); --p-lg:40px;"  class="changelogs-content">
+              <span style="--bgc:[#3A9CFF];"  class="changelogs-tag">Changed</span>
               <ul>
                 <li>
                   Enhance or improve <span>User experience</span>, our Site, or
@@ -292,7 +265,7 @@
                   <span>including to amended legal</span> documents
                 </li>
               </ul>
-              <span class="changelogs-tag bg-[#00CE92]">Added</span>
+              <span style="--bgc:[#00CE92];"  class="changelogs-tag">Added</span>
               <ul>
                 <li>
                   Enhance or improve <span>User experience</span>, our Site, or
@@ -307,17 +280,15 @@
             </div>
           </div>
         </div>
-        <div class="row mb-10 lg:mt-0">
-          <div class="lg:col-3">
-            <h6 class="mb-4 pl-7 text-lg lg:mt-0 lg:pl-0">
+        <div style="--mb:40px; --mt-lg:0;"  class="row">
+          <div  class="lg:col-3">
+            <h6 style="--mb:16px; --pl:28px; --size:1.125rem; --lh:1.75rem; --mt-lg:0; --pl-lg:0;" >
               13.3.1 (Octobor 15,2020)
             </h6>
           </div>
-          <div class="border-border lg:col-9 lg:border-l lg:pl-10 lg:pb-10">
-            <div
-              class="changelogs-content rounded-xl bg-white p-6 shadow-lg lg:p-10"
-            >
-              <span class="changelogs-tag bg-[#973CFF]">Removed</span>
+          <div style="--bc:border; --bc-lg:l; --pl-lg:40px; --pb-lg:40px;"  class="lg:col-9">
+            <div style="--radius:0.75rem; --bgc:#ffffff; --p:24px; --shadow:0 10px 15px -3px rgb(0,0,0,0.1), 0 4px 6px -2px rgb(0,0,0,0.05); --p-lg:40px;"  class="changelogs-content">
+              <span style="--bgc:[#973CFF];"  class="changelogs-tag">Removed</span>
               <ul>
                 <li>
                   Enhance or improve <span>User experience</span>, our Site, or
@@ -333,7 +304,7 @@
                   <span>including to amended legal</span> documents
                 </li>
               </ul>
-              <span class="changelogs-tag bg-[#9C275F]">Security</span>
+              <span style="--bgc:[#9C275F];"  class="changelogs-tag">Security</span>
               <ul>
                 <li>
                   Enhance or improve <span>User experience</span>, our Site, or
@@ -348,17 +319,15 @@
             </div>
           </div>
         </div>
-        <div class="row mb-10 lg:mt-0">
-          <div class="lg:col-3">
-            <h6 class="mb-4 pl-7 text-lg lg:mt-0 lg:pl-0">
+        <div style="--mb:40px; --mt-lg:0;"  class="row">
+          <div  class="lg:col-3">
+            <h6 style="--mb:16px; --pl:28px; --size:1.125rem; --lh:1.75rem; --mt-lg:0; --pl-lg:0;" >
               13.3.1 (Octobor 15,2020)
             </h6>
           </div>
-          <div class="border-border lg:col-9 lg:border-l lg:pl-10">
-            <div
-              class="changelogs-content rounded-xl bg-white p-6 shadow-lg lg:p-10"
-            >
-              <span class="changelogs-tag bg-primary">Depriciated</span>
+          <div style="--bc:border; --bc-lg:l; --pl-lg:40px;"  class="lg:col-9">
+            <div style="--radius:0.75rem; --bgc:#ffffff; --p:24px; --shadow:0 10px 15px -3px rgb(0,0,0,0.1), 0 4px 6px -2px rgb(0,0,0,0.05); --p-lg:40px;"  class="changelogs-content">
+              <span style="--bgc:primary;"  class="changelogs-tag">Depriciated</span>
               <ul>
                 <li>
                   Enhance or improve <span>User experience</span>, our Site, or
@@ -374,7 +343,7 @@
                   <span>including to amended legal</span> documents
                 </li>
               </ul>
-              <span class="changelogs-tag bg-[#973CFF]">Removed</span>
+              <span style="--bgc:[#973CFF];"  class="changelogs-tag">Removed</span>
               <ul>
                 <li>
                   Enhance or improve <span>User experience</span>, our Site, or
@@ -393,33 +362,31 @@
     </div>
   </div>
 </section>
-<div
-  class="fixed left-0 top-0 z-50 flex w-[30px] items-center justify-center bg-gray-200 py-[2.5px] text-[12px] uppercase text-black sm:bg-red-200 md:bg-yellow-200 lg:bg-green-200 xl:bg-blue-200 2xl:bg-pink-200"
->
-  <span class="block sm:hidden">all</span>
-  <span class="hidden sm:block md:hidden">sm</span>
-  <span class="hidden md:block lg:hidden">md</span>
-  <span class="hidden lg:block xl:hidden">lg</span>
-  <span class="hidden xl:block 2xl:hidden">xl</span>
-  <span class="hidden 2xl:block">2xl</span>
+<div style="--pos:fixed; --left:0; --top:0; --z:50; --d:flex; --w:30px; --ai:center; --jc:center; --bgc:#e5e7eb; --pt:[2.5px]; --pb:[2.5px]; --c:[12px]; --tt:uppercase; --c:#000000; --bgc-sm:#fecaca; --bgc-md:#fef08a; --bgc-lg:#bbf7d0; --bgc-xl:#bfdbfe; --bgc-2xl:#fbcfe8;" >
+  <span style="--d:block; --d-sm:none;" >all</span>
+  <span style="--d:none; --d-sm:block; --d-md:none;" >sm</span>
+  <span style="--d:none; --d-md:block; --d-lg:none;" >md</span>
+  <span style="--d:none; --d-lg:block; --d-xl:none;" >lg</span>
+  <span style="--d:none; --d-xl:block; --d-2xl:none;" >xl</span>
+  <span style="--d:none; --d-2xl:block;" >2xl</span>
 </div>
 
- <footer class="footer bg-theme-light/50">
-  <div class="container">
-    <div class="row gx-5 pb-10 pt-[52px]">
-      <div class="col-12 mt-12 md:col-6 lg:col-3">
+ <footer style="--bgc:theme-light/50;"  class="footer">
+  <div  class="container">
+    <div style="--pb:40px; --pt:[52px];"  class="row gx-5">
+      <div style="--mt:48px;"  class="col-12 md:col-6 lg:col-3">
         <a href="index-2.html">
           <img src="images/logo.svg" alt="" />
         </a>
-        <p class="mt-6">
+        <p style="--mt:24px;" >
           Lorem ipsum dolor sit sed dmi amet, consectetur adipiscing. Cdo
           tellus, sed condimentum volutpat.
         </p>
       </div>
-      <div class="col-12 mt-12 md:col-6 lg:col-3">
+      <div style="--mt:48px;"  class="col-12 md:col-6 lg:col-3">
         <h6>Socials</h6>
         <p>themefisher@gmail.com</p>
-        <ul class="social-icons mt-4 lg:mt-6">
+        <ul style="--mt:16px; --mt-lg:24px;"  class="social-icons">
           <li>
             <a href="#">
               <svg
@@ -486,7 +453,7 @@
           </li>
         </ul>
       </div>
-      <div class="col-12 mt-12 md:col-6 lg:col-3">
+      <div style="--mt:48px;"  class="col-12 md:col-6 lg:col-3">
         <h6>Quick Links</h6>
         <ul>
           <li>
@@ -503,17 +470,15 @@
           </li>
         </ul>
       </div>
-      <div class="col-12 mt-12 md:col-6 lg:col-3">
+      <div style="--mt:48px;"  class="col-12 md:col-6 lg:col-3">
         <h6>Location & Contact</h6>
         <p>2118 Thornridge Cir. Syracuse, Connecticut 35624</p>
         <p>(704) 555-0127</p>
       </div>
     </div>
   </div>
-  <div class="container max-w-[1440px]">
-    <div
-      class="footer-copyright mx-auto border-t border-border pb-10 pt-7 text-center"
-    >
+  <div style="--maxw:1440px;"  class="container">
+    <div style="--bc:t; --bc:border; --pb:40px; --pt:28px; --ta:center;"  class="footer-copyright mx-auto">
       <p>Designed And Developed by <a href="https://themefisher.com/" target="_blank">Themefisher</a> | Distributed by <a href="https://themewagon.com/" target="_blank">ThemeWagon</a></p>
       
     </div>

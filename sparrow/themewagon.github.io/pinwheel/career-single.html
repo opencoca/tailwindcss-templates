@@ -43,7 +43,7 @@
   <meta name="robots" content="" />
 
   <!-- meta-description -->
-  <meta name="description" content="meta description" />
+  <meta name="description" content="Join our company as a UI/UX Lead Designer focused on personal financial planning, seeking a motivated developer with expertise in web APIs, functional progra...">
 
   <!-- author from config.json -->
   <meta name="author" content="{config.metadata.meta_author}" />
@@ -94,34 +94,30 @@
 
   <!-- Main Stylesheet -->
   <link href="styles/main.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://startr.style/style.css">
 </head>
 
-<header class="header">
-  <nav class="navbar container">
+<header  class="header">
+  <nav  class="navbar container">
     <!-- logo -->
-    <div class="order-0">
+    <div style="--o:0;" >
       <a href="index-2.html">
         <img src="images/logo.svg" height="30" width="147" alt="logo" />
       </a>
     </div>
     <!-- navbar toggler -->
-    <input id="nav-toggle" type="checkbox" class="hidden" />
-    <label
-      id="show-button"
-      for="nav-toggle"
-      class="order-1 flex cursor-pointer items-center lg:order-1 lg:hidden"
-    >
-      <svg class="h-6 fill-current" viewBox="0 0 20 20">
+    <input style="--d:none;" id="nav-toggle" type="checkbox"  />
+    <label style="--o:1; --d:flex; --cur:pointer; --ai:center; --o-lg:1; --d-lg:none;" id="show-button"
+      for="nav-toggle">
+      <svg style="--h:24px;" viewBox="0 0 20 20" class="fill-current">
         <title>Menu Open</title>
         <path d="M0 3h20v2H0V3z m0 6h20v2H0V9z m0 6h20v2H0V0z"></path>
       </svg>
     </label>
-    <label
-      id="hide-button"
-      for="nav-toggle"
-      class="order-2 hidden cursor-pointer items-center lg:order-1"
-    >
-      <svg class="h-6 fill-current" viewBox="0 0 20 20">
+    <label style="--o:2; --d:none; --cur:pointer; --ai:center; --o-lg:1;" id="hide-button"
+      for="nav-toggle">
+      <svg style="--h:24px;" viewBox="0 0 20 20" class="fill-current">
         <title>Menu Close</title>
         <polygon
           points="11 9 22 9 22 11 11 11 11 22 9 22 9 11 -2 11 -2 9 9 9 9 -2 11 -2"
@@ -130,146 +126,123 @@
       </svg>
     </label>
     <!-- /navbar toggler -->
-    <ul
-      id="nav-menu"
-      class="navbar-nav order-2 hidden w-full flex-[0_0_100%] lg:order-1 lg:flex lg:w-auto lg:flex-auto lg:justify-center lg:space-x-5"
-    >
-      <li class="nav-item">
+    <ul style="--o:2; --d:none; --w:100%; --o-lg:1; --d-lg:flex; --w-lg:auto; --jc-lg:center;" id="nav-menu" class="navbar-nav flex-[0_0_100%] lg:flex-auto lg:space-x-5">
+      <li  class="nav-item">
         <a href="#" class="nav-link active">Home</a>
       </li>
-      <li class="nav-item">
+      <li  class="nav-item">
         <a href="about.html" class="nav-link">About</a>
       </li>
-      <li class="nav-item">
+      <li  class="nav-item">
         <a href="blog.html" class="nav-link">Blog</a>
       </li>
-      <li class="nav-item">
+      <li  class="nav-item">
         <a href="features.html" class="nav-link">Features</a>
       </li>
-      <li class="nav-item">
+      <li  class="nav-item">
         <a href="how-it-works.html" class="nav-link">How It Works</a>
       </li>
-      <li class="nav-item nav-dropdown group relative">
-        <span class="nav-link inline-flex items-center">
+      <li style="--pos:relative;"  class="nav-item nav-dropdown group">
+        <span style="--ai:center;"  class="nav-link inline-flex">
           Pages
-          <svg class="h-4 w-4 fill-current" viewBox="0 0 20 20">
+          <svg style="--h:16px; --w:16px;" viewBox="0 0 20 20" class="fill-current">
             <path
               d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
             />
           </svg>
         </span>
-        <ul
-          class="nav-dropdown-list hidden group-hover:block lg:invisible lg:absolute lg:block lg:opacity-0 lg:group-hover:visible lg:group-hover:opacity-100"
-        >
-          <li class="nav-dropdown-item">
+        <ul style="--d:none; --pos-lg:absolute; --d-lg:block; --op-lg:0.0;"  class="nav-dropdown-list group-hover:block lg:invisible lg:group-hover:visible lg:group-hover:opacity-100">
+          <li  class="nav-dropdown-item">
             <a href="career.html" class="nav-dropdown-link">Career</a>
           </li>
-          <li class="nav-dropdown-item">
-            <a href="career-single.html" class="nav-dropdown-link"
-              >Career Single</a
+          <li  class="nav-dropdown-item">
+            <a href="career-single.html" class="nav-dropdown-link">Career Single</a
             >
           </li>
-          <li class="nav-dropdown-item">
-            <a href="integrations.html" class="nav-dropdown-link"
-              >Integrations</a
+          <li  class="nav-dropdown-item">
+            <a href="integrations.html" class="nav-dropdown-link">Integrations</a
             >
           </li>
-          <li class="nav-dropdown-item">
-            <a href="integration-single.html" class="nav-dropdown-link"
-              >Integration Single</a
+          <li  class="nav-dropdown-item">
+            <a href="integration-single.html" class="nav-dropdown-link">Integration Single</a
             >
           </li>
-          <li class="nav-dropdown-item">
+          <li  class="nav-dropdown-item">
             <a href="pricing.html" class="nav-dropdown-link">Pricing</a>
           </li>
-          <li class="nav-dropdown-item">
+          <li  class="nav-dropdown-item">
             <a href="changelogs.html" class="nav-dropdown-link">Changelogs</a>
           </li>
-          <li class="nav-dropdown-item">
-            <a href="terms-conditions.html" class="nav-dropdown-link"
-              >Terms & Conditions</a
+          <li  class="nav-dropdown-item">
+            <a href="terms-conditions.html" class="nav-dropdown-link">Terms & Conditions</a
             >
           </li>
         </ul>
       </li>
-      <li class="nav-item">
+      <li  class="nav-item">
         <a href="contact.html" class="nav-link">Contact</a>
       </li>
-      <li class="nav-item mt-3.5 lg:hidden">
-        <a class="btn btn-white btn-sm border-border" href="signin.html"
-          >Sing Up Now</a
+      <li style="--mt:3.5; --d-lg:none;"  class="nav-item">
+        <a style="--bc:border;" href="signin.html" class="btn btn-white btn-sm">Sing Up Now</a
         >
       </li>
     </ul>
-    <div class="order-1 ml-auto hidden items-center md:order-2 md:ml-0 lg:flex">
-      <a class="btn btn-white btn-sm" href="signin.html">Sing Up Now</a>
+    <div style="--o:1; --d:none; --ai:center; --o-md:2; --ml-md:0; --d-lg:flex;"  class="ml-auto">
+      <a href="signin.html" class="btn btn-white btn-sm">Sing Up Now</a>
     </div>
   </nav>
 </header>
 
 <body><!-- floating assets -->
-<img
-  class="floating-bubble-1 absolute right-0 top-0 -z-[1]"
-  src="images/floating-bubble-1.svg"
+<img style="--pos:absolute; --right:0; --top:0;" src="images/floating-bubble-1.svg"
   alt=""
-/>
-<img
-  class="floating-bubble-2 absolute left-0 top-[387px] -z-[1]"
-  src="images/floating-bubble-2.svg"
+/ class="floating-bubble-1 -z-[1]">
+<img style="--pos:absolute; --left:0; --top:[387px];" src="images/floating-bubble-2.svg"
   alt=""
-/>
-<img
-  class="floating-bubble-3 absolute right-0 top-[605px] -z-[1]"
-  src="images/floating-bubble-3.svg"
+/ class="floating-bubble-2 -z-[1]">
+<img style="--pos:absolute; --right:0; --top:[605px];" src="images/floating-bubble-3.svg"
   alt=""
-/>
+/ class="floating-bubble-3 -z-[1]">
 <!-- ./end floating assets -->
 
 <!-- Common hero -->
-<section class="page-hero py-16">
-  <div class="container">
-    <div class="text-center">
-      <ul
-        class="breadcrumb inline-flex h-8 items-center justify-center space-x-2 rounded-3xl bg-theme-light px-4 py-2"
-      >
-        <li class="leading-none text-dark">
-          <a class="inline-flex items-center text-primary" href="#">
-            <svg
-              class="mr-1.5"
-              width="15"
+<section style="--pt:64px; --pb:64px;"  class="page-hero">
+  <div  class="container">
+    <div style="--ta:center;" >
+      <ul style="--h:32px; --ai:center; --jc:center; --radius:1.5rem; --bgc:theme-light; --pl:16px; --pr:16px; --pt:8px; --pb:8px;"  class="breadcrumb inline-flex space-x-2">
+        <li style="--c:dark;"  class="leading-none">
+          <a style="--ai:center; --c:primary;" href="#" class="inline-flex">
+            <svg style="--mr:6px;" width="15"
               height="15"
               viewBox="0 0 16 16"
               fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
+              xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M13.1769 15.0588H10.3533V9.41178H5.64744V15.0588H2.82391V6.58825H1.88274V16H14.118V6.58825H13.1769V15.0588ZM6.58862 15.0588V10.353H9.41215V15.0588H6.58862ZM15.8084 6.09225L15.2512 6.85178L8.00038 1.52472L0.749559 6.8499L0.192383 6.09131L8.00038 0.357666L15.8084 6.09225Z"
                 fill="black"
               />
             </svg>
-            <span class="text-sm leading-none">Home</span>
+            <span style="--size:0.875rem; --lh:1.25rem;"  class="leading-none">Home</span>
           </a>
         </li>
-        <li class="leading-none text-dark">
-          <span class="text-sm leading-none">/ Career</span>
+        <li style="--c:dark;"  class="leading-none">
+          <span style="--size:0.875rem; --lh:1.25rem;"  class="leading-none">/ Career</span>
         </li>
       </ul>
     </div>
-    <div class="page-hero-content mx-auto max-w-[768px] text-center">
-      <h1 class="mb-5 mt-8">Lead UI/UX Designer</h1>
+    <div style="--maxw:768px; --ta:center;"  class="page-hero-content mx-auto">
+      <h1 style="--mb:20px; --mt:32px;" >Lead UI/UX Designer</h1>
     </div>
   </div>
 </section>
 <!-- end Common hero -->
 
-<section class="section career-single pt-0">
-  <div class="container">
-    <div class="row lg:gx-4">
-      <div class="lg:col-8">
-        <div
-          class="career-single-content rounded-xl bg-white p-7 shadow-lg lg:px-12 lg:py-[60px]"
-        >
-          <h5 class="h5">What Is the role?</h5>
+<section style="--pt:0;"  class="section career-single">
+  <div  class="container">
+    <div  class="row lg:gx-4">
+      <div  class="lg:col-8">
+        <div style="--radius:0.75rem; --bgc:#ffffff; --p:28px; --shadow:0 10px 15px -3px rgb(0,0,0,0.1), 0 4px 6px -2px rgb(0,0,0,0.05); --pl-lg:48px; --pr-lg:48px; --pt-lg:[60px]; --pb-lg:[60px];"  class="career-single-content">
+          <h5  class="h5">What Is the role?</h5>
           <p>
             We are looking for a personal financial planning pro (Certified
             Financial Planner™ preferred) who will lead our client advising
@@ -279,7 +252,7 @@
             clients in what is arguably the most important position at the
             company.
           </p>
-          <h5 class="h5">About you</h5>
+          <h5  class="h5">About you</h5>
           <p>
             We are especially interested in finding developers with experience
             either building web APIs with Go or experience with functional
@@ -294,13 +267,13 @@
             team do can be perfect, but you make sure that you always know the
             trade-offs.
           </p>
-          <h5 class="h5">Your Role</h5>
+          <h5  class="h5">Your Role</h5>
           <p>
             We are looking for a personal financial planning pro (Certified
             Financial Planner™ preferred) who will lead our client advising
             efforts. on areas including: saving, retirement, debt management,
           </p>
-          <h5 class="h5">Responsibilities</h5>
+          <h5  class="h5">Responsibilities</h5>
 
           <ul>
             <li>
@@ -317,14 +290,14 @@
               protect the or proper functioning of our Site or Service.
             </li>
           </ul>
-          <h5 class="h5">Requirements</h5>
+          <h5  class="h5">Requirements</h5>
           <p>
             We are looking for a personal financial planning pro (Certified
             Financial Planner™ preferred) who will lead our client advising
             efforts. You will be a fiduciary who works with clients providing
             holistic advice on areas including: saving, retirement, debt
           </p>
-          <h5 class="h5">We offer you</h5>
+          <h5  class="h5">We offer you</h5>
           <ul>
             <li>
               Enhance or improve User experience, our Site, or our Service.
@@ -338,31 +311,28 @@
           </ul>
         </div>
       </div>
-      <div class="career-single-sidebar mt-8 lg:col-4 lg:mt-0">
-        <div class="mb-8 rounded-xl bg-white py-10 px-7 shadow-lg">
-          <h5 class="h5">Apply today</h5>
-          <p class="mt-4">
+      <div style="--mt:32px; --mt-lg:0;"  class="career-single-sidebar lg:col-4">
+        <div style="--mb:32px; --radius:0.75rem; --bgc:#ffffff; --pt:40px; --pb:40px; --pl:28px; --pr:28px; --shadow:0 10px 15px -3px rgb(0,0,0,0.1), 0 4px 6px -2px rgb(0,0,0,0.05);" >
+          <h5  class="h5">Apply today</h5>
+          <p style="--mt:16px;" >
             Management, investments. You’ll be on arguably the most important
             position at the company the front lines helping
           </p>
-          <a class="btn btn-primary mt-6 block w-full" href="#">Apply Now</a>
+          <a style="--mt:24px; --d:block; --w:100%;" href="#" class="btn btn-primary">Apply Now</a>
         </div>
-        <div class="mb-8 rounded-xl bg-white py-10 px-7 shadow-lg">
-          <h5 class="h5">Sr. React Native Developer</h5>
-          <p class="mt-6">
+        <div style="--mb:32px; --radius:0.75rem; --bgc:#ffffff; --pt:40px; --pb:40px; --pl:28px; --pr:28px; --shadow:0 10px 15px -3px rgb(0,0,0,0.1), 0 4px 6px -2px rgb(0,0,0,0.05);" >
+          <h5  class="h5">Sr. React Native Developer</h5>
+          <p style="--mt:24px;" >
             Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam lorem
             amet eget in netus laoreet
           </p>
-          <ul class="mt-6 flex flex-wrap items-center text-dark">
-            <li class="my-1 mr-8 inline-flex items-center">
-              <svg
-                class="mr-1"
-                width="16"
+          <ul style="--mt:24px; --d:flex; --fw:wrap; --ai:center; --c:dark;" >
+            <li style="--mt:4px; --mb:4px; --mr:32px; --ai:center;"  class="inline-flex">
+              <svg style="--mr:4px;" width="16"
                 height="16"
                 viewBox="0 0 16 16"
                 fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
+                xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M7.65217 0C3.42496 0 0 3.58065 0 8C0 12.4194 3.42496 16 7.65217 16C11.8794 16 15.3043 12.4194 15.3043 8C15.3043 3.58065 11.8794 0 7.65217 0ZM7.65217 14.4516C4.24264 14.4516 1.48107 11.5645 1.48107 8C1.48107 4.43548 4.24264 1.54839 7.65217 1.54839C11.0617 1.54839 13.8233 4.43548 13.8233 8C13.8233 11.5645 11.0617 14.4516 7.65217 14.4516ZM9.55905 11.0839L6.93941 9.09355C6.84376 9.01935 6.78822 8.90323 6.78822 8.78065V3.48387C6.78822 3.27097 6.95484 3.09677 7.15849 3.09677H8.14586C8.34951 3.09677 8.51613 3.27097 8.51613 3.48387V8.05484L10.5773 9.62258C10.7439 9.74839 10.7778 9.99032 10.6575 10.1645L10.0774 11C9.95708 11.171 9.72567 11.2097 9.55905 11.0839Z"
                   fill="currentColor"
@@ -370,15 +340,12 @@
               </svg>
               Full Time
             </li>
-            <li class="my-1 mr-8 inline-flex items-center">
-              <svg
-                class="mr-1"
-                width="16"
+            <li style="--mt:4px; --mb:4px; --mr:32px; --ai:center;"  class="inline-flex">
+              <svg style="--mr:4px;" width="16"
                 height="20"
                 viewBox="0 0 23 33"
                 fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
+                xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M11.5007 0.970703C5.61504 0.970703 0.824219 5.75958 0.824219 11.6472C0.824219 20.1359 10.3612 31.2259 10.7669 31.6956L11.5007 32.5401L12.2345 31.6937C12.6402 31.2259 22.1772 20.1359 22.1772 11.6472C22.1772 5.75958 17.3863 0.970703 11.5007 0.970703ZM11.5007 29.5351C9.2761 26.7709 2.7654 18.1229 2.7654 11.6472C2.7654 6.83111 6.68463 2.91188 11.5007 2.91188C16.3167 2.91188 20.236 6.83111 20.236 11.6472C20.236 18.1171 13.7253 26.7709 11.5007 29.5351ZM11.5007 6.09347C8.28998 6.09347 5.67716 8.70629 5.67716 11.917C5.67716 15.1277 8.28998 17.7405 11.5007 17.7405C14.7114 17.7405 17.3242 15.1277 17.3242 11.917C17.3242 8.70629 14.7114 6.09347 11.5007 6.09347ZM11.5007 15.7993C9.35957 15.7993 7.61834 14.0581 7.61834 11.917C7.61834 9.77588 9.35957 8.03464 11.5007 8.03464C13.6418 8.03464 15.383 9.77588 15.383 11.917C15.383 14.0581 13.6418 15.7993 11.5007 15.7993Z"
                   fill="currentColor"
@@ -387,32 +354,26 @@
 
               San Francisco
             </li>
-            <li class="my-1 mr-8">
-              <a
-                class="inline-flex items-center font-semibold text-primary"
-                href="#"
-                >Read More
-                <img class="ml-1.5" src="images/icons/arrow-right.svg" alt="" />
+            <li style="--mt:4px; --mb:4px; --mr:32px;" >
+              <a style="--ai:center; --weight:600; --c:primary;" href="#" class="inline-flex">Read More
+                <img style="--ml:6px;" src="images/icons/arrow-right.svg" alt="" />
               </a>
             </li>
           </ul>
         </div>
-        <div class="mb-8 rounded-xl bg-white py-10 px-7 shadow-lg">
-          <h5 class="h5">Lead Brand Designer</h5>
-          <p class="mt-6">
+        <div style="--mb:32px; --radius:0.75rem; --bgc:#ffffff; --pt:40px; --pb:40px; --pl:28px; --pr:28px; --shadow:0 10px 15px -3px rgb(0,0,0,0.1), 0 4px 6px -2px rgb(0,0,0,0.05);" >
+          <h5  class="h5">Lead Brand Designer</h5>
+          <p style="--mt:24px;" >
             Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam lorem
             amet eget in netus laoreet
           </p>
-          <ul class="mt-6 flex flex-wrap items-center text-dark">
-            <li class="my-1 mr-8 inline-flex items-center">
-              <svg
-                class="mr-1"
-                width="16"
+          <ul style="--mt:24px; --d:flex; --fw:wrap; --ai:center; --c:dark;" >
+            <li style="--mt:4px; --mb:4px; --mr:32px; --ai:center;"  class="inline-flex">
+              <svg style="--mr:4px;" width="16"
                 height="16"
                 viewBox="0 0 16 16"
                 fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
+                xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M7.65217 0C3.42496 0 0 3.58065 0 8C0 12.4194 3.42496 16 7.65217 16C11.8794 16 15.3043 12.4194 15.3043 8C15.3043 3.58065 11.8794 0 7.65217 0ZM7.65217 14.4516C4.24264 14.4516 1.48107 11.5645 1.48107 8C1.48107 4.43548 4.24264 1.54839 7.65217 1.54839C11.0617 1.54839 13.8233 4.43548 13.8233 8C13.8233 11.5645 11.0617 14.4516 7.65217 14.4516ZM9.55905 11.0839L6.93941 9.09355C6.84376 9.01935 6.78822 8.90323 6.78822 8.78065V3.48387C6.78822 3.27097 6.95484 3.09677 7.15849 3.09677H8.14586C8.34951 3.09677 8.51613 3.27097 8.51613 3.48387V8.05484L10.5773 9.62258C10.7439 9.74839 10.7778 9.99032 10.6575 10.1645L10.0774 11C9.95708 11.171 9.72567 11.2097 9.55905 11.0839Z"
                   fill="currentColor"
@@ -420,15 +381,12 @@
               </svg>
               Full Time
             </li>
-            <li class="my-1 mr-8 inline-flex items-center">
-              <svg
-                class="mr-1"
-                width="16"
+            <li style="--mt:4px; --mb:4px; --mr:32px; --ai:center;"  class="inline-flex">
+              <svg style="--mr:4px;" width="16"
                 height="20"
                 viewBox="0 0 23 33"
                 fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
+                xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M11.5007 0.970703C5.61504 0.970703 0.824219 5.75958 0.824219 11.6472C0.824219 20.1359 10.3612 31.2259 10.7669 31.6956L11.5007 32.5401L12.2345 31.6937C12.6402 31.2259 22.1772 20.1359 22.1772 11.6472C22.1772 5.75958 17.3863 0.970703 11.5007 0.970703ZM11.5007 29.5351C9.2761 26.7709 2.7654 18.1229 2.7654 11.6472C2.7654 6.83111 6.68463 2.91188 11.5007 2.91188C16.3167 2.91188 20.236 6.83111 20.236 11.6472C20.236 18.1171 13.7253 26.7709 11.5007 29.5351ZM11.5007 6.09347C8.28998 6.09347 5.67716 8.70629 5.67716 11.917C5.67716 15.1277 8.28998 17.7405 11.5007 17.7405C14.7114 17.7405 17.3242 15.1277 17.3242 11.917C17.3242 8.70629 14.7114 6.09347 11.5007 6.09347ZM11.5007 15.7993C9.35957 15.7993 7.61834 14.0581 7.61834 11.917C7.61834 9.77588 9.35957 8.03464 11.5007 8.03464C13.6418 8.03464 15.383 9.77588 15.383 11.917C15.383 14.0581 13.6418 15.7993 11.5007 15.7993Z"
                   fill="currentColor"
@@ -437,12 +395,9 @@
 
               San Francisco
             </li>
-            <li class="my-1 mr-8">
-              <a
-                class="inline-flex items-center font-semibold text-primary"
-                href="#"
-                >Read More
-                <img class="ml-1.5" src="images/icons/arrow-right.svg" alt="" />
+            <li style="--mt:4px; --mb:4px; --mr:32px;" >
+              <a style="--ai:center; --weight:600; --c:primary;" href="#" class="inline-flex">Read More
+                <img style="--ml:6px;" src="images/icons/arrow-right.svg" alt="" />
               </a>
             </li>
           </ul>
@@ -451,33 +406,31 @@
     </div>
   </div>
 </section>
-<div
-  class="fixed left-0 top-0 z-50 flex w-[30px] items-center justify-center bg-gray-200 py-[2.5px] text-[12px] uppercase text-black sm:bg-red-200 md:bg-yellow-200 lg:bg-green-200 xl:bg-blue-200 2xl:bg-pink-200"
->
-  <span class="block sm:hidden">all</span>
-  <span class="hidden sm:block md:hidden">sm</span>
-  <span class="hidden md:block lg:hidden">md</span>
-  <span class="hidden lg:block xl:hidden">lg</span>
-  <span class="hidden xl:block 2xl:hidden">xl</span>
-  <span class="hidden 2xl:block">2xl</span>
+<div style="--pos:fixed; --left:0; --top:0; --z:50; --d:flex; --w:30px; --ai:center; --jc:center; --bgc:#e5e7eb; --pt:[2.5px]; --pb:[2.5px]; --c:[12px]; --tt:uppercase; --c:#000000; --bgc-sm:#fecaca; --bgc-md:#fef08a; --bgc-lg:#bbf7d0; --bgc-xl:#bfdbfe; --bgc-2xl:#fbcfe8;" >
+  <span style="--d:block; --d-sm:none;" >all</span>
+  <span style="--d:none; --d-sm:block; --d-md:none;" >sm</span>
+  <span style="--d:none; --d-md:block; --d-lg:none;" >md</span>
+  <span style="--d:none; --d-lg:block; --d-xl:none;" >lg</span>
+  <span style="--d:none; --d-xl:block; --d-2xl:none;" >xl</span>
+  <span style="--d:none; --d-2xl:block;" >2xl</span>
 </div>
 
- <footer class="footer bg-theme-light/50">
-  <div class="container">
-    <div class="row gx-5 pb-10 pt-[52px]">
-      <div class="col-12 mt-12 md:col-6 lg:col-3">
+ <footer style="--bgc:theme-light/50;"  class="footer">
+  <div  class="container">
+    <div style="--pb:40px; --pt:[52px];"  class="row gx-5">
+      <div style="--mt:48px;"  class="col-12 md:col-6 lg:col-3">
         <a href="index-2.html">
           <img src="images/logo.svg" alt="" />
         </a>
-        <p class="mt-6">
+        <p style="--mt:24px;" >
           Lorem ipsum dolor sit sed dmi amet, consectetur adipiscing. Cdo
           tellus, sed condimentum volutpat.
         </p>
       </div>
-      <div class="col-12 mt-12 md:col-6 lg:col-3">
+      <div style="--mt:48px;"  class="col-12 md:col-6 lg:col-3">
         <h6>Socials</h6>
         <p>themefisher@gmail.com</p>
-        <ul class="social-icons mt-4 lg:mt-6">
+        <ul style="--mt:16px; --mt-lg:24px;"  class="social-icons">
           <li>
             <a href="#">
               <svg
@@ -544,7 +497,7 @@
           </li>
         </ul>
       </div>
-      <div class="col-12 mt-12 md:col-6 lg:col-3">
+      <div style="--mt:48px;"  class="col-12 md:col-6 lg:col-3">
         <h6>Quick Links</h6>
         <ul>
           <li>
@@ -561,17 +514,15 @@
           </li>
         </ul>
       </div>
-      <div class="col-12 mt-12 md:col-6 lg:col-3">
+      <div style="--mt:48px;"  class="col-12 md:col-6 lg:col-3">
         <h6>Location & Contact</h6>
         <p>2118 Thornridge Cir. Syracuse, Connecticut 35624</p>
         <p>(704) 555-0127</p>
       </div>
     </div>
   </div>
-  <div class="container max-w-[1440px]">
-    <div
-      class="footer-copyright mx-auto border-t border-border pb-10 pt-7 text-center"
-    >
+  <div style="--maxw:1440px;"  class="container">
+    <div style="--bc:t; --bc:border; --pb:40px; --pt:28px; --ta:center;"  class="footer-copyright mx-auto">
       <p>Designed And Developed by <a href="https://themefisher.com/" target="_blank">Themefisher</a> | Distributed by <a href="https://themewagon.com/" target="_blank">ThemeWagon</a></p>
       
     </div>

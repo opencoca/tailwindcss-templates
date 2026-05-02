@@ -43,7 +43,7 @@
   <meta name="robots" content="" />
 
   <!-- meta-description -->
-  <meta name="description" content="meta description" />
+  <meta name="description" content="Here is a concise and SEO-friendly meta description (max 150 characters) based on the content: &quot;Discover the beauty ofLorem ipsum text, a stylish layout feat...">
 
   <!-- author from config.json -->
   <meta name="author" content="{config.metadata.meta_author}" />
@@ -94,34 +94,30 @@
 
   <!-- Main Stylesheet -->
   <link href="styles/main.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://startr.style/style.css">
 </head>
 
-<header class="header">
-  <nav class="navbar container">
+<header  class="header">
+  <nav  class="navbar container">
     <!-- logo -->
-    <div class="order-0">
+    <div style="--o:0;" >
       <a href="index-2.html">
         <img src="images/logo.svg" height="30" width="147" alt="logo" />
       </a>
     </div>
     <!-- navbar toggler -->
-    <input id="nav-toggle" type="checkbox" class="hidden" />
-    <label
-      id="show-button"
-      for="nav-toggle"
-      class="order-1 flex cursor-pointer items-center lg:order-1 lg:hidden"
-    >
-      <svg class="h-6 fill-current" viewBox="0 0 20 20">
+    <input style="--d:none;" id="nav-toggle" type="checkbox"  />
+    <label style="--o:1; --d:flex; --cur:pointer; --ai:center; --o-lg:1; --d-lg:none;" id="show-button"
+      for="nav-toggle">
+      <svg style="--h:24px;" viewBox="0 0 20 20" class="fill-current">
         <title>Menu Open</title>
         <path d="M0 3h20v2H0V3z m0 6h20v2H0V9z m0 6h20v2H0V0z"></path>
       </svg>
     </label>
-    <label
-      id="hide-button"
-      for="nav-toggle"
-      class="order-2 hidden cursor-pointer items-center lg:order-1"
-    >
-      <svg class="h-6 fill-current" viewBox="0 0 20 20">
+    <label style="--o:2; --d:none; --cur:pointer; --ai:center; --o-lg:1;" id="hide-button"
+      for="nav-toggle">
+      <svg style="--h:24px;" viewBox="0 0 20 20" class="fill-current">
         <title>Menu Close</title>
         <polygon
           points="11 9 22 9 22 11 11 11 11 22 9 22 9 11 -2 11 -2 9 9 9 9 -2 11 -2"
@@ -130,125 +126,107 @@
       </svg>
     </label>
     <!-- /navbar toggler -->
-    <ul
-      id="nav-menu"
-      class="navbar-nav order-2 hidden w-full flex-[0_0_100%] lg:order-1 lg:flex lg:w-auto lg:flex-auto lg:justify-center lg:space-x-5"
-    >
-      <li class="nav-item">
+    <ul style="--o:2; --d:none; --w:100%; --o-lg:1; --d-lg:flex; --w-lg:auto; --jc-lg:center;" id="nav-menu" class="navbar-nav flex-[0_0_100%] lg:flex-auto lg:space-x-5">
+      <li  class="nav-item">
         <a href="#" class="nav-link active">Home</a>
       </li>
-      <li class="nav-item">
+      <li  class="nav-item">
         <a href="about.html" class="nav-link">About</a>
       </li>
-      <li class="nav-item">
+      <li  class="nav-item">
         <a href="blog.html" class="nav-link">Blog</a>
       </li>
-      <li class="nav-item">
+      <li  class="nav-item">
         <a href="features.html" class="nav-link">Features</a>
       </li>
-      <li class="nav-item">
+      <li  class="nav-item">
         <a href="how-it-works.html" class="nav-link">How It Works</a>
       </li>
-      <li class="nav-item nav-dropdown group relative">
-        <span class="nav-link inline-flex items-center">
+      <li style="--pos:relative;"  class="nav-item nav-dropdown group">
+        <span style="--ai:center;"  class="nav-link inline-flex">
           Pages
-          <svg class="h-4 w-4 fill-current" viewBox="0 0 20 20">
+          <svg style="--h:16px; --w:16px;" viewBox="0 0 20 20" class="fill-current">
             <path
               d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
             />
           </svg>
         </span>
-        <ul
-          class="nav-dropdown-list hidden group-hover:block lg:invisible lg:absolute lg:block lg:opacity-0 lg:group-hover:visible lg:group-hover:opacity-100"
-        >
-          <li class="nav-dropdown-item">
+        <ul style="--d:none; --pos-lg:absolute; --d-lg:block; --op-lg:0.0;"  class="nav-dropdown-list group-hover:block lg:invisible lg:group-hover:visible lg:group-hover:opacity-100">
+          <li  class="nav-dropdown-item">
             <a href="career.html" class="nav-dropdown-link">Career</a>
           </li>
-          <li class="nav-dropdown-item">
-            <a href="career-single.html" class="nav-dropdown-link"
-              >Career Single</a
+          <li  class="nav-dropdown-item">
+            <a href="career-single.html" class="nav-dropdown-link">Career Single</a
             >
           </li>
-          <li class="nav-dropdown-item">
-            <a href="integrations.html" class="nav-dropdown-link"
-              >Integrations</a
+          <li  class="nav-dropdown-item">
+            <a href="integrations.html" class="nav-dropdown-link">Integrations</a
             >
           </li>
-          <li class="nav-dropdown-item">
-            <a href="integration-single.html" class="nav-dropdown-link"
-              >Integration Single</a
+          <li  class="nav-dropdown-item">
+            <a href="integration-single.html" class="nav-dropdown-link">Integration Single</a
             >
           </li>
-          <li class="nav-dropdown-item">
+          <li  class="nav-dropdown-item">
             <a href="pricing.html" class="nav-dropdown-link">Pricing</a>
           </li>
-          <li class="nav-dropdown-item">
+          <li  class="nav-dropdown-item">
             <a href="changelogs.html" class="nav-dropdown-link">Changelogs</a>
           </li>
-          <li class="nav-dropdown-item">
-            <a href="terms-conditions.html" class="nav-dropdown-link"
-              >Terms & Conditions</a
+          <li  class="nav-dropdown-item">
+            <a href="terms-conditions.html" class="nav-dropdown-link">Terms & Conditions</a
             >
           </li>
         </ul>
       </li>
-      <li class="nav-item">
+      <li  class="nav-item">
         <a href="contact.html" class="nav-link">Contact</a>
       </li>
-      <li class="nav-item mt-3.5 lg:hidden">
-        <a class="btn btn-white btn-sm border-border" href="signin.html"
-          >Sing Up Now</a
+      <li style="--mt:3.5; --d-lg:none;"  class="nav-item">
+        <a style="--bc:border;" href="signin.html" class="btn btn-white btn-sm">Sing Up Now</a
         >
       </li>
     </ul>
-    <div class="order-1 ml-auto hidden items-center md:order-2 md:ml-0 lg:flex">
-      <a class="btn btn-white btn-sm" href="signin.html">Sing Up Now</a>
+    <div style="--o:1; --d:none; --ai:center; --o-md:2; --ml-md:0; --d-lg:flex;"  class="ml-auto">
+      <a href="signin.html" class="btn btn-white btn-sm">Sing Up Now</a>
     </div>
   </nav>
 </header>
 
 <body><!-- floating assets -->
-<img
-  class="floating-bubble-1 absolute right-0 top-0 -z-[1]"
-  src="images/floating-bubble-1.svg"
+<img style="--pos:absolute; --right:0; --top:0;" src="images/floating-bubble-1.svg"
   alt=""
-/>
-<img
-  class="floating-bubble-2 absolute left-0 top-[387px] -z-[1]"
-  src="images/floating-bubble-2.svg"
+/ class="floating-bubble-1 -z-[1]">
+<img style="--pos:absolute; --left:0; --top:[387px];" src="images/floating-bubble-2.svg"
   alt=""
-/>
-<img
-  class="floating-bubble-3 absolute right-0 top-[605px] -z-[1]"
-  src="images/floating-bubble-3.svg"
+/ class="floating-bubble-2 -z-[1]">
+<img style="--pos:absolute; --right:0; --top:[605px];" src="images/floating-bubble-3.svg"
   alt=""
-/>
+/ class="floating-bubble-3 -z-[1]">
 <!-- ./end floating assets -->
 
 <!-- blog single -->
-<section class="section blog-single">
-  <div class="container">
-    <div class="row justify-center">
-      <div class="lg:col-10">
-        <img class="rounded-xl" src="images/blog-single.png" alt="" />
+<section  class="section blog-single">
+  <div  class="container">
+    <div style="--jc:center;"  class="row">
+      <div  class="lg:col-10">
+        <img style="--radius:0.75rem;" src="images/blog-single.png" alt="" />
       </div>
-      <div class="mt-10 max-w-[810px] lg:col-9">
-        <h1 class="h2">
+      <div style="--mt:40px; --maxw:810px;"  class="lg:col-9">
+        <h1  class="h2">
           Memo To All Housekeeping, Kitchen, & Dining Room Staff At Mar-A-Lago
         </h1>
-        <div class="mt-6 mb-5 flex items-center space-x-2">
-          <div
-            class="blog-author-avatar h-[58px] w-[58px] rounded-full border-2 border-primary p-0.5"
-          >
+        <div style="--mt:24px; --mb:20px; --d:flex; --ai:center;"  class="space-x-2">
+          <div style="--h:58px; --w:58px; --radius:9999px; --bw:2px; --bc:primary; --p:2px;"  class="blog-author-avatar">
             <img src="images/blog-author.png" alt="" />
           </div>
           <div class="">
-            <p class="text-dark">Cameron Williamson</p>
-            <span class="text-sm">Nov 28, 2019. 5 Min read</span>
+            <p style="--c:dark;" >Cameron Williamson</p>
+            <span style="--size:0.875rem; --lh:1.25rem;" >Nov 28, 2019. 5 Min read</span>
           </div>
         </div>
 
-        <div class="content">
+        <div  class="content">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec et
             ipsum ullamcorper venenatis fringilla. Pretium, purus eu nec
@@ -271,12 +249,12 @@
             tincidunt id justo. Diam massa pretium consequat mauris viverra.
             Sagittis eu libero
           </p>
-          <div class="blockquote my-10 rounded-xl bg-white py-8 px-16 lg:px-20">
-            <blockquote class="text-2xl text-dark">
+          <div style="--mt:40px; --mb:40px; --radius:0.75rem; --bgc:#ffffff; --pt:32px; --pb:32px; --pl:64px; --pr:64px; --pl-lg:80px; --pr-lg:80px;"  class="blockquote">
+            <blockquote style="--size:1.5rem; --lh:2rem; --c:dark;" >
               A wise girls her limit to touch.To Repellat neque praesentium .The
               me an idea, so I as quickly To get.
             </blockquote>
-            <p class="mt-4 mb-0">Darlene Robertson</p>
+            <p style="--mt:16px; --mb:0;" >Darlene Robertson</p>
           </div>
 
           <p>
@@ -303,49 +281,45 @@
             tristique eu.
           </p>
         </div>
-        <div class="comments">
-          <h3
-            class="h5 inline-block border-b-[3px] border-primary font-primary font-medium leading-8"
-          >
+        <div  class="comments">
+          <h3 style="--d:inline-block; --bc:b-[3px]; --bc:primary; --weight:500;"  class="h5 font-primary leading-8">
             Comments
           </h3>
-          <div class="comment flex space-x-4 border-b border-border py-8">
-            <img
-              src="images/comment-author-1.png"
-              class="h-[70px] w-[70px] rounded-full"
+          <div style="--d:flex; --bc:b; --bc:border; --pt:32px; --pb:32px;"  class="comment space-x-4">
+            <img style="--h:70px; --w:70px; --radius:9999px;" src="images/comment-author-1.png"
+              
               alt=""
             />
             <div>
-              <h4 class="font-primary text-lg font-medium capitalize">
+              <h4 style="--size:1.125rem; --lh:1.75rem; --weight:500; --tt:capitalize;"  class="font-primary">
                 ronin bishop
               </h4>
-              <p class="mt-2.5">
+              <p style="--mt:10px;" >
                 April 18, 2020 at 6.25 pm
-                <a class="ml-4 text-primary" href="#">Replay</a>
+                <a style="--ml:16px; --c:primary;" href="#">Replay</a>
               </p>
-              <p class="mt-5">
+              <p style="--mt:20px;" >
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec et
                 ipsum ullamcorper venenatis fringilla. Pretium, purus eu nec
                 vulputate vel habitant egestas.ornare ipsum
               </p>
             </div>
           </div>
-          <div class="comment flex space-x-4 py-8">
+          <div style="--d:flex; --pt:32px; --pb:32px;"  class="comment space-x-4">
             <img src="images/icons/replay-arrow.svg" alt="" />
-            <img
-              src="images/comment-author-2.png"
-              class="h-[70px] w-[70px] rounded-full"
+            <img style="--h:70px; --w:70px; --radius:9999px;" src="images/comment-author-2.png"
+              
               alt=""
             />
             <div>
-              <h4 class="font-primary text-lg font-medium capitalize">
+              <h4 style="--size:1.125rem; --lh:1.75rem; --weight:500; --tt:capitalize;"  class="font-primary">
                 Kathryn Murphy
               </h4>
-              <p class="mt-2.5">
+              <p style="--mt:10px;" >
                 April 18, 2020 at 6.25 pm
-                <a class="ml-4 text-primary" href="#">Replay</a>
+                <a style="--ml:16px; --c:primary;" href="#">Replay</a>
               </p>
-              <p class="mt-5">
+              <p style="--mt:20px;" >
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec et
                 ipsum ullamcorper venenatis fringilla. Pretium, purus eu nec
                 vulputate vel habitant egestas.ornare ipsum
@@ -353,38 +327,34 @@
             </div>
           </div>
         </div>
-        <form class="comment-form" action="#" method="POST">
-          <p class="mb-4">LEAVE A REPLAY</p>
-          <div class="form-group">
+        <form action="#" method="POST" class="comment-form">
+          <p style="--mb:16px;" >LEAVE A REPLAY</p>
+          <div  class="form-group">
             <textarea cols="30" rows="10"></textarea>
           </div>
-          <div class="row mb-8">
-            <div class="form-group mt-8 md:col-6 lg:col-4">
+          <div style="--mb:32px;"  class="row">
+            <div style="--mt:32px;"  class="form-group md:col-6 lg:col-4">
               <input type="text" placeholder="Name" />
             </div>
-            <div class="form-group mt-8 md:col-6 lg:col-4">
+            <div style="--mt:32px;"  class="form-group md:col-6 lg:col-4">
               <input type="text" placeholder="Email" />
             </div>
-            <div class="form-group mt-8 md:col-6 lg:col-4">
+            <div style="--mt:32px;"  class="form-group md:col-6 lg:col-4">
               <input type="text" placeholder="Website" />
             </div>
           </div>
-          <div class="form-group relative flex pl-6">
-            <input
-              class="absolute left-0 top-1"
-              type="checkbox"
+          <div style="--pos:relative; --d:flex; --pl:24px;"  class="form-group">
+            <input style="--pos:absolute; --left:0; --top:4px;" type="checkbox"
               id="save-info"
             />
-            <label class="block" for="save-info"
-              >Save my name, email, and website in this browser for the next
+            <label style="--d:block;" for="save-info">Save my name, email, and website in this browser for the next
               time I comment.</label
             >
           </div>
-          <input
-            type="Submit"
-            class="btn btn-primary mt-8 min-w-[189px] cursor-pointer"
+          <input style="--mt:32px; --minw:189px; --cur:pointer;" type="Submit"
+            
             value="Post Comment"
-          />
+          / class="btn btn-primary">
         </form>
       </div>
     </div>
@@ -392,33 +362,31 @@
 </section>
 
 <!-- ./end blog-single -->
-<div
-  class="fixed left-0 top-0 z-50 flex w-[30px] items-center justify-center bg-gray-200 py-[2.5px] text-[12px] uppercase text-black sm:bg-red-200 md:bg-yellow-200 lg:bg-green-200 xl:bg-blue-200 2xl:bg-pink-200"
->
-  <span class="block sm:hidden">all</span>
-  <span class="hidden sm:block md:hidden">sm</span>
-  <span class="hidden md:block lg:hidden">md</span>
-  <span class="hidden lg:block xl:hidden">lg</span>
-  <span class="hidden xl:block 2xl:hidden">xl</span>
-  <span class="hidden 2xl:block">2xl</span>
+<div style="--pos:fixed; --left:0; --top:0; --z:50; --d:flex; --w:30px; --ai:center; --jc:center; --bgc:#e5e7eb; --pt:[2.5px]; --pb:[2.5px]; --c:[12px]; --tt:uppercase; --c:#000000; --bgc-sm:#fecaca; --bgc-md:#fef08a; --bgc-lg:#bbf7d0; --bgc-xl:#bfdbfe; --bgc-2xl:#fbcfe8;" >
+  <span style="--d:block; --d-sm:none;" >all</span>
+  <span style="--d:none; --d-sm:block; --d-md:none;" >sm</span>
+  <span style="--d:none; --d-md:block; --d-lg:none;" >md</span>
+  <span style="--d:none; --d-lg:block; --d-xl:none;" >lg</span>
+  <span style="--d:none; --d-xl:block; --d-2xl:none;" >xl</span>
+  <span style="--d:none; --d-2xl:block;" >2xl</span>
 </div>
 
- <footer class="footer bg-theme-light/50">
-  <div class="container">
-    <div class="row gx-5 pb-10 pt-[52px]">
-      <div class="col-12 mt-12 md:col-6 lg:col-3">
+ <footer style="--bgc:theme-light/50;"  class="footer">
+  <div  class="container">
+    <div style="--pb:40px; --pt:[52px];"  class="row gx-5">
+      <div style="--mt:48px;"  class="col-12 md:col-6 lg:col-3">
         <a href="index-2.html">
           <img src="images/logo.svg" alt="" />
         </a>
-        <p class="mt-6">
+        <p style="--mt:24px;" >
           Lorem ipsum dolor sit sed dmi amet, consectetur adipiscing. Cdo
           tellus, sed condimentum volutpat.
         </p>
       </div>
-      <div class="col-12 mt-12 md:col-6 lg:col-3">
+      <div style="--mt:48px;"  class="col-12 md:col-6 lg:col-3">
         <h6>Socials</h6>
         <p>themefisher@gmail.com</p>
-        <ul class="social-icons mt-4 lg:mt-6">
+        <ul style="--mt:16px; --mt-lg:24px;"  class="social-icons">
           <li>
             <a href="#">
               <svg
@@ -485,7 +453,7 @@
           </li>
         </ul>
       </div>
-      <div class="col-12 mt-12 md:col-6 lg:col-3">
+      <div style="--mt:48px;"  class="col-12 md:col-6 lg:col-3">
         <h6>Quick Links</h6>
         <ul>
           <li>
@@ -502,17 +470,15 @@
           </li>
         </ul>
       </div>
-      <div class="col-12 mt-12 md:col-6 lg:col-3">
+      <div style="--mt:48px;"  class="col-12 md:col-6 lg:col-3">
         <h6>Location & Contact</h6>
         <p>2118 Thornridge Cir. Syracuse, Connecticut 35624</p>
         <p>(704) 555-0127</p>
       </div>
     </div>
   </div>
-  <div class="container max-w-[1440px]">
-    <div
-      class="footer-copyright mx-auto border-t border-border pb-10 pt-7 text-center"
-    >
+  <div style="--maxw:1440px;"  class="container">
+    <div style="--bc:t; --bc:border; --pb:40px; --pt:28px; --ta:center;"  class="footer-copyright mx-auto">
       <p>Designed And Developed by <a href="https://themefisher.com/" target="_blank">Themefisher</a> | Distributed by <a href="https://themewagon.com/" target="_blank">ThemeWagon</a></p>
       
     </div>
