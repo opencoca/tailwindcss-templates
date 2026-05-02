@@ -6,6 +6,10 @@ This folder contains the MatDash app used in this repository.
 
 This project uses Bun.
 
+Poka-Yoke guardrails are enabled:
+- `packageManager` is pinned to Bun in `package.json`
+- `preinstall` blocks `npm`, `pnpm`, and `yarn`
+
 ## Development
 
 Install dependencies:
