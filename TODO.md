@@ -29,16 +29,16 @@ _Nothing actively in flight. Move items here when work begins._
   - [ ] Add any untracked inline items to `## TODO / From Codebase (untracked)` below
 - [ ] **Review `.todoscope-exclude.csv`**: Verify all tool-generated and vendor paths are excluded
   - [ ] Confirm `sparrow/` exclusion is correct (HTTrack mirror of third-party sites)
-  - [ ] Confirm `MatDash-1.0.0/node_modules` and `dist` paths are listed once dependencies are installed
+  - [x] Confirm `MatDash-1.0.0/node_modules` and `dist` paths are listed once dependencies are installed
 
 ### Repo Housekeeping
 
 - [ ] **Update `index.html` Title**: Replace upstream `By Digizu` attribution with Startr LLC branding
   - [ ] Update `<title>` tag
   - [ ] Update `<meta name="description">` tag
-- [ ] **MatDash README**: Replace Create React App boilerplate README with project-specific docs
-  - [ ] Describe what MatDash is and its purpose in this repo
-  - [ ] Document `bun run dev` / `bun run build` commands
+- [x] **MatDash README**: Replace Create React App boilerplate README with project-specific docs
+  - [x] Describe what MatDash is and its purpose in this repo
+  - [x] Document `bun run dev` / `bun run build` commands
 - [ ] **Copyright Header Pass**: Add `Copyright (c) 2026 Startr LLC` comment header to original source files in `MatDash-1.0.0/src/`
   - [ ] `src/layouts/full/sidebar/Sidebaritems.ts`
   - [ ] `src/types/auth/auth.ts`
@@ -54,9 +54,9 @@ _Nothing actively in flight. Move items here when work begins._
 ## Backlog
 
 - [ ] **MatDash Build Setup**: Install dependencies and verify dev/build pipeline works
-  - [ ] `bun install` inside `MatDash-1.0.0/`
+  - [x] `bun install` inside `MatDash-1.0.0/`
   - [ ] `bun run dev` — confirm Vite dev server starts
-  - [ ] `bun run build` — confirm dist output
+  - [x] `bun run build` — confirm dist output
 - [ ] **Template Index Page**: Expand `index.html` to include previews of `MatDash-1.0.0` and any new Sparrow layouts
 - [ ] **CI — Link Check**: Add a simple CI workflow to catch dead CDN links across layout files
 
@@ -69,3 +69,10 @@ _No known bugs. Use `# BUG:` inline tags to flag defects in source._
 - [x] **Copyright Attribution**: Added Startr LLC to `LICENSE.md` and `README.md`
   - [x] Updated `LICENSE.md` with `Copyright (c) [2024-2026] [Startr LLC]`
   - [x] Added Startr LLC to Authors section in `README.md`
+- [x] **Bun Migration**: Moved MatDash package management from npm to Bun
+  - [x] Migrated lockfile to `bun.lock`
+  - [x] Removed `package-lock.json`
+  - [x] Switched scripts and docs to Bun commands
+- [x] **Poka-Yoke Package Manager Guard**: Prevent accidental npm/pnpm/yarn usage in MatDash
+  - [x] Added install-time guard script (`scripts/enforce-bun.cjs`)
+  - [x] Added runtime script guards (`predev`, `prebuild`, `prelint`, `prepreview`)

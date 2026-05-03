@@ -9,6 +9,7 @@ This project uses Bun.
 Poka-Yoke guardrails are enabled:
 - `packageManager` is pinned to Bun in `package.json`
 - `preinstall` blocks `npm`, `pnpm`, and `yarn`
+- `predev`, `prebuild`, `prelint`, and `prepreview` block non-Bun script execution
 
 ## Development
 

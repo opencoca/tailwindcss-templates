@@ -10,12 +10,15 @@
   "type": "module",
   "scripts": {
     "preinstall": "node ./scripts/enforce-bun.cjs",
+    "predev": "node ./scripts/enforce-bun.cjs",
+    "prebuild": "node ./scripts/enforce-bun.cjs",
+    "prelint": "node ./scripts/enforce-bun.cjs",
+    "prepreview": "node ./scripts/enforce-bun.cjs",
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "predeploy": "bun run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "node ./scripts/enforce-bun.cjs && bun run build && gh-pages -d dist"
   },
   "dependencies": {
     "@svgr/rollup": "8.1.0",
