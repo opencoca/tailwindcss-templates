@@ -18,9 +18,29 @@
 
 ## In Progress
 
-_Nothing actively in flight. Move items here when work begins._
+- [ ] **tw2startr Kickoff**: Start conversion workflow on `layouts/**/*.html` #critical
+  - [x] Run dry-run with diff/report on `layouts/voyage.html` using `WEB-AI--Sage-is-AI-UI/tools/tw2startr`
+  - [x] Capture unsupported classes/selectors as manual follow-up list
+  - [ ] Manual follow-up tokens from `layouts/voyage.html`: `antialiased`, `container`, `font-display`, `font-heading`
+  - [ ] Remove `https://cdn.tailwindcss.com` script from `layouts/voyage.html` once equivalent styling is validated
+  - [x] Pick 1 template for first full conversion pass (`layouts/voyage.html`)
 
 ## TODO
+
+### Priority — tw2startr Conversion
+
+- [ ] **Adopt `tw2startr` Workflow**: Use the converter from `WEB-AI--Sage-is-AI-UI/tools/tw2startr` as the primary migration tool for this repo #critical
+  - [ ] Run a dry-run conversion report against `layouts/**/*.html`
+  - [ ] Identify unsupported Tailwind patterns that require manual follow-up
+  - [ ] Decide whether to run the converter in-place from the external repo or vendor it into this repo
+- [ ] **Convert Layout Templates to `startr.style`**: Replace heavy Tailwind utility usage with lightweight inline Startr.Style properties
+  - [x] Start with one representative template and validate visual parity (`layouts/voyage.html` converted; smoke-view loads successfully)
+  - [ ] Replace Tailwind CDN dependency with `https://startr.style/style.css` where conversion is complete
+  - [ ] Keep third-party/vendor-exported templates out of scope unless explicitly selected for cleanup
+- [ ] **Define Conversion Review Standard**: Decide what counts as acceptable auto-conversion vs manual cleanup
+  - [ ] Preserve responsive behavior (`sm:`, `md:`, `lg:`, `xl:`)
+  - [ ] Review hover/dark mappings for parity
+  - [ ] Track unsupported selectors and component states as manual review items
 
 ### TodoScope Alignment
 
@@ -47,17 +67,14 @@ _Nothing actively in flight. Move items here when work begins._
 ### layouts/ Templates
 
 - [ ] **Deduplicate Stylesheet Link**: `index.html` includes `startr.style/style.css` twice — remove duplicate `<link>` tag
-- [ ] **Audit Layout Templates**: Review all HTML files in `layouts/` for outdated CDN references (Tailwind via old jsdelivr CDN)
+- [ ] **Audit Layout Templates**: Inventory which templates are good candidates for `tw2startr` conversion first
+  - [ ] Separate original/local templates from downloaded vendor snapshots
   - [ ] Identify which templates still use `cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css`
-  - [ ] Update to current Tailwind CDN or document intentional pin
+  - [ ] Queue the cleanest conversion candidates first
 
 ## Backlog
 
-- [ ] **MatDash Build Setup**: Install dependencies and verify dev/build pipeline works
-  - [x] `bun install` inside `MatDash-1.0.0/`
-  - [ ] `bun run dev` — confirm Vite dev server starts
-  - [x] `bun run build` — confirm dist output
-- [ ] **Template Index Page**: Expand `index.html` to include previews of `MatDash-1.0.0` and any new Sparrow layouts
+- [ ] **Template Index Page**: Expand `index.html` to highlight converted `startr.style` templates first; consider MatDash only if it remains in scope
 - [ ] **CI — Link Check**: Add a simple CI workflow to catch dead CDN links across layout files
 
 ## Bugs
@@ -76,3 +93,14 @@ _No known bugs. Use `# BUG:` inline tags to flag defects in source._
 - [x] **Poka-Yoke Package Manager Guard**: Prevent accidental npm/pnpm/yarn usage in MatDash
   - [x] Added install-time guard script (`scripts/enforce-bun.cjs`)
   - [x] Added runtime script guards (`predev`, `prebuild`, `prelint`, `prepreview`)
+- [x] **MatDash Build Setup**: Dependencies and dev/build pipeline verified
+  - [x] `bun install` inside `MatDash-1.0.0/`
+  - [x] `bun run dev` — confirmed Vite dev server starts
+  - [x] `bun run build` — confirmed dist output
+- [x] **Project Focus Set**: Prioritized Tailwind-to-Startr.Style conversion for this repo
+  - [x] Confirmed external utility path: `WEB-AI--Sage-is-AI-UI/tools/tw2startr`
+  - [x] Identified this repo's main focus as layout conversion rather than MatDash expansion
+- [x] **Voyage Pilot Conversion**: Applied `tw2startr` to `layouts/voyage.html`
+  - [x] Dry-run diff/report reviewed before apply
+  - [x] Apply run completed (`32` classes converted, `14` classes remaining)
+  - [x] Browser smoke-view verified at `http://localhost:8080/layouts/voyage.html`
