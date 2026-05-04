@@ -8,50 +8,37 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100;200;300;400;500;600;700&family=Marcellus&family=Overpass:wght@200;300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://startr.style/style.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              fontFamily: {
-                'display' : ['Marcellus', 'serif'],
-                'heading' : ['Barlow Semi Condensed', 'serif'],
-                'sans' : ['Overpass', 'sans-serif']
-              }
-            }
-          }
-        }
-    </script>
+    <link rel="stylesheet" href="./tw2startr-manual-utilities.css">
 </head>
 <section style="--ff:ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, " UI', Roboto, 'Helvetica Neue', Arial, sans-serif; --bgc:gray-50;" class="antialiased">
     <div style="--pos:relative; --z:40; --pos:relative; --pl:24px; --pr:24px; --c:white;" >
-        <div style="--h:128px; --pt:16px; --pb:16px; --d:flex; --ai:center; --jc:space-between; --pos:relative; --z:10;"  class="container mx-auto">
-            <a style="--tt:uppercase; --weight:700; --size:1.5rem; --lh:2rem; --d:flex; --ai:center; --jc:start; --h:100%;" href="/" class="hover:opacity-50">fettle</a>
+        <div style="--maxw:80rem; --w:100%; --mx:auto; --h:128px; --pt:16px; --pb:16px; --d:flex; --ai:center; --jc:space-between; --pos:relative; --z:10;">
+            <a style="--hvr-op:0.5; --tt:uppercase; --weight:700; --size:1.5rem; --lh:2rem; --d:flex; --ai:center; --jc:start; --h:100%;" href="/">fettle</a>
             <div style="--pos:relative; --z:40; --fx:1; --c:right;" x-data="{ open: false }">
                 <div : class="{ 'flex' : open, 'hidden' : open === false }">
-                    <a style="--c:left; --d:block; --w:100%; --w-md:auto; --bc:b; --bc:oklch(82.58% 0.015 262); --bc-md:none; --pt:16px; --pb:16px; --pt-md:0; --pb-md:0; --ml-md:32px;" href="/" class="hover:opacity-50">Home</a>
-                    <a style="--c:left; --d:block; --w:100%; --w-md:auto; --bc:b; --bc:oklch(82.58% 0.015 262); --bc-md:none; --pt:16px; --pb:16px; --pt-md:0; --pb-md:0; --ml-md:32px;" href="/about" class="hover:opacity-50">About</a>
-                    <a style="--c:left; --d:block; --w:100%; --w-md:auto; --bc:b; --bc:oklch(82.58% 0.015 262); --bc-md:none; --pt:16px; --pb:16px; --pt-md:0; --pb-md:0; --ml-md:32px;" href="/blog" class="hover:opacity-50">Blog</a>
-                    <a style="--c:left; --d:block; --w:100%; --w-md:auto; --bc:b; --bc:oklch(82.58% 0.015 262); --bc-md:none; --pt:16px; --pb:16px; --pt-md:0; --pb-md:0; --ml-md:32px;" href="/portfolio" class="hover:opacity-50">Portfolio</a>
-                    <a style="--c:left; --d:block; --w:100%; --w-md:auto; --bc:b; --bc:oklch(82.58% 0.015 262); --bc-md:none; --pt:16px; --pb:16px; --pt-md:0; --pb-md:0; --ml-md:32px;" href="/contact" class="hover:opacity-50">Contact</a>
+                    <a style="--hvr-op:0.5; --c:left; --d:block; --w:100%; --w-md:auto; --bc:b; --bc:oklch(82.58% 0.015 262); --bc-md:none; --pt:16px; --pb:16px; --pt-md:0; --pb-md:0; --ml-md:32px;" href="/">Home</a>
+                    <a style="--hvr-op:0.5; --c:left; --d:block; --w:100%; --w-md:auto; --bc:b; --bc:oklch(82.58% 0.015 262); --bc-md:none; --pt:16px; --pb:16px; --pt-md:0; --pb-md:0; --ml-md:32px;" href="/about">About</a>
+                    <a style="--hvr-op:0.5; --c:left; --d:block; --w:100%; --w-md:auto; --bc:b; --bc:oklch(82.58% 0.015 262); --bc-md:none; --pt:16px; --pb:16px; --pt-md:0; --pb-md:0; --ml-md:32px;" href="/blog">Blog</a>
+                    <a style="--hvr-op:0.5; --c:left; --d:block; --w:100%; --w-md:auto; --bc:b; --bc:oklch(82.58% 0.015 262); --bc-md:none; --pt:16px; --pb:16px; --pt-md:0; --pb-md:0; --ml-md:32px;" href="/portfolio">Portfolio</a>
+                    <a style="--hvr-op:0.5; --c:left; --d:block; --w:100%; --w-md:auto; --bc:b; --bc:oklch(82.58% 0.015 262); --bc-md:none; --pt:16px; --pb:16px; --pt-md:0; --pb-md:0; --ml-md:32px;" href="/contact">Contact</a>
                     <div style="--d:flex; --d-md:none; --ai:center; --jc:center; --mt:48px; --mb:48px;" >
                         <a style="--ml:16px; --mr:16px;" href="#">
-                            <svg style="--w:16px; --h:16px;" viewBox="0 0 24 24" class="fill-current">
+                            <svg style="fill:currentColor; --w:16px; --h:16px;" viewBox="0 0 24 24">
                                 <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
                             </svg>
                         </a>
                         <a style="--ml:16px; --mr:16px;" href="#">
-                            <svg style="--w:16px; --h:16px;" viewBox="0 0 24 24" class="fill-current">
+                            <svg style="fill:currentColor; --w:16px; --h:16px;" viewBox="0 0 24 24">
                                 <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
                             </svg>
                         </a>
                         <a style="--ml:16px; --mr:16px;" href="#">
-                            <svg style="--w:16px; --h:16px;" viewBox="0 0 24 24" class="fill-current">
+                            <svg style="fill:currentColor; --w:16px; --h:16px;" viewBox="0 0 24 24">
                                 <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/>
                             </svg>
                         </a>
                         <a style="--ml:16px; --mr:16px;" href="#">
-                            <svg style="--w:16px; --h:16px;" viewBox="0 0 24 24" class="fill-current">
+                            <svg style="fill:currentColor; --w:16px; --h:16px;" viewBox="0 0 24 24">
                                 <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.162-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.401.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.354-.629-2.758-1.379l-.749 2.848c-.269 1.045-1.004 2.352-1.498 3.146 1.123.345 2.306.535 3.55.535 6.607 0 11.985-5.365 11.985-11.987C23.97 5.39 18.592.026 11.985.026L12.017 0z"/>
                             </svg>
                         </a>
@@ -76,22 +63,22 @@
         ]
     });
     </script>
-    <div style="--w:100%; --h:100vh; --pos:relative; --z:20; --pl:48px; --pr:48px; --d:flex; --ai:center; --jc:center; --bgc:green-900;" x-data="slideshow()" class="-mt-32">
+    <div style="--mt:-8rem; --w:100%; --h:100vh; --pos:relative; --z:20; --pl:48px; --pr:48px; --d:flex; --ai:center; --jc:center; --bgc:green-900;" x-data="slideshow()">
         <div style="--from:#000000; --to:transparent; --h:100%; --w:100%; --pos:absolute; --top:0; --right:0; --bottom:0; --left:0; --bgc:gradient-to-b; --op:0.3;" ></div>
         <div style="--pos:relative; --z:10; --ta:center; --pl:48px; --pr:48px;" >
-            <h1 style="--maxw-md:32rem; --maxw-lg:32rem; --maxw-xl:42rem; --size:1.875rem; --lh:2.25rem; --size-lg:2.25rem; --lh-lg:2.5rem; --size-xl:3rem; --lh-xl:1; --weight:900; --c:white;"  class="mx-auto leading-relaxed lg:leading-relaxed xl:leading-normal font-display">Lorem ipsum dolor sit</h1>
-            <div style="--maxw:20rem; --maxw-md:24rem; --maxw-lg:28rem; --mt:32px; --c:white; --size:0.875rem; --lh:1.25rem; --size-lg:1rem; --lh-lg:1.5rem;"  class="mx-auto lg:leading-loose tracking-wide">
+            <h1 style="--mx:auto; --lh:1.625; --lh-lg:1.625; --lh-xl:1.5; --ff:'Playfair Display', serif; --maxw-md:32rem; --maxw-lg:32rem; --maxw-xl:42rem; --size:1.875rem; --size-lg:2.25rem; --size-xl:3rem; --weight:900; --c:white">Lorem ipsum dolor sit</h1>
+            <div style="--mx:auto; --lh-lg:2; --ls:0.025em; --maxw:20rem; --maxw-md:24rem; --maxw-lg:28rem; --mt:32px; --c:white; --size:0.875rem; --lh:1.25rem; --size-lg:1rem">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
         </div>
         <img style="--pos:absolute; --top:0; --left:0; --w:100%; --h:100%; --objf:cover; --op:0.9;" x-bind:src="images[current]">
-        <div style="--pos:absolute; --z:20; --left:0; --w:100%; --d:flex; --ai:center; --jc:space-between; --pl:24px; --pr:24px; --pl-md:48px; --pr-md:48px;"  class="top-1/2">
-            <button x-on:click="current = current > 0 ? current - 1 : images.length - 1" class="hover:opacity-50">
+        <div style="--top:50%; --pos:absolute; --z:20; --left:0; --w:100%; --d:flex; --ai:center; --jc:space-between; --pl:24px; --pr:24px; --pl-md:48px; --pr-md:48px;">
+            <button x-on:click="current = current > 0 ? current - 1 : images.length - 1" style="--hvr-op:0.5">
                 <svg style="--w:48px; --h:48px; --c:white;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M7 16l-4-4m0 0l4-4m-4 4h18"/>
                 </svg>
             </button>
-            <button x-on:click="current = current < images.length - 1 ? current + 1 : 0" class="hover:opacity-50">
+            <button x-on:click="current = current < images.length - 1 ? current + 1 : 0" style="--hvr-op:0.5">
                 <svg style="--w:48px; --h:48px; --c:white;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
                 </svg>
@@ -100,63 +87,63 @@
     </div>
     <div style="--p:48px; --p-md:96px;" >
         <div style="--bgc:gray-100; --p:48px; --pt-md:96px; --pb-md:96px; --d-lg:flex;" >
-            <div style="--maxw:56rem; --d:flex; --fw:wrap;"  class="mx-auto">
-                <img style="--w:100%; --h:100%; --objf:cover;" src="https://images.unsplash.com/photo-1538805060514-97d9cc17730c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80" class="lg:w-4/12">
+            <div style="--mx:auto; --maxw:56rem; --d:flex; --fw:wrap;">
+                <img style="--w-lg:33.333333%; --w:100%; --h:100%; --objf:cover;" src="https://images.unsplash.com/photo-1538805060514-97d9cc17730c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80">
                 <div style="--fx:1; --d:flex; --ai:center; --jc:center; --pt:48px; --pt-lg:0;" >
                     <div style="--ta:center;" >
-                        <h3 style="--size:2.25rem; --lh:2.5rem; --mb:32px; --c:oklch(47.318% 0.036 262);"  class="font-display">Lorem ipsum dolor sit</h3>
-                        <p style="--size:0.875rem; --lh:1.25rem; --size-lg:1.125rem; --lh-lg:1.75rem; --maxw:28rem; --c:gray-500;"  class="mx-auto leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <h3 style="--ff:'Playfair Display', serif; --size:2.25rem; --lh:2.5rem; --mb:32px; --c:oklch(47.318% 0.036 262);">Lorem ipsum dolor sit</h3>
+                        <p style="--mx:auto; --lh:1.625; --size:0.875rem; --size-lg:1.125rem; --lh-lg:1.75rem; --maxw:28rem; --c:gray-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <div style="--p:48px; --p-md:96px; --pt-md:48px;" >
-        <h3 style="--size:0.75rem; --lh:1rem; --tt:uppercase; --ta:center; --mb:8px; --c:gray-800;"  class="tracking-widest">Featured Links</h3>
-        <h2 style="--size:1.5rem; --lh:2rem; --tt:uppercase; --ta:center; --size-lg:2.25rem; --lh-lg:2.5rem; --mb:80px; --c:gray-900;"  class="tracking-widest font-heading">Work Overview</h2>
-        <div style="--d-lg:grid; --gtc:repeat(4, 1fr); --gtr:repeat(3, 1fr); --gg:20px; --size:1.875rem; --lh:2.25rem; --c:white;"  class="font-display">
+        <h3 style="--ls:0.1em; --size:0.75rem; --lh:1rem; --tt:uppercase; --ta:center; --mb:8px; --c:gray-800;">Featured Links</h3>
+        <h2 style="--ls:0.1em; --ff:'Fira Sans Condensed', sans-serif; --size:1.5rem; --lh:2rem; --tt:uppercase; --ta:center; --size-lg:2.25rem; --lh-lg:2.5rem; --mb:80px; --c:gray-900;">Work Overview</h2>
+        <div style="--ff:'Playfair Display', serif; --d-lg:grid; --gtc:repeat(4, 1fr); --gtr:repeat(3, 1fr); --gg:20px; --size:1.875rem; --lh:2.25rem; --c:white;">
             <a style="--bgc:black; --gc:span 1; --gr:span 1; --pos:relative; --d:flex; --ai:center; --jc:center; --pt:96px; --pb:96px;" href="#">
                 <span style="--pos:relative; --z:10;" >About</span>
-                <img style="--pos:absolute; --top:0; --right:0; --bottom:0; --left:0; --w:100%; --h:100%; --objf:cover; --op:0.5;" src="https://images.unsplash.com/photo-1465310477141-6fb93167a273?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" class="hover:opacity-25">
+                <img style="--hvr-op:0.25; --pos:absolute; --top:0; --right:0; --bottom:0; --left:0; --w:100%; --h:100%; --objf:cover; --op:0.5;" src="https://images.unsplash.com/photo-1465310477141-6fb93167a273?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80">
             </a>
             <a style="--bgc:black; --gc:span 1; --gr:span 1; --pos:relative; --d:flex; --ai:center; --jc:center; --pt:96px; --pb:96px;" href="#">
                 <span style="--pos:relative; --z:10;" >Blog</span>
-                <img style="--pos:absolute; --top:0; --right:0; --bottom:0; --left:0; --w:100%; --h:100%; --objf:cover; --op:0.5;" src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" class="hover:opacity-25">
+                <img style="--hvr-op:0.25; --pos:absolute; --top:0; --right:0; --bottom:0; --left:0; --w:100%; --h:100%; --objf:cover; --op:0.5;" src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80">
             </a>
             <a style="--bgc:black; --gc:span 2; --gr:span 2; --pos:relative; --d:flex; --ai:center; --jc:center; --pt:96px; --pb:96px;" href="#">
                 <span style="--pos:relative; --z:10;" >Work</span>
-                <img style="--pos:absolute; --top:0; --right:0; --bottom:0; --left:0; --w:100%; --h:100%; --objf:cover; --op:0.5;" src="https://images.unsplash.com/photo-1594381898411-846e7d193883?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80" class="hover:opacity-25">
+                <img style="--hvr-op:0.25; --pos:absolute; --top:0; --right:0; --bottom:0; --left:0; --w:100%; --h:100%; --objf:cover; --op:0.5;" src="https://images.unsplash.com/photo-1594381898411-846e7d193883?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80">
             </a>
             <a style="--bgc:black; --gc:span 2; --gr:span 2; --pos:relative; --d:flex; --ai:center; --jc:center; --pt:96px; --pb:96px;" href="#">
                 <span style="--pos:relative; --z:10;" >Contact</span>
-                <img style="--pos:absolute; --top:0; --right:0; --bottom:0; --left:0; --w:100%; --h:100%; --objf:cover; --op:0.5;" src="https://images.unsplash.com/photo-1575052814086-f385e2e2ad1b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" class="hover:opacity-25">
+                <img style="--hvr-op:0.25; --pos:absolute; --top:0; --right:0; --bottom:0; --left:0; --w:100%; --h:100%; --objf:cover; --op:0.5;" src="https://images.unsplash.com/photo-1575052814086-f385e2e2ad1b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80">
             </a>
             <a style="--bgc:black; --gc:span 1; --gr:span 1; --pos:relative; --d:flex; --ai:center; --jc:center; --pt:96px; --pb:96px;" href="#">
                 <span style="--pos:relative; --z:10;" >Prints</span>
-                <img style="--pos:absolute; --top:0; --right:0; --bottom:0; --left:0; --w:100%; --h:100%; --objf:cover; --op:0.5;" src="https://images.unsplash.com/photo-1485727749690-d091e8284ef3?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80" class="hover:opacity-25">
+                <img style="--hvr-op:0.25; --pos:absolute; --top:0; --right:0; --bottom:0; --left:0; --w:100%; --h:100%; --objf:cover; --op:0.5;" src="https://images.unsplash.com/photo-1485727749690-d091e8284ef3?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80">
             </a>
             <a style="--bgc:black; --gc:span 1; --gr:span 1; --pos:relative; --d:flex; --ai:center; --jc:center; --pt:96px; --pb:96px;" href="#">
                 <span style="--pos:relative; --z:10;" >FAQ</span>
-                <img style="--pos:absolute; --top:0; --right:0; --bottom:0; --left:0; --w:100%; --h:100%; --objf:cover; --op:0.5;" src="https://images.unsplash.com/photo-1434494878577-86c23bcb06b9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" class="hover:opacity-25">
+                <img style="--hvr-op:0.25; --pos:absolute; --top:0; --right:0; --bottom:0; --left:0; --w:100%; --h:100%; --objf:cover; --op:0.5;" src="https://images.unsplash.com/photo-1434494878577-86c23bcb06b9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80">
             </a>
         </div>
     </div>
     <div style="--p:48px; --p-md:96px; --pt:0; --pt-md:0;" >
         <div style="--bgc:gray-100; --p:48px; --pt-md:96px; --pb-md:96px; --d-lg:flex;" >
-            <div style="--maxw:56rem; --d:flex; --fw:wrap;"  class="mx-auto">
-                <img style="--w:100%; --h:100%; --objf:cover;" src="https://images.unsplash.com/photo-1549060279-7e168fcee0c2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" class="lg:w-7/12">
+            <div style="--mx:auto; --maxw:56rem; --d:flex; --fw:wrap;">
+                <img style="--w-lg:58.333333%; --w:100%; --h:100%; --objf:cover;" src="https://images.unsplash.com/photo-1549060279-7e168fcee0c2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80">
                 <div style="--fx:1; --d:flex; --ai:center; --jc:center; --pl-lg:48px; --pr-lg:48px; --pt:48px; --pt-lg:0;" >
                     <div style="--ta:center;" >
-                        <div style="--tt:uppercase; --size:0.75rem; --lh:1rem; --c:gray-600; --mb:16px; --weight:700; --mb:40px;"  class="tracking-widest font-display">my latest adventure</div>
-                        <div style="--tt:uppercase; --size:0.75rem; --lh:1rem; --c:gray-600; --mb:16px;"  class="tracking-widest">Travel</div>
-                        <h3 style="--size:2.25rem; --lh:2.5rem; --mb:32px; --c:oklch(47.318% 0.036 262); --mt:24px; --mb:24px;"  class="leading-tight font-display">Lorem ipsum dolor sit</h3>
-                        <a style="--d:inline-block; --tt:uppercase; --size:0.75rem; --lh:1rem; --bw:1px; --bc:oklch(82.58% 0.015 262); --pl:24px; --pr:24px; --pt:16px; --pb:16px;" href="#" class="tracking-widest hover:bg-gray-300">See more</a>
+                        <div style="--ls:0.1em; --ff:'Playfair Display', serif; --tt:uppercase; --size:0.75rem; --lh:1rem; --c:gray-600; --mb:16px; --weight:700; --mb:40px;">my latest adventure</div>
+                        <div style="--ls:0.1em; --tt:uppercase; --size:0.75rem; --lh:1rem; --c:gray-600; --mb:16px;">Travel</div>
+                        <h3 style="--lh:1.25; --ff:'Playfair Display', serif; --size:2.25rem; --mb:32px; --c:oklch(47.318% 0.036 262); --mt:24px; --mb:24px">Lorem ipsum dolor sit</h3>
+                        <a style="--ls:0.1em; --hvr-bgc:var(--color-gray-300, hsl(0 0% 80%)); --d:inline-block; --tt:uppercase; --size:0.75rem; --lh:1rem; --bw:1px; --bc:oklch(82.58% 0.015 262); --pl:24px; --pr:24px; --pt:16px; --pb:16px;" href="#">See more</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div style="--pl:24px; --pr:24px; --mb:48px;"  class="container mx-auto">
+    <div style="--maxw:80rem; --w:100%; --mx:auto; --pl:24px; --pr:24px; --mb:48px;">
         <div style="--d:flex; --h:128px; --h-lg:192px; --h-md:208px; --bgc:black; --pos:relative;" >
             <div style="--fx:1; --h:100%; --pos:relative;" >
                 <img style="--pos:absolute; --w:100%; --h:100%; --objf:cover; --op:0.5;" src="https://images.unsplash.com/photo-1591258370814-01609b341790?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80" class="inset">
@@ -174,11 +161,11 @@
                 <img style="--pos:absolute; --w:100%; --h:100%; --objf:cover; --op:0.5;" src="https://images.unsplash.com/photo-1557564437-0995702f88fc?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" class="inset">
             </div>
             <div style="--pos:absolute; --top:0; --right:0; --bottom:0; --left:0; --w:100%; --h:100%; --d:flex; --z:20; --d:flex; --ai:center; --jc:center;" >
-                <a style="--bgc:white; --pl:32px; --pr:32px; --pt:12px; --pb:12px; --size:0.875rem; --lh:1.25rem;" href="#" class="tracking-widest font-heading">@novolio</a>
+                <a style="--ls:0.1em; --ff:'Fira Sans Condensed', sans-serif; --bgc:white; --pl:32px; --pr:32px; --pt:12px; --pb:12px; --size:0.875rem; --lh:1.25rem;" href="#">@novolio</a>
             </div>
         </div>
     </div>
-    <div style="--size:0.875rem; --lh:1.25rem; --size-lg:1rem; --lh-lg:1.5rem; --ta:center; --pb:96px; --tt:uppercase; --op:0.5;"  class="font-heading tracking-widest">&copy; fettle. all rights reserved</div>
+    <div style="--ff:'Fira Sans Condensed', sans-serif; --ls:0.1em; --size:0.875rem; --lh:1.25rem; --size-lg:1rem; --lh-lg:1.5rem; --ta:center; --pb:96px; --tt:uppercase; --op:0.5;">&copy; fettle. all rights reserved</div>
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.2/dist/alpine.min.js" defer="defer"></script>
 </body>
 </html>

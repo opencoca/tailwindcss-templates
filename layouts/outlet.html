@@ -11,6 +11,7 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="https://startr.style/style.css">
+    <link rel="stylesheet" href="./tw2startr-manual-utilities.css">
 </head>
 
 <section style="--ff:ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, " UI', Roboto, 'Helvetica Neue', Arial, sans-serif; --c:oklch(47.318% 0.036 262); --bgc:white;" class="antialiased">
@@ -21,10 +22,10 @@
         });
     </script>
     <div x-data="menu()">
-        <div style="--pl:24px; --pr:24px; --d:flex; --jc:space-between; --ai:center; --pt:16px; --pb:16px; --h:128px;"  class="container mx-auto">
+        <div style="--maxw:80rem; --w:100%; --mx:auto; --pl:24px; --pr:24px; --d:flex; --jc:space-between; --ai:center; --pt:16px; --pb:16px; --h:128px;">
             <div style="--d:flex; --ai:center; --h:100%;">
-                <a style="--size:1.5rem; --lh:2rem; --weight:700; --weight:900; --h:100%; --d:flex; --ai:center;" href="/" class="tracking-tighter">outlet</a>
-                <div style="--d:none; --d-lg:flex; --ai:center; --size:0.75rem; --lh:1rem; --tt:uppercase; --ml:16px;"  class="tracking-wider">
+                <a style="--ls:-0.05em; --size:1.5rem; --lh:2rem; --weight:700; --weight:900; --h:100%; --d:flex; --ai:center;" href="/">outlet</a>
+                <div style="--ls:0.05em; --d:none; --d-lg:flex; --ai:center; --size:0.75rem; --lh:1rem; --tt:uppercase; --ml:16px;">
                     <a style="--ml:32px;" href="/products">Catalog</a>
                     <a style="--ml:32px;" href="/about">About</a>
                     <a style="--ml:32px;" href="/blog">Blog</a>
@@ -32,7 +33,7 @@
                         type="button">Contact</button>
                 </div>
             </div>
-            <div style="--d:flex; --ai:center; --size:0.75rem; --lh:1rem; --tt:uppercase;"  class="tracking-wider">
+            <div style="--ls:0.05em; --d:flex; --ai:center; --size:0.75rem; --lh:1rem; --tt:uppercase;">
                 <a style="--ml:32px;" href="/cart">
                     <svg style="--w:24px; --h:24px;" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg">
@@ -101,7 +102,7 @@
             </template>
         </div>
         <div style="--d:flex; --jc:center; --ai:center;">
-            <button style="--d:flex; --d-lg:none; --tt:uppercase; --size:0.75rem; --lh:1rem; --ai:center; --mb:24px;" x-on:click="showMobileMenu = true" class="-mt-6">
+            <button style="--mt:-1.5rem; --d:flex; --d-lg:none; --tt:uppercase; --size:0.75rem; --lh:1rem; --ai:center; --mb:24px;" x-on:click="showMobileMenu = true">
                 <svg style="--w:16px; --h:16px; --mr:4px;" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16"></path>
@@ -110,11 +111,11 @@
             </button>
         </div>
         <template x-if="showMobileMenu">
-            <div style="--d-md:none; --pos:fixed; --top:0; --right:0; --bottom:0; --left:0; --w:100%; --h:100%; --d:flex; --fd:column; --ai:center; --jc:center; --bgc:gray-100; --z:40; --tt:uppercase; --size:1.25rem; --lh:1.75rem; --ta:center; --weight:900;"  class="space-y-4 tracking-widest">
+            <div style="--g:1rem; --ls:0.1em; --d-md:none; --pos:fixed; --top:0; --right:0; --bottom:0; --left:0; --w:100%; --h:100%; --d:flex; --fd:column; --ai:center; --jc:center; --bgc:gray-100; --z:40; --tt:uppercase; --size:1.25rem; --lh:1.75rem; --ta:center; --weight:900;">
                 <a href="/products">Catalog</a>
                 <a href="/about">About</a>
                 <a href="/blog">Blog</a>
-                <button style="--tt:uppercase; --weight:900;" x-on:click="showContactInfo = true" type="button" class="tracking-widest">Contact</button>
+                <button style="--ls:0.1em; --tt:uppercase; --weight:900;" x-on:click="showContactInfo = true" type="button">Contact</button>
                 <button style="--pos:absolute; --top:0; --right:0; --pr:32px; --pt:16px;"
                     x-on:click="showMobileMenu = false" type="button">
                     <svg style="--w:32px; --h:32px;" fill="none" stroke="currentColor" viewBox="0 0 24 24"
@@ -126,11 +127,11 @@
             </div>
         </template>
     </div>
-    <div style="--pl:24px; --pr:24px; --d:grid; --gtc:repeat(1, 1fr); --gtc-lg:repeat(12, 1fr);"  class="container mx-auto">
+    <div style="--maxw:80rem; --w:100%; --mx:auto; --pl:24px; --pr:24px; --d:grid; --gtc:repeat(1, 1fr); --gtc-lg:repeat(12, 1fr);">
         <div
             style="--gc-lg:span 5; --pt:48px; --pb:48px; --pl-md:48px; --pr-md:48px; --pt-md:128px; --pb-md:128px; --d:flex; --ai:center; --jc:center;">
             <div style="--maxw:24rem;">
-                <h1 style="--size:3rem; --lh:1; --size-md:3.75rem; --lh-md:1; --mb:24px; --weight:900;"  class="font-display leading-tight">Our new arrivals</h1>
+                <h1 style="--ff:'Playfair Display', serif; --lh:1.25; --size:3rem; --size-md:3.75rem; --lh-md:1; --mb:24px; --weight:900">Our new arrivals</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua.</p>
                 <a style="--d:flex; --ai:center; --mt:32px; --tt:uppercase; --size:0.875rem; --lh:1.25rem; --c:black; --weight:600;"
@@ -171,14 +172,14 @@
                     src="https://images.unsplash.com/photo-1515555230216-82228b88ea98?auto=format&amp;amp;fit=crop&amp;amp;w=900&amp;amp;q=60">
             </a>
             <div style="--pos:absolute; --bottom:0; --right:0; --d:grid; --gtc:repeat(2, 1fr);">
-                <button style="--p:16px; --p-md:24px; --bgc:white;" x-on:click="current = current class="hover:bg-gray-100 hover:opacity-80"> 0 ? current - 1 : items.length - 1">
+                <button style="--hvr-bgc:var(--color-gray-100, hsl(0 0% 93%)); --hvr-op:0.8; --p:16px; --p-md:24px; --bgc:white;" x-on:click="current = current> 0 ? current - 1 : items.length - 1">
                     <svg style="--w:24px; --h:24px; --w-md:40px; --h-md:40px;" fill="none" stroke="currentColor"
                         viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7">
                         </path>
                     </svg>
                 </button>
-                <button style="--p:16px; --p-md:24px; --bgc:white;" x-on:click="current = current < items.length - 1 ? current + 1 : 0" class="hover:bg-gray-100 hover:opacity-80">
+                <button style="--hvr-bgc:var(--color-gray-100, hsl(0 0% 93%)); --hvr-op:0.8; --p:16px; --p-md:24px; --bgc:white;" x-on:click="current = current < items.length - 1 ? current + 1 : 0">
                     <svg style="--w:24px; --h:24px; --w-md:40px; --h-md:40px;" fill="none" stroke="currentColor"
                         viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -187,17 +188,17 @@
             </div>
         </div>
     </div>
-    <h2 style="--ta:center; --tt:uppercase; --size:1.125rem; --lh:1.75rem; --size-md:1.25rem; --lh-md:1.75rem; --weight:900; --pt:48px; --pb:48px; --pt-md:96px; --pb-md:96px; --pl:24px; --pr:24px;"  class="font-display">Our Collections</h2>
-    <div style="--pl:24px; --pr:24px; --d:grid; --gtc:repeat(1, 1fr); --gtc-lg:repeat(2, 1fr); --mb-lg:96px;"  class="container mx-auto">
+    <h2 style="--ff:'Playfair Display', serif; --ta:center; --tt:uppercase; --size:1.125rem; --lh:1.75rem; --size-md:1.25rem; --lh-md:1.75rem; --weight:900; --pt:48px; --pb:48px; --pt-md:96px; --pb-md:96px; --pl:24px; --pr:24px;">Our Collections</h2>
+    <div style="--maxw:80rem; --w:100%; --mx:auto; --pl:24px; --pr:24px; --d:grid; --gtc:repeat(1, 1fr); --gtc-lg:repeat(2, 1fr); --mb-lg:96px;">
         <div style="--pos:relative; --h:208px; --h-md:72; --h-lg:auto;">
             <a href="/category">
                 <img style="--pos:absolute; --top:0; --right:0; --bottom:0; --left:0; --w:100%; --h:100%; --objf:cover;"
                     src="https://images.unsplash.com/photo-1523779105320-d1cd346ff52b?auto=format&amp;fit=crop&amp;w=900&amp;q=60">
             </a>
         </div>
-        <div style="--pl:24px; --pr:24px; --pt:48px; --pb:48px; --p-md:64px; --p-lg:128px; --d:flex; --ai:center; --jc:center;"  class="order-last">
+        <div style="order:9999; --pl:24px; --pr:24px; --pt:48px; --pb:48px; --p-md:64px; --p-lg:128px; --d:flex; --ai:center; --jc:center;">
             <div>
-                <h3 style="--size:2.25rem; --lh:2.5rem; --mb:24px; --weight:900;"  class="font-display leading-tight">Bags +
+                <h3 style="--ff:'Playfair Display', serif; --lh:1.25; --size:2.25rem; --mb:24px; --weight:900">Bags +
                     Clutches</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua.</p>
@@ -212,16 +213,16 @@
             </div>
         </div>
     </div>
-    <div style="--pl:24px; --pr:24px; --d:grid; --gtc:repeat(1, 1fr); --gtc-lg:repeat(2, 1fr); --mb-lg:96px;"  class="container mx-auto">
+    <div style="--maxw:80rem; --w:100%; --mx:auto; --pl:24px; --pr:24px; --d:grid; --gtc:repeat(1, 1fr); --gtc-lg:repeat(2, 1fr); --mb-lg:96px;">
         <div style="--pos:relative; --h:208px; --h-md:72; --h-lg:auto;">
             <a href="/category">
                 <img style="--pos:absolute; --top:0; --right:0; --bottom:0; --left:0; --w:100%; --h:100%; --objf:cover;"
                     src="https://images.unsplash.com/photo-1506629082955-511b1aa562c8?auto=format&amp;fit=crop&amp;w=900&amp;q=60">
             </a>
         </div>
-        <div style="--pl:24px; --pr:24px; --pt:48px; --pb:48px; --p-md:64px; --p-lg:128px; --d:flex; --ai:center; --jc:center;"  class="order-last lg:order-first">
+        <div style="order:9999; order:-9999; --pl:24px; --pr:24px; --pt:48px; --pb:48px; --p-md:64px; --p-lg:128px; --d:flex; --ai:center; --jc:center;">
             <div>
-                <h3 style="--size:2.25rem; --lh:2.5rem; --mb:24px; --weight:900;"  class="font-display leading-tight">
+                <h3 style="--ff:'Playfair Display', serif; --lh:1.25; --size:2.25rem; --mb:24px; --weight:900">
                     Clothing</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua.</p>
@@ -236,16 +237,16 @@
             </div>
         </div>
     </div>
-    <div style="--pl:24px; --pr:24px; --d:grid; --gtc:repeat(1, 1fr); --gtc-lg:repeat(2, 1fr); --mb-lg:96px;"  class="container mx-auto">
+    <div style="--maxw:80rem; --w:100%; --mx:auto; --pl:24px; --pr:24px; --d:grid; --gtc:repeat(1, 1fr); --gtc-lg:repeat(2, 1fr); --mb-lg:96px;">
         <div style="--pos:relative; --h:208px; --h-md:72; --h-lg:auto;">
             <a href="/category">
                 <img style="--pos:absolute; --top:0; --right:0; --bottom:0; --left:0; --w:100%; --h:100%; --objf:cover;"
                     src="https://images.unsplash.com/photo-1596944924616-7b38e7cfac36?auto=format&amp;fit=crop&amp;w=900&amp;q=60">
             </a>
         </div>
-        <div style="--pl:24px; --pr:24px; --pt:48px; --pb:48px; --p-md:64px; --p-lg:128px; --d:flex; --ai:center; --jc:center;"  class="order-last">
+        <div style="order:9999; --pl:24px; --pr:24px; --pt:48px; --pb:48px; --p-md:64px; --p-lg:128px; --d:flex; --ai:center; --jc:center;">
             <div>
-                <h3 style="--size:2.25rem; --lh:2.5rem; --mb:24px; --weight:900;"  class="font-display leading-tight">
+                <h3 style="--ff:'Playfair Display', serif; --lh:1.25; --size:2.25rem; --mb:24px; --weight:900">
                     Jewellery</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua.</p>
@@ -260,8 +261,8 @@
             </div>
         </div>
     </div>
-    <h2 style="--ta:center; --tt:uppercase; --size:1.125rem; --lh:1.75rem; --size-lg:1.25rem; --lh-lg:1.75rem; --weight:900; --pt:48px; --pb:48px; --pt-md:96px; --pb-md:96px; --pl:24px; --pr:24px;"  class="font-display">Latest Products</h2>
-    <div style="--pl:24px; --pr:24px; --d:grid; --gtc:repeat(1, 1fr); --gtc-lg:repeat(4, 1fr); --gtr-lg:repeat(2, 1fr); --gg:32px; --ta:center; --size:0.875rem; --lh:1.25rem; --tt:uppercase;"  class="container mx-auto grid-rows-none">
+    <h2 style="--ff:'Playfair Display', serif; --ta:center; --tt:uppercase; --size:1.125rem; --lh:1.75rem; --size-lg:1.25rem; --lh-lg:1.75rem; --weight:900; --pt:48px; --pb:48px; --pt-md:96px; --pb-md:96px; --pl:24px; --pr:24px;">Latest Products</h2>
+    <div style="--maxw:80rem; --w:100%; --mx:auto; --gtr:none; --pl:24px; --pr:24px; --d:grid; --gtc:repeat(1, 1fr); --gtc-lg:repeat(4, 1fr); --gtr-lg:repeat(2, 1fr); --gg:32px; --ta:center; --size:0.875rem; --lh:1.25rem; --tt:uppercase;">
         <div style="--gc:span 1; --gr:span 1;">
             <div style="--w:100%; --h:208px; --pos:relative;">
                 <a href="/product">
@@ -323,26 +324,26 @@
             </div>
         </div>
     </div>
-    <div style="--pt:80px; --pb:80px; --mt:48px; --mt-md:96px; --bc:t; --bc:oklch(91.9% 0.016 262);"  class="container mx-auto">
+    <div style="--maxw:80rem; --w:100%; --mx:auto; --pt:80px; --pb:80px; --mt:48px; --mt-md:96px; --bc:t; --bc:oklch(91.9% 0.016 262);">
         <div style="--bgc:black; --pos:relative;">
             <div
                 style="--pos:relative; --z:10; --c:white; --ta:center; --pl:24px; --pr:24px; --pl-md:48px; --pr-md:48px; --pt:96px; --pb:96px; --pt-md:192px; --pb-md:192px;">
-                <h3 style="--size:1.5rem; --lh:2rem;"  class="font-display">End of Season Sale</h3>
+                <h3 style="--ff:'Playfair Display', serif; --size:1.5rem; --lh:2rem;">End of Season Sale</h3>
                 <p style="--mt:24px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-                <a style="--d:inline-block; --bgc:black; --tt:uppercase; --size:0.875rem; --lh:1.25rem; --pt:16px; --pb:16px; --pl:24px; --pr:24px; --mt:32px;" href="/products" class="hover:opacity-75">Browse</a>
+                <a style="--hvr-op:0.75; --d:inline-block; --bgc:black; --tt:uppercase; --size:0.875rem; --lh:1.25rem; --pt:16px; --pb:16px; --pl:24px; --pr:24px; --mt:32px;" href="/products">Browse</a>
             </div>
             <img style="--pos:absolute; --top:0; --right:0; --bottom:0; --left:0; --w:100%; --h:100%; --objf:cover; --op:0.75;"
                 src="https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=2550&amp;q=80">
         </div>
     </div>
-    <div style="--bc:t; --bc:oklch(91.9% 0.016 262); --pl:24px; --pr:24px;"  class="container mx-auto">
-        <div style="--ta:center; --maxw:28rem; --mt:48px; --mb:48px; --mt-md:96px; --mb-md:96px;"  class="mx-auto">
+    <div style="--maxw:80rem; --w:100%; --mx:auto; --bc:t; --bc:oklch(91.9% 0.016 262); --pl:24px; --pr:24px;">
+        <div style="--mx:auto; --ta:center; --maxw:28rem; --mt:48px; --mb:48px; --mt-md:96px; --mb-md:96px;">
             <p style="--size:1.125rem; --lh:1.75rem;">"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
             <div style="--mt:16px; --weight:700;">novolio</div>
         </div>
     </div>
-    <div style="--d:flex; --fw:wrap; --jc:space-between; --bc:t; --bc:b; --bc:oklch(91.9% 0.016 262); --pt:24px; --pb:24px; --mb:32px;"  class="container mx-auto">
+    <div style="--maxw:80rem; --w:100%; --mx:auto; --d:flex; --fw:wrap; --jc:space-between; --bc:t; --bc:b; --bc:oklch(91.9% 0.016 262); --pt:24px; --pb:24px; --mb:32px;">
         <form style="--d:flex; --fw:wrap; --fw-sm:nowrap; --w:100%; --maxw-sm:24rem; --pl:24px; --pr:24px;"
             name="subscribe" method="POST">
             <input
@@ -354,28 +355,28 @@
         <div
             style="--w:100%; --w-sm:auto; --d:flex; --ai:center; --jc:center; --jc-sm:end; --pl:24px; --pr:24px; --mt:24px; --mt-sm:0;">
             <a style="--ml:8px; --mr:8px;" href="#">
-                <svg style="--w:24px; --h:24px;" viewBox="0 0 24 24" class="fill-current">
+                <svg style="fill:currentColor; --w:24px; --h:24px;" viewBox="0 0 24 24">
                     <path
                         d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z">
                     </path>
                 </svg>
             </a>
             <a style="--ml:8px; --mr:8px;" href="#">
-                <svg style="--w:24px; --h:24px;" viewBox="0 0 24 24" class="fill-current">
+                <svg style="fill:currentColor; --w:24px; --h:24px;" viewBox="0 0 24 24">
                     <path
                         d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z">
                     </path>
                 </svg>
             </a>
             <a style="--ml:8px; --mr:8px;" href="#">
-                <svg style="--w:24px; --h:24px;" viewBox="0 0 24 24" class="fill-current">
+                <svg style="fill:currentColor; --w:24px; --h:24px;" viewBox="0 0 24 24">
                     <path
                         d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z">
                     </path>
                 </svg>
             </a>
             <a style="--ml:8px; --mr:8px;" href="#">
-                <svg style="--w:24px; --h:24px;" viewBox="0 0 24 24" class="fill-current">
+                <svg style="fill:currentColor; --w:24px; --h:24px;" viewBox="0 0 24 24">
                     <path
                         d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.162-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.401.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.354-.629-2.758-1.379l-.749 2.848c-.269 1.045-1.004 2.352-1.498 3.146 1.123.345 2.306.535 3.55.535 6.607 0 11.985-5.365 11.985-11.987C23.97 5.39 18.592.026 11.985.026L12.017 0z">
                     </path>
@@ -383,7 +384,7 @@
             </a>
         </div>
     </div>
-    <div style="--pl:24px; --pr:24px; --d:flex; --fw:wrap; --tt:uppercase; --size:0.875rem; --lh:1.25rem; --weight:700; --c:gray-900; --pt:24px; --pb:24px;"  class="container mx-auto">
+    <div style="--maxw:80rem; --w:100%; --mx:auto; --pl:24px; --pr:24px; --d:flex; --fw:wrap; --tt:uppercase; --size:0.875rem; --lh:1.25rem; --weight:700; --c:gray-900; --pt:24px; --pb:24px;">
         <div style="--fx:1;">
             <a style="--d:block; --mt:8px;" href="/products">Catalog</a>
             <a style="--d:block; --mt:8px;" href="/about">About</a>
@@ -399,13 +400,13 @@
             <a style="--d:block; --mt:8px;" href="/about">About</a>
             <a style="--d:block; --mt:8px;" href="/blog">Blog</a>
         </div>
-        <div style="--w:100%; --mt:48px; --mt-md:0;"  class="md:w-4/12">
+        <div style="--w-md:33.333333%; --w:100%; --mt:48px; --mt-md:0;">
             <h4>outlet</h4>
-            <p style="--tt:none; --mt:8px; --maxw:24rem;"  class="leading-relaxed">Lorem ipsum dolor sit amet,
+            <p style="--lh:1.625; --tt:none; --mt:8px; --maxw:24rem;">Lorem ipsum dolor sit amet,
                 consectetur adipisicing elit, sed do eiusmod tempor</p>
         </div>
     </div>
-    <div style="--ta:center; --pt:48px; --pb:48px; --mt:48px; --bc:t; --bc:oklch(91.9% 0.016 262); --size:0.75rem; --lh:1rem; --tt:uppercase;"  class="container mx-auto">
+    <div style="--maxw:80rem; --w:100%; --mx:auto; --ta:center; --pt:48px; --pb:48px; --mt:48px; --bc:t; --bc:oklch(91.9% 0.016 262); --size:0.75rem; --lh:1rem; --tt:uppercase;">
         <div>Copyright &copy; 2021 novolio</div>
         <div style="--c:gray-400; --mt:8px;">Images by Unsplash</div>
     </div>

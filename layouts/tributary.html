@@ -7,28 +7,16 @@
     <title>tributary</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@100;200;300;400;500;600;700&family=Karla:wght@200;300;400;600;700&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://startr.style/style.css">
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              fontFamily: {
-                'display' : ['Crimson Text', 'serif'],
-                'sans' : ['Karla', 'sans-serif']
-              }
-            }
-          }
-        }
-    </script>
+    <link rel="stylesheet" href="./tw2startr-manual-utilities.css">
 </head>
-<section style="--ff:ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, " UI', Roboto, 'Helvetica Neue', Arial, sans-serif; --bgc:white;" class="antialiased">
-    <div style="--h:32px; --z:10; --pos:relative; --bgc:white; --c:gray-600; --size:0.75rem; --lh:1rem; --ta:center; --d:flex; --ai:center; --jc:center;"  class="tracking-wider">
+<section style="-webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; --ff:'Karla', sans-serif; --bgc:hsl(0 0% 100%);">
+        <div style="--h:32px; --z:10; --pos:relative; --bgc:hsl(0 0% 100%); --c:var(--color-gray-600, hsl(0 0% 40%)); --size:0.75rem; --lh:1rem; --ta:center; --d:flex; --ai:center; --jc:center; --ls:0.05em;">
         Our new plant book is available. 
         <a style="--td:underline; --ml:4px;" href="#">Get it here</a>
     </div>
-    <div style="--h:96px; --z:10; --pos:relative; --pl:24px; --pr:24px; --d:flex; --ai:center; --jc:center;"  class="container mx-auto">
-        <div style="--pos:absolute; --top:0; --right:0; --bottom:0; --left:0; --w:100%; --h:100%; --d:flex; --ai:center; --jc:space-between; --c:gray-900; --weight:300;" >
+    <div style="--h:96px; --z:10; --pos:relative; --pl:24px; --pr:24px; --d:flex; --ai:center; --jc:center; --maxw:80rem; --w:100%; --mx:auto;">
+        <div style="--pos:absolute; --top:0; --right:0; --bottom:0; --left:0; --w:100%; --h:100%; --d:flex; --ai:center; --jc:space-between; --c:var(--color-gray-900, hsl(0 0% 9%)); --weight:300;" >
             <div>
                 <a style="--mr:24px;" href="#">Shop</a>
                 <a style="--mr:24px;" href="#">About</a>
@@ -40,7 +28,7 @@
             </div>
         </div>
         <a style="--pos:relative;" href="#">
-            <svg style="--h:96px; --w:auto; --c:gray-900;" id="logoipsum" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 177.778 100" class="fill-current">
+            <svg style="--h:96px; --w:auto; --c:var(--color-gray-900, hsl(0 0% 9%)); fill:currentColor;" id="logoipsum" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 177.778 100">
                 <path d="M53.73,45.71c.36,0,.48.13.48.48v7.92h4.07c.35,0,.48.13.48.48v.7c0,.35-.13.48-.48.48H52.92c-.35,0-.49-.13-.49-.48v-9.1c0-.35.14-.48.49-.48Z"/>
                 <path d="M62.31,49.2c0-2.31,1.46-3.7,4-3.7s4,1.39,4,3.7v3.08c0,2.31-1.47,3.7-4,3.7s-4-1.39-4-3.7Zm6.32,0c0-1.3-.81-2-2.27-2s-2.26.71-2.26,2V52.3c0,1.31.8,2,2.26,2s2.27-.72,2.27-2Z"/>
                 <path d="M82.22,50.26c.39,0,.48.13.48.48v1.9A3,3,0,0,1,81.64,55a4.36,4.36,0,0,1-3,.94c-2.59,0-4-1.39-4-3.7v-3.1c0-2.28,1.46-3.68,4-3.68,2,0,3.3.79,3.85,2.37a.43.43,0,0,1-.3.62l-.78.27c-.34.12-.48.05-.6-.3a2.06,2.06,0,0,0-2.17-1.3c-1.47,0-2.27.71-2.27,2V52.3c0,1.31.81,2,2.27,2S81,53.63,81,52.65v-.74H78.83c-.36,0-.49-.14-.49-.49v-.68c0-.35.13-.48.49-.48Z"/>
@@ -54,118 +42,116 @@
             </svg>
         </a>
     </div>
-    <div style="--pos:relative; --w:100%; --h:100vh; --bgc:yellow-300; --d:flex; --ai:flex-end; --jc:center;"  class="-mt-32">
-        <img style="--w:100%; --h:100%; --pos:absolute; --top:0; --right:0; --bottom:0; --left:0; --objf:cover; --op:0.8;" src="https://images.unsplash.com/photo-1521334884684-d80222895322?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=100" class="object-top">
-        <svg style="--w:40px; --h:40px; --c:gray-900; --pos:relative; --z:10; --mb:32px;" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <div style="--pos:relative; --w:100%; --h:100vh; --bgc:hsl(50 98% 64%); --d:flex; --ai:flex-end; --jc:center; --mt:-8rem;">
+        <img style="--w:100%; --h:100%; --pos:absolute; --top:0; --right:0; --bottom:0; --left:0; --objf:cover; --objp:top; --op:0.8;" src="https://images.unsplash.com/photo-1521334884684-d80222895322?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=100">
+        <svg style="--w:40px; --h:40px; --c:var(--color-gray-900, hsl(0 0% 9%)); --pos:relative; --z:10; --mb:32px;" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
         </svg>
     </div>
-    <div style="--bgc:green-50; --bgc:opacity-50;" >
+    <div style="--bgc:hsl(138 76% 97% / 0.5);" >
         <div style="--pl:48px; --pr:48px; --pt:128px; --pb:128px;" >
-            <h1 style="--size:3rem; --lh:1; --maxw:42rem; --ta:center; --weight:600; --c:gray-800;"  class="mx-auto leading-tight font-display">Beautiful plant stands that encourage you to get creative.</h1>
+            <h1 style="--size:3rem; --lh:1.25; --maxw:42rem; --ta:center; --weight:600; --c:var(--color-gray-800, hsl(0 0% 20%)); --mx:auto; --ff:'Crimson Text', serif;">Beautiful plant stands that encourage you to get creative.</h1>
         </div>
-        <div style="--d:grid; --gtc:repeat(1, 1fr); --gtc-md:repeat(2, 1fr); --gg:48px; --pl:48px; --pr:48px;"  class="container mx-auto">
+        <div style="--d:grid; --gtc:repeat(1, 1fr); --gtc-md:repeat(2, 1fr); --gg:48px; --pl:48px; --pr:48px; --maxw:80rem; --w:100%; --mx:auto;">
             <img style="--h:100vh; --w:100%; --objf:cover;" src="https://images.unsplash.com/photo-1459156212016-c812468e2115?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=949&q=80">
             <img style="--h:100vh; --w:100%; --objf:cover; --mt-md:128px;" src="https://images.unsplash.com/photo-1531875456634-3f5418280d20?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80">
         </div>
-        <div style="--pl:48px; --pr:48px; --d:grid; --gtc:repeat(1, 1fr); --gtc-md:repeat(2, 1fr); --gg:48px;"  class="container mx-auto md:-mt-32">
+        <div style="--pl:48px; --pr:48px; --d:grid; --gtc:repeat(1, 1fr); --gtc-md:repeat(2, 1fr); --gg:48px; --maxw:80rem; --w:100%; --mx:auto; --mt-md:-8rem;">
             <div style="--p:48px; --p-md:64px;" >
-                <p style="--c:oklch(47.318% 0.036 262); --mb:48px;"  class="leading-relaxed">Driven by a committment to encourage creativity with greenery, we design functional plant stands and botanical wares that amplify plant wares within a space.</p>
+                <p style="--c:oklch(47.318% 0.036 262); --mb:48px; --lh:1.625;">Driven by a committment to encourage creativity with greenery, we design functional plant stands and botanical wares that amplify plant wares within a space.</p>
                 <a style="--bc:b; --bc:oklch(47.318% 0.036 262); --c:oklch(47.318% 0.036 262);" href="#">Shop all our products</a>
             </div>
         </div>
         <div style="--d:grid; --gtc:repeat(3, 1fr); --gg:48px; --pl:48px; --pr:48px; --pt:128px; --pb:128px;" >
-            <a style="--d:block; --pos:relative; --h:72; --d:flex; --ai:flex-end; --jc:end; --pr:48px; --pb:48px; --c:right;" href="#" class="hover:opacity-75">
+            <a style="--d:block; --pos:relative; --h:72; --d:flex; --ai:flex-end; --jc:end; --pr:48px; --pb:48px; --c:right; --hvr-op:0.75;" href="#">
                 <div style="--pos:relative; --z:10;" >
-                    <h3 style="--size:1.875rem; --lh:2.25rem; --weight:600; --c:gray-800; --mb:24px;"  class="font-display">Our Favourites</h3>
+                    <h3 style="--size:1.875rem; --lh:2.25rem; --weight:600; --c:var(--color-gray-800, hsl(0 0% 20%)); --mb:24px; --ff:'Crimson Text', serif;">Our Favourites</h3>
                     <span style="--bc:b; --bc:oklch(47.318% 0.036 262); --c:oklch(47.318% 0.036 262); --pb:4px;" >Shop now</span>
                 </div>
-                <img style="--pos:absolute; --top:0; --right:0; --bottom:0; --left:0; --w:100%; --h:100%; --objf:cover;" src="https://images.unsplash.com/photo-1487700160041-babef9c3cb55?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1935&q=80" class="object-right">
+                <img style="--pos:absolute; --top:0; --right:0; --bottom:0; --left:0; --w:100%; --h:100%; --objf:cover; --objp:right;" src="https://images.unsplash.com/photo-1487700160041-babef9c3cb55?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1935&q=80">
             </a>
-            <a style="--d:block; --pos:relative; --h:72; --d:flex; --ai:flex-end; --jc:end; --pr:48px; --pb:48px; --c:right;" href="#" class="hover:opacity-75">
+            <a style="--d:block; --pos:relative; --h:72; --d:flex; --ai:flex-end; --jc:end; --pr:48px; --pb:48px; --c:right; --hvr-op:0.75;" href="#">
                 <div style="--pos:relative; --z:10;" >
-                    <h3 style="--size:1.875rem; --lh:2.25rem; --weight:600; --c:gray-800; --mb:24px;"  class="font-display">The Collection</h3>
+                    <h3 style="--size:1.875rem; --lh:2.25rem; --weight:600; --c:var(--color-gray-800, hsl(0 0% 20%)); --mb:24px; --ff:'Crimson Text', serif;">The Collection</h3>
                     <span style="--bc:b; --bc:oklch(47.318% 0.036 262); --c:oklch(47.318% 0.036 262); --pb:4px;" >Shop now</span>
                 </div>
-                <img style="--pos:absolute; --top:0; --right:0; --bottom:0; --left:0; --w:100%; --h:100%; --objf:cover;" src="https://images.unsplash.com/photo-1466781783364-36c955e42a7f?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1951&q=80" class="object-right">
+                <img style="--pos:absolute; --top:0; --right:0; --bottom:0; --left:0; --w:100%; --h:100%; --objf:cover; --objp:right;" src="https://images.unsplash.com/photo-1466781783364-36c955e42a7f?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1951&q=80">
             </a>
-            <a style="--d:block; --pos:relative; --h:72; --d:flex; --ai:flex-end; --jc:end; --pr:48px; --pb:48px; --c:right;" href="#" class="hover:opacity-75">
+            <a style="--d:block; --pos:relative; --h:72; --d:flex; --ai:flex-end; --jc:end; --pr:48px; --pb:48px; --c:right; --hvr-op:0.75;" href="#">
                 <div style="--pos:relative; --z:10;" >
-                    <h3 style="--size:1.875rem; --lh:2.25rem; --weight:600; --c:gray-800; --mb:24px;"  class="font-display">Signature Style</h3>
+                    <h3 style="--size:1.875rem; --lh:2.25rem; --weight:600; --c:var(--color-gray-800, hsl(0 0% 20%)); --mb:24px; --ff:'Crimson Text', serif;">Signature Style</h3>
                     <span style="--bc:b; --bc:oklch(47.318% 0.036 262); --c:oklch(47.318% 0.036 262); --pb:4px;" >Shop now</span>
                 </div>
-                <img style="--pos:absolute; --top:0; --right:0; --bottom:0; --left:0; --w:100%; --h:100%; --objf:cover;" src="https://images.unsplash.com/photo-1504198266287-1659872e6590?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1950&q=80" class="object-right">
+                <img style="--pos:absolute; --top:0; --right:0; --bottom:0; --left:0; --w:100%; --h:100%; --objf:cover; --objp:right;" src="https://images.unsplash.com/photo-1504198266287-1659872e6590?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1950&q=80">
             </a>
         </div>
-        <div style="--pl:48px; --pr:48px; --pb:96px;"  class="container mx-auto">
-            <h2 style="--size:3rem; --lh:1; --c:left; --weight:600; --c:gray-800; --pl:48px; --pr:48px;"  class="leading-tight font-display">New products</h2>
+        <div style="--pl:48px; --pr:48px; --pb:96px; --maxw:80rem; --w:100%; --mx:auto;">
+            <h2 style="--size:3rem; --lh:1.25; --c:left; --weight:600; --c:var(--color-gray-800, hsl(0 0% 20%)); --pl:48px; --pr:48px; --ff:'Crimson Text', serif;">New products</h2>
         </div>
-        <div style="--d:grid; --gtc:repeat(1, 1fr); --gtc-md:repeat(2, 1fr); --gg:48px; --pl:48px; --pr:48px; --pb:96px;"  class="container mx-auto">
-            <a style="--d:block;" href="#" class="hover:opacity-75">
+        <div style="--d:grid; --gtc:repeat(1, 1fr); --gtc-md:repeat(2, 1fr); --gg:48px; --pl:48px; --pr:48px; --pb:96px; --maxw:80rem; --w:100%; --mx:auto;">
+            <a style="--d:block; --hvr-op:0.75;" href="#">
                 <img style="--h:100vh; --w:100%; --objf:cover;" src="https://images.unsplash.com/photo-1459156212016-c812468e2115?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=949&q=80">
                 <div style="--pt:24px;" >
                     <h3>Loop</h3>
-                    <div style="--c:red-400;" >
+                    <div style="--c:hsl(0 91% 71%);" >
                         £30.00 
-                        <span style="--c:gray-400; --td:line-through; --ml:16px;" >£60.00</span>
+                        <span style="--c:var(--color-gray-400, hsl(0 0% 71%)); --td:line-through; --ml:16px;" >£60.00</span>
                     </div>
                 </div>
             </a>
-            <a style="--d:block;" href="#" class="hover:opacity-75 md:-mt-32">
+            <a style="--d:block; --hvr-op:0.75; --mt-md:-8rem;" href="#">
                 <img style="--h:100vh; --w:100%; --objf:cover;" src="https://images.unsplash.com/photo-1531875456634-3f5418280d20?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80">
                 <div style="--pt:24px;" >
                     <h3>Loop</h3>
-                    <div style="--c:red-400;" >
+                    <div style="--c:hsl(0 91% 71%);" >
                         £30.00 
-                        <span style="--c:gray-400; --td:line-through; --ml:16px;" >£60.00</span>
+                        <span style="--c:var(--color-gray-400, hsl(0 0% 71%)); --td:line-through; --ml:16px;" >£60.00</span>
                     </div>
                 </div>
             </a>
         </div>
     </div>
-    <div style="--bgc:white; --pt:48px; --pb:48px;" >
-        <div style="--d:grid; --gtc:repeat(1, 1fr); --gtc-md:repeat(2, 1fr); --gg:128px; --pl:48px; --pr:48px; --pt:96px;"  class="container mx-auto">
+    <div style="--bgc:hsl(0 0% 100%); --pt:48px; --pb:48px;" >
+        <div style="--d:grid; --gtc:repeat(1, 1fr); --gtc-md:repeat(2, 1fr); --gg:128px; --pl:48px; --pr:48px; --pt:96px; --maxw:80rem; --w:100%; --mx:auto;">
             <div>
-                <h2 style="--pb:96px; --pl:48px; --pr:48px; --size:3rem; --lh:1; --c:left; --weight:600; --c:gray-800; --pl:48px; --pr:48px;"  class="leading-tight font-display">How to turn your home into a jungle retreat</h2>
+                <h2 style="--pb:96px; --pl:48px; --pr:48px; --size:3rem; --lh:1.25; --c:left; --weight:600; --c:var(--color-gray-800, hsl(0 0% 20%)); --pl:48px; --pr:48px; --ff:'Crimson Text', serif;">How to turn your home into a jungle retreat</h2>
                 <img style="--h:96; --w:100%; --objf:cover;" src="https://images.unsplash.com/photo-1484509025075-64c8133991bf?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1951&q=80">
             </div>
             <div style="--pt-md:128px;" >
                 <img style="--h:96; --w:100%; --objf:cover;" src="https://images.unsplash.com/photo-1505066211281-ed125c006f4c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80">
                 <div style="--pl:48px; --pr:48px; --pt:96px; --pb:96px;" >
-                    <p style="--c:oklch(47.318% 0.036 262); --mb:48px;"  class="leading-relaxed">With design-savvy tips and expert advice you'll learn all there is to know about decorating with plants and botanical styling, plus the necessities like light requirements and when to water and feed. From bathroom to boudoir and every room in between, create your very own green oasis with Plant Style.</p>
-                </div>
+                    <p style="--c:oklch(47.318% 0.036 262); --mb:48px; --lh:1.625;">With design-savvy tips and expert advice you'll learn all there is to know about decorating with plants and botanical styling, plus the necessities like light requirements and when to water and feed. From bathroom to boudoir and every room in between, create your very own green oasis with Plant Style.</p></div>
+        </div>
+    </div>
+    <div style="--ls:0.1em; --bgc:hsl(138 76% 97%); --c:hsl(0 0% 20% / 0.4); --weight:600; --size:0.75rem; --lh:1rem; --pl:48px; --pr:48px;">
+        <div style="--maxw:80rem; --w:100%; --mx:auto; --d:grid; --gtc:repeat(4, 1fr); --pt:96px; --pb:96px;">
+            <div>
+                <div style="--ff:'Crimson Text', serif; --c:var(--color-gray-900, hsl(0 0% 9%)); --size:2.25rem; --lh:2.5rem;">tributary</div>
+            </div>
+            <div>
+                <div style="--ff:'Crimson Text', serif; --ls:0.1em; --c:var(--color-gray-900, hsl(0 0% 9%)); --size:0.875rem; --lh:1.25rem; --mb:24px;">More Info</div>
+                <a style="--d:block; --mb:16px;" href="#">Shop</a>
+                <a style="--d:block; --mb:16px;" href="#">About</a>
+                <a style="--d:block; --mb:16px;" href="#">Info</a>
+                <a style="--d:block; --mb:16px;" href="#">FAQ</a>
+            </div>
+            <div>
+                <div style="--ff:'Crimson Text', serif; --ls:0.1em; --c:var(--color-gray-900, hsl(0 0% 9%)); --size:0.875rem; --lh:1.25rem; --mb:24px;">Helpful Links</div>
+                <a style="--d:block; --mb:16px;" href="#">Shop</a>
+                <a style="--d:block; --mb:16px;" href="#">About</a>
+                <a style="--d:block; --mb:16px;" href="#">Info</a>
+                <a style="--d:block; --mb:16px;" href="#">FAQ</a>
+            </div>
+            <div>
+                <div style="--ff:'Crimson Text', serif; --ls:0.1em; --c:var(--color-gray-900, hsl(0 0% 9%)); --size:0.875rem; --lh:1.25rem; --mb:24px;">Find out more</div>
+                <a style="--d:block; --mb:16px;" href="#">Shop</a>
+                <a style="--d:block; --mb:16px;" href="#">About</a>
+                <a style="--d:block; --mb:16px;" href="#">Info</a>
+                <a style="--d:block; --mb:16px;" href="#">FAQ</a>
             </div>
         </div>
     </div>
-    <div style="--bgc:green-50; --c:gray-800; --c:opacity-40; --weight:600; --size:0.75rem; --lh:1rem; --pl:48px; --pr:48px;"  class="tracking-widest">
-        <div style="--d:grid; --gtc:repeat(4, 1fr); --pt:96px; --pb:96px;"  class="container mx-auto">
-            <div>
-                <div style="--c:gray-900; --size:2.25rem; --lh:2.5rem;"  class="font-display">tributary</div>
-            </div>
-            <div>
-                <div style="--c:gray-900; --size:0.875rem; --lh:1.25rem; --mb:24px;"  class="font-display tracking-widest">More Info</div>
-                <a style="--d:block; --mb:16px;" href="#">Shop</a>
-                <a style="--d:block; --mb:16px;" href="#">About</a>
-                <a style="--d:block; --mb:16px;" href="#">Info</a>
-                <a style="--d:block; --mb:16px;" href="#">FAQ</a>
-            </div>
-            <div>
-                <div style="--c:gray-900; --size:0.875rem; --lh:1.25rem; --mb:24px;"  class="font-display tracking-widest">Helpful Links</div>
-                <a style="--d:block; --mb:16px;" href="#">Shop</a>
-                <a style="--d:block; --mb:16px;" href="#">About</a>
-                <a style="--d:block; --mb:16px;" href="#">Info</a>
-                <a style="--d:block; --mb:16px;" href="#">FAQ</a>
-            </div>
-            <div>
-                <div style="--c:gray-900; --size:0.875rem; --lh:1.25rem; --mb:24px;"  class="font-display tracking-widest">Find out more</div>
-                <a style="--d:block; --mb:16px;" href="#">Shop</a>
-                <a style="--d:block; --mb:16px;" href="#">About</a>
-                <a style="--d:block; --mb:16px;" href="#">Info</a>
-                <a style="--d:block; --mb:16px;" href="#">FAQ</a>
-            </div>
-        </div>
-    </div>
-    <div style="--bgc:oklch(48.94% 0.19 142); --bgc:opacity-30; --c:green-900; --size:0.875rem; --lh:1.25rem; --size-lg:1rem; --lh-lg:1.5rem; --ta:center; --weight:300; --tt:uppercase; --p:48px;"  class="font-heading tracking-widest">©2021 design by novolio. images by unsplash</div>
+    <div style="--ff:'Karla', sans-serif; --ls:0.1em; --bgc:oklch(48.94% 0.19 142 / 0.3); --c:hsl(144 61% 20%); --size:0.875rem; --lh:1.25rem; --size-lg:1rem; --lh-lg:1.5rem; --ta:center; --weight:300; --tt:uppercase; --p:48px;">©2021 design by novolio. images by unsplash</div>
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.2/dist/alpine.min.js" defer="defer"></script>
 </body>
 </html>

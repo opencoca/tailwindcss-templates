@@ -68,10 +68,12 @@
   <link href="./Pinwheel-tailwind_files/main.css" rel="stylesheet">
 
 <link rel="stylesheet" href="https://startr.style/style.css">
+    <link rel="stylesheet" href="./tw2startr-manual-utilities.css">
 </head>
 
 <body><header  class="header header-sticky">
-  <nav  class="navbar container">
+  <nav  style="--maxw:80rem; --w:100%"
+	class="navbar">
     <!-- logo -->
     <div style="--o:0;" >
       <a href="https://themewagon.github.io/pinwheel/index.html">
@@ -81,19 +83,19 @@
     <!-- navbar toggler -->
     <input style="--d:none;" id="nav-toggle" type="checkbox">
     <label style="--o:1; --d:flex; --cur:pointer; --ai:center; --o-lg:1; --d-lg:none;" id="show-button" for="nav-toggle">
-      <svg style="--h:24px;" viewBox="0 0 20 20" class="fill-current">
+      <svg style="fill:currentColor; --h:24px;" viewBox="0 0 20 20">
         <title>Menu Open</title>
         <path d="M0 3h20v2H0V3z m0 6h20v2H0V9z m0 6h20v2H0V0z"></path>
       </svg>
     </label>
     <label style="--o:2; --d:none; --cur:pointer; --ai:center; --o-lg:1;" id="hide-button" for="nav-toggle">
-      <svg style="--h:24px;" viewBox="0 0 20 20" class="fill-current">
+      <svg style="fill:currentColor; --h:24px;" viewBox="0 0 20 20">
         <title>Menu Close</title>
         <polygon points="11 9 22 9 22 11 11 11 11 22 9 22 9 11 -2 11 -2 9 9 9 9 -2 11 -2" transform="rotate(45 10 10)"></polygon>
       </svg>
     </label>
     <!-- /navbar toggler -->
-    <ul style="--o:2; --d:none; --w:100%; --o-lg:1; --d-lg:flex; --w-lg:auto; --jc-lg:center;" id="nav-menu" class="navbar-nav flex-[0_0_100%] lg:flex-auto lg:space-x-5">
+    <ul style="--fx-lg:1 1 auto; --g-lg:1.2rem; --o:2; --d:none; --w:100%; --o-lg:1; --d-lg:flex; --w-lg:auto; --jc-lg:center;" id="nav-menu" class="navbar-nav flex-[0_0_100%]">
       <li  class="nav-item">
         <a href="https://themewagon.github.io/pinwheel/" class="nav-link active">Home</a>
       </li>
@@ -110,13 +112,13 @@
         <a href="https://themewagon.github.io/pinwheel/how-it-works.html" class="nav-link">How It Works</a>
       </li>
       <li style="--pos:relative;"  class="nav-item nav-dropdown group">
-        <span style="--ai:center;"  class="nav-link inline-flex">
+        <span style="--d:inline-flex; --ai:center;"  class="nav-link">
           Pages
-          <svg style="--h:16px; --w:16px;" viewBox="0 0 20 20" class="fill-current">
+          <svg style="fill:currentColor; --h:16px; --w:16px;" viewBox="0 0 20 20">
             <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path>
           </svg>
         </span>
-        <ul style="--d:none; --pos-lg:absolute; --d-lg:block; --op-lg:0.0;"  class="nav-dropdown-list group-hover:block lg:invisible lg:group-hover:visible lg:group-hover:opacity-100">
+        <ul style="--v-lg:hidden; --d:none; --pos-lg:absolute; --d-lg:block; --op-lg:0.0;"  class="nav-dropdown-list group-hover:block lg:group-hover:visible lg:group-hover:opacity-100">
           <li  class="nav-dropdown-item">
             <a href="https://themewagon.github.io/pinwheel/career.html" class="nav-dropdown-link">Career</a>
           </li>
@@ -147,7 +149,7 @@
         <a style="--bc:border;" href="https://themewagon.github.io/pinwheel/signin.html" class="btn btn-white btn-sm">Sing Up Now</a>
       </li>
     </ul>
-    <div style="--o:1; --d:none; --ai:center; --o-md:2; --ml-md:0; --d-lg:flex;"  class="ml-auto">
+    <div style="--ml:auto; --o:1; --d:none; --ai:center; --o-md:2; --ml-md:0; --d-lg:flex;">
       <a href="https://themewagon.github.io/pinwheel/signin.html" class="btn btn-white btn-sm">Sing Up Now</a>
     </div>
   </nav>
@@ -155,7 +157,7 @@
 
 <!-- Banner -->
 <section style="--pos:relative;"  class="section banner">
-  <div  class="container">
+  <div  style="--maxw:80rem; --w:100%">
     <div style="--ai:center;"  class="row">
       <div  class="lg:col-6">
         <h1  class="banner-title">
@@ -172,14 +174,14 @@
       </div>
     </div>
   </div>
-  <img style="--pos:absolute; --right:0; --w:100%; --maxw:30%;" src="./Pinwheel-tailwind_files/banner-shape.svg" alt="" class="banner-shape -top-28 -z-[1]">
+  <img style="--top:-7rem; --z:-1; --pos:absolute; --right:0; --w:100%; --maxw:30%;" src="./Pinwheel-tailwind_files/banner-shape.svg" alt="" class="banner-shape">
 </section>
 <!-- ./end Banner -->
 
 <!-- Key features -->
 <section style="--pos:relative;"  class="section key-feature">
-  <img style="--pos:absolute; --left:0; --top:0;" src="./Pinwheel-tailwind_files/feature-shape.svg" alt="" class="-z-[1] -translate-y-1/2">
-  <div  class="container">
+  <img style="--z:-1; --translatey:-50%; --pos:absolute; --left:0; --top:0;" src="./Pinwheel-tailwind_files/feature-shape.svg" alt="">
+  <div  style="--maxw:80rem; --w:100%">
     <div style="--jc:space-between; --ta:center; --c-lg:start;"  class="row">
       <div  class="lg:col-5">
         <h2>The Highlighting Part Of Our Solution</h2>
@@ -289,7 +291,7 @@
 
 <!-- Services -->
 <section  class="section services">
-  <div  class="container">
+  <div  style="--maxw:80rem; --w:100%">
     <div style="--ai:center;" data-tab-group="integration-tab" class="tab row gx-5">
       <div style="--o-lg:2;"  class="lg:col-7">
         <div data-tab-content="" class="tab-content">
@@ -314,7 +316,7 @@
             experiences that retain and engage your users. We build the
             infrastructure, you can.
           </p>
-          <ul style="--mt:32px; --bc:b-0;" data-tab-nav="" class="tab-nav -ml-4">
+          <ul style="--ml:-1rem; --mt:32px; --bc:b-0;" data-tab-nav="" class="tab-nav">
             <li data-tab="0" class="tab-nav-item active">
               <img style="--mr:12px;" src="./Pinwheel-tailwind_files/drop.svg" alt="">
               Habit building essential choose habit
@@ -335,7 +337,7 @@
       <div  class="lg:col-7">
         <div style="--pos:relative;" >
           <img style="--w:100%; --objf:contain;" src="./Pinwheel-tailwind_files/collaboration.png">
-          <img style="--pos:absolute; --bottom:24px;" src="./Pinwheel-tailwind_files/shape.svg" alt="" class="left-1/2 -z-[1] -translate-x-1/2">
+          <img style="--left:50%; --z:-1; --translatex:-50%; --pos:absolute; --bottom:24px;" src="./Pinwheel-tailwind_files/shape.svg" alt="">
         </div>
       </div>
       <div style="--mt:24px; --mt-lg:0;"  class="lg:col-5">
@@ -348,7 +350,7 @@
             malesuada. Mauris pellentesque nec, egestas non nisi. Cras ultricies
             ligula sed
           </p>
-          <ul style="--mt:24px; --c:dark;"  class="lg:-ml-4">
+          <ul style="--ml-lg:-1rem; --mt:24px; --c:dark;">
             <li style="--mb:8px; --d:flex; --ai:center; --radius:0.25rem; --pl:16px; --pr:16px;" >
               <img style="--mr:12px;" src="./Pinwheel-tailwind_files/checkmark-circle.svg" alt="">
               Supporting more than 119 country world
@@ -377,7 +379,7 @@
           <div style="--pos:absolute; --left:0; --top:0; --z:10; --h:100%; --w:100%;"  class="video-player">
             <iframe style="--h:100%; --w:100%;" allowfullscreen="" src="./Pinwheel-tailwind_files/g3-VxLQO7do.html"></iframe>
           </div>
-          <img style="--pos:absolute; --bottom:0; --right:0;" src="./Pinwheel-tailwind_files/shape.svg" alt="" class="intro-shape -z-[1]">
+          <img style="--z:-1; --pos:absolute; --bottom:0; --right:0;" src="./Pinwheel-tailwind_files/shape.svg" alt="" class="intro-shape">
         </div>
       </div>
       <div style="--mt:24px; --o-lg:1; --mt-lg:0;"  class="lg:col-5">
@@ -398,7 +400,7 @@
 
 <!-- Reviews -->
 <section  class="reviews">
-  <div  class="container">
+  <div  style="--maxw:80rem; --w:100%">
     <div style="--jc:space-between;"  class="row">
       <div  class="lg:col-6">
         <h2>Our customers have nice things to say about us</h2>
@@ -424,7 +426,7 @@
                   Our platform helps build secure onboarding authentica
                   experiences &amp; engage your users. We build .
                 </p>
-                <div style="--mt:24px; --d:flex; --ai:center; --jc:center;"  class="review-rating space-x-2.5">
+                <div style="--g:0.625rem; --mt:24px; --d:flex; --ai:center; --jc:center;"  class="review-rating">
                   <img src="./Pinwheel-tailwind_files/star.svg" alt="">
                   <img src="./Pinwheel-tailwind_files/star.svg" alt="">
                   <img src="./Pinwheel-tailwind_files/star.svg" alt="">
@@ -443,7 +445,7 @@
                   Our platform helps build secure onboarding authentica
                   experiences &amp; engage your users. We build .
                 </p>
-                <div style="--mt:24px; --d:flex; --ai:center; --jc:center;"  class="review-rating space-x-2.5">
+                <div style="--g:0.625rem; --mt:24px; --d:flex; --ai:center; --jc:center;"  class="review-rating">
                   <img src="./Pinwheel-tailwind_files/star.svg" alt="">
                   <img src="./Pinwheel-tailwind_files/star.svg" alt="">
                   <img src="./Pinwheel-tailwind_files/star.svg" alt="">
@@ -462,7 +464,7 @@
                   Our platform helps build secure onboarding authentica
                   experiences &amp; engage your users. We build .
                 </p>
-                <div style="--mt:24px; --d:flex; --ai:center; --jc:center;"  class="review-rating space-x-2.5">
+                <div style="--g:0.625rem; --mt:24px; --d:flex; --ai:center; --jc:center;"  class="review-rating">
                   <img src="./Pinwheel-tailwind_files/star.svg" alt="">
                   <img src="./Pinwheel-tailwind_files/star.svg" alt="">
                   <img src="./Pinwheel-tailwind_files/star.svg" alt="">
@@ -482,7 +484,7 @@
                   Our platform helps build secure onboarding authentica
                   experiences &amp; engage your users. We build .
                 </p>
-                <div style="--mt:24px; --d:flex; --ai:center; --jc:center;"  class="review-rating space-x-2.5">
+                <div style="--g:0.625rem; --mt:24px; --d:flex; --ai:center; --jc:center;"  class="review-rating">
                   <img src="./Pinwheel-tailwind_files/star.svg" alt="">
                   <img src="./Pinwheel-tailwind_files/star.svg" alt="">
                   <img src="./Pinwheel-tailwind_files/star.svg" alt="">
@@ -502,7 +504,7 @@
                   Our platform helps build secure onboarding authentica
                   experiences &amp; engage your users. We build .
                 </p>
-                <div style="--mt:24px; --d:flex; --ai:center; --jc:center;"  class="review-rating space-x-2.5">
+                <div style="--g:0.625rem; --mt:24px; --d:flex; --ai:center; --jc:center;"  class="review-rating">
                   <img src="./Pinwheel-tailwind_files/star.svg" alt="">
                   <img src="./Pinwheel-tailwind_files/star.svg" alt="">
                   <img src="./Pinwheel-tailwind_files/star.svg" alt="">
@@ -522,7 +524,7 @@
                   Our platform helps build secure onboarding authentica
                   experiences &amp; engage your users. We build .
                 </p>
-                <div style="--mt:24px; --d:flex; --ai:center; --jc:center;"  class="review-rating space-x-2.5">
+                <div style="--g:0.625rem; --mt:24px; --d:flex; --ai:center; --jc:center;"  class="review-rating">
                   <img src="./Pinwheel-tailwind_files/star.svg" alt="">
                   <img src="./Pinwheel-tailwind_files/star.svg" alt="">
                   <img src="./Pinwheel-tailwind_files/star.svg" alt="">
@@ -542,7 +544,7 @@
                   Our platform helps build secure onboarding authentica
                   experiences &amp; engage your users. We build .
                 </p>
-                <div style="--mt:24px; --d:flex; --ai:center; --jc:center;"  class="review-rating space-x-2.5">
+                <div style="--g:0.625rem; --mt:24px; --d:flex; --ai:center; --jc:center;"  class="review-rating">
                   <img src="./Pinwheel-tailwind_files/star.svg" alt="">
                   <img src="./Pinwheel-tailwind_files/star.svg" alt="">
                   <img src="./Pinwheel-tailwind_files/star.svg" alt="">
@@ -561,7 +563,7 @@
                   Our platform helps build secure onboarding authentica
                   experiences &amp; engage your users. We build .
                 </p>
-                <div style="--mt:24px; --d:flex; --ai:center; --jc:center;"  class="review-rating space-x-2.5">
+                <div style="--g:0.625rem; --mt:24px; --d:flex; --ai:center; --jc:center;"  class="review-rating">
                   <img src="./Pinwheel-tailwind_files/star.svg" alt="">
                   <img src="./Pinwheel-tailwind_files/star.svg" alt="">
                   <img src="./Pinwheel-tailwind_files/star.svg" alt="">
@@ -580,7 +582,7 @@
                   Our platform helps build secure onboarding authentica
                   experiences &amp; engage your users. We build .
                 </p>
-                <div style="--mt:24px; --d:flex; --ai:center; --jc:center;"  class="review-rating space-x-2.5">
+                <div style="--g:0.625rem; --mt:24px; --d:flex; --ai:center; --jc:center;"  class="review-rating">
                   <img src="./Pinwheel-tailwind_files/star.svg" alt="">
                   <img src="./Pinwheel-tailwind_files/star.svg" alt="">
                   <img src="./Pinwheel-tailwind_files/star.svg" alt="">
@@ -600,8 +602,8 @@
 
 <!-- Call To action -->
 <section style="--pl:20px; --pr:20px; --pt:80px; --pb:80px; --pt-xl:[120px]; --pb-xl:[120px];" >
-  <div  class="container">
-    <div style="--bgc:gradient; --jc:center; --pl:[30px]; --pr:[30px]; --pb:[75px]; --pt:64px;"  class="row rounded-b-[80px] rounded-t-[20px]">
+  <div  style="--maxw:80rem; --w:100%">
+    <div style="--bblr:80px; --bbrr:80px; --btlr:20px; --btrr:20px; --bgc:gradient; --jc:center; --pl:[30px]; --pr:[30px]; --pb:[75px]; --pt:64px;"  class="row">
       <div  class="lg:col-11">
         <div  class="row">
           <div  class="lg:col-7">
@@ -630,7 +632,7 @@
 </div>
 
  <footer style="--bgc:theme-light/50;"  class="footer">
-  <div  class="container">
+  <div  style="--maxw:80rem; --w:100%">
     <div style="--pb:40px; --pt:[52px];"  class="row gx-5">
       <div style="--mt:48px;"  class="col-12 md:col-6 lg:col-3">
         <a href="https://themewagon.github.io/pinwheel/index.html">
@@ -699,8 +701,8 @@
       </div>
     </div>
   </div>
-  <div style="--maxw:1440px;"  class="container">
-    <div style="--bc:t; --bc:border; --pb:40px; --pt:28px; --ta:center;"  class="footer-copyright mx-auto">
+  <div style="--maxw:80rem; --w:100%">
+    <div style="--mx:auto; --bc:t; --bc:border; --pb:40px; --pt:28px; --ta:center;"  class="footer-copyright">
       <p>Designed And Developed by <a href="https://themefisher.com/" target="_blank">Themefisher</a> | Distributed by <a href="https://themewagon.com/" target="_blank">ThemeWagon</a></p>
       
     </div>
