@@ -1,0 +1,39 @@
+{
+  "font-display": {
+    "--ff": "'Playfair Display', serif"
+  },
+  "font-heading": {
+    "--ff": "'Fira Sans Condensed', sans-serif"
+  },
+  "container": {
+    "--maxw": "80rem",
+    "--w": "100%"
+  },
+  "mx-auto": {
+    "--mx": "auto"
+  },
+  "tracking-wider": {
+    "--ls": "0.05em"
+  },
+  "tracking-widest": {
+    "--ls": "0.1em"
+  },
+  "fill-current": {
+    "fill": "currentColor"
+  },
+  "object-top": {
+    "--objp": "top"
+  },
+  "object-right": {
+    "--objp": "right"
+  },
+  "leading-tight": {
+    "--lh": "1.25"
+  },
+  "leading-relaxed": {
+    "--lh": "1.625"
+  },
+  "-mt-32": {
+    "--mt": "-8rem"
+  }
+}
