@@ -43,3 +43,4 @@ logs
 .cache/
 .npm/
 .eslintcache
+layouts/*.html.backup
