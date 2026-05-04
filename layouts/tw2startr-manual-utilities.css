@@ -1,0 +1,69 @@
+/* Manual utility shims for patterns tw2startr cannot yet auto-convert.
+   Keep this file as the source of truth for future converter rule additions. */
+
+/* focus:* */
+.focus\:outline-none:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.focus\:bg-white:focus {
+  background-color: #fff;
+}
+
+.focus\:border-gray-500:focus {
+  border-color: #6b7280;
+}
+
+/* group-hover:* */
+.group:hover .group-hover\:block {
+  display: block;
+}
+
+@media (min-width: 1024px) {
+  .group:hover .lg\:group-hover\:visible {
+    visibility: visible;
+  }
+
+  .group:hover .lg\:group-hover\:opacity-100 {
+    opacity: 1;
+  }
+}
+
+/* space-x/space-y combinators */
+.space-y-4 > * + * {
+  margin-top: 1rem;
+}
+
+.space-x-2\.5 > * + * {
+  margin-left: 0.625rem;
+}
+
+@media (min-width: 768px) {
+  .md\:space-x-12 > * + * {
+    margin-left: 3rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:space-x-5 > * + * {
+    margin-left: 1.25rem;
+  }
+}
+
+/* responsive order */
+@media (min-width: 768px) {
+  .md\:order-first {
+    order: -9999;
+  }
+
+  .md\:order-last {
+    order: 9999;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:order-first {
+    order: -9999;
+  }
+}
